@@ -12,12 +12,23 @@ li {
   border: 2px solid $gray;
   display: inline-block;
   list-style: none;
-  margin-right: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 0.3em;
+  padding: 1em;
+  text-align: center;
 }
 
 .ss-gro {
+  @include span-columns(2, 18);
   li {
+    @include span-columns(1, 2);
     border-top-left-radius: 0;
+
+    &:nth-of-type(even) {
+      @include span-columns(1 omega, 2);
+    }
+
+    &:nth-child(2) {
+      margin-top: 48.19277%+3.61446%;
+    }
   }
 }
