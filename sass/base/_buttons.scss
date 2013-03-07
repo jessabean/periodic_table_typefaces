@@ -1,0 +1,86 @@
+// ======================
+// Default Button Style
+// ======================
+.button,
+input.button
+button.button {
+
+}
+
+
+// Small button
+.button.small {
+}
+
+
+// Primary action button style
+.button.primary,
+input.button.primary {
+
+  &:hover {
+  }
+
+  &:focus {
+  }
+
+  &:active {
+  }
+}
+
+// Secondary action button style
+.button.secondary,
+input.button.secondary {
+
+  &:hover {
+  }
+
+  &:focus {
+  }
+
+  &:active {
+  }
+}
+
+// Disabled button style
+.button.disabled,
+input.button.disabled {
+
+  &:hover {
+  }
+
+  &:focus {
+  }
+
+  &:active {
+  }
+}
+
+// Processing state for button - animated stripes
+.button.processing,
+input.button.processing {
+  @include process-stripes;
+  @include border(1px, solid, #3A6F86);
+  color:#fff;
+}
+@-webkit-keyframes animate-stripes {0% {background-position: 0 0;} 100% {background-position: 25px 0;}}
+@-moz-keyframes animate-stripes {0% {background-position: 0 0;} 100% {background-position: 25px 0;}}
+
+// Alert button - red
+.button.danger,
+input.button.danger {
+
+  &:hover {
+  }
+
+  &:focus {
+  }
+
+  &:active {
+  }
+}
+
+// Button group
+.pill,
+.util-buttons {
+}
+

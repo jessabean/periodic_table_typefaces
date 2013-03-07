@@ -1,0 +1,49 @@
+// IMPORTS:
+//  the imports are serving as a manifest of file for now so you can
+//  include mc-chrome in your manifest for Sprockets to get all of the base
+//  css needed for the MC chrome. Highly custom mixins should not be imported here
+//  so apps can choose when they want to use them outside of the standard chrome.
+
+@import 'compass';
+
+// Variables and Mixins
+@import "globals";
+
+@import "mixins/border";
+@import "mixins/border_radius";
+@import "mixins/clearfix";
+@import "mixins/gradients";
+
+
+// Base Styles
+@import "base/reset";
+@import "base/structure";
+@import "base/base";
+@import "base/type";
+@import "base/buttons";
+@import "base/lists";
+@import "base/blank_states";
+@import "base/error_pages";
+@import "base/misc";
+@import "base/forms/forms";
+
+
+// Components
+@import "components/charts";
+@import "components/icons";
+@import "components/labels_badges";
+@import "components/links";
+@import "components/loading";
+@import "components/media";
+@import "components/messages";
+@import "components/modal";
+@import "components/nav";
+@import "components/pagination";
+@import "components/tooltip";
+@import "components/wells";
+
+
+// IE Fixes
+@import "base/ie";
+
+

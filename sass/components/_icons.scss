@@ -1,0 +1,83 @@
+// =============================
+// Icons
+// =============================
+
+.ico                          { display: inline-block; vertical-align: middle; }
+
+.ico-left                     {margin-right: 10px;}
+.ico-right                    {margin-left: 10px;}
+
+.ico-24                       { background: url(asset-path('icons_24.png', image)) no-repeat; height: 24px; width: 24px; }
+.ico-16                       { background: url(asset-path('icons_16.png', image)) no-repeat; height: 16px; width: 16px; }
+.ico-10                       { background: url(asset-path('icons_10.png', image)) no-repeat; height: 10px; width: 10px; }
+.ico-mini                     { background: url(asset-path('icons_mini.png', image)) no-repeat; }
+
+.ico-warning,
+.ico-confirmed,
+.ico-notice                   { margin-right:10px; }
+
+.ico-24.ico-warning           {background-position: 0 0;}
+.ico-24.ico-confirmed         {background-position: 0 -35px;}
+.ico-24.ico-notice            {background-position: 0 -105px;}
+
+.ico-16.ico-tooltip           { background-position: 0 0; cursor: pointer; margin-left: 5px; margin-top: -2px; }
+.ico-16.ico-gift              { background-position: 0 -78px; }
+
+.ico-10.ico-close             { background-position: 0 0; margin-top: -2px; margin-left: 5px; }
+.ico-10.ico-close-light       { background-position: 0 -20px; margin-top: -2px; margin-left: 5px; }
+.ico-10.ico-arrow             { background-position: 0 -40px; vertical-align: middle; }
+.ico-10.ico-arrow-light       { background-position: 0 -80px; vertical-align: middle; }
+
+.active .ico-arrow,
+.ui-state-active .ico-arrow   { background-position: 0 -60px; }
+.active .ico-arrow-light      { background-position: 0 -100px; }
+.ico-mini.ico-arrow-light     { background-position: -69px 0; width: 9px; height: 5px; }
+
+.ico-24.ico-arrow             { background-position: 0 -244px; }
+.active .ico-24.ico-arrow     { background-position: 0 -279px; }
+
+.ico-dashboard.ico-payments {
+  background-position: 0 -105px;
+  height: 107px;
+  width: 104px;
+}
+
+.ico-dashboard.ico-redeem {
+  background-position: 0 0;
+  height: 97px;
+  width: 105px;
+}
+
+
+.ico-dashboard.ico-redeem-orange {
+  background-position: 0 -220px;
+  height: 97px;
+  width: 105px;
+}
+
+.ico-dashboard.ico-chart {
+  background-position: 0 -318px;
+  height: 114px;
+  width: 105px;
+}
+
+.ico-hiw {
+  background: url(asset_path('icons_hiw.png', image));
+  background-repeat: no-repeat;
+	float: left;
+	height: 101px;
+	margin-right: 40px;
+	width: 120px;
+}
+
+.ico-hiw.ico-chart {
+	background-position: 0 1px;
+}
+
+.ico-hiw.ico-people {
+	background-position: 0 -101px;
+}
+
+.ico-hiw.ico-feedback {
+	background-position: 0 -201px;
+}
