@@ -1,0 +1,42 @@
+/* line 5, ../sass/base/_base.scss */
+* {
+  -webkit-text-size-adjust: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 20, ../sass/base/_base.scss */
+section,
+nav,
+header,
+aside {
+  display: block; }
+
+/* line 48, ../sass/base/_type.scss */
+em {
+  font-style: italic; }
+
+/* line 53, ../sass/base/_type.scss */
+strong,
+b {
+  font-weight: bold; }
+
+/* line 5, ../sass/_periodic_table.scss */
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 10, ../sass/_periodic_table.scss */
+li {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #555555;
+  display: inline-block;
+  list-style: none;
+  margin-right: 2px;
+  margin-bottom: 2px; }
+
+/* line 20, ../sass/_periodic_table.scss */
+.ss-gro li {
+  border-top-left-radius: 0; }
