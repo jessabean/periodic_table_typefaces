@@ -51,28 +51,29 @@ li {
   list-style: none;
   margin-bottom: 0.3em;
   padding: 1em;
-  text-align: center; }
+  text-align: center;
+  text-transform: capitalize; }
 
-/* line 20, ../sass/_periodic_table.scss */
+/* line 21, ../sass/_periodic_table.scss */
 .ss-gro {
   width: 10.76524%;
   float: left;
   margin-right: 0.38911%;
   display: inline; }
-  /* line 22, ../sass/_periodic_table.scss */
+  /* line 23, ../sass/_periodic_table.scss */
   .ss-gro li {
     width: 48.19277%;
     float: left;
     margin-right: 3.61446%;
     display: inline;
     border-top-left-radius: 0; }
-    /* line 26, ../sass/_periodic_table.scss */
+    /* line 27, ../sass/_periodic_table.scss */
     .ss-gro li:nth-of-type(even) {
       width: 48.19277%;
       float: right;
       margin-right: 0;
       *margin-left: -0.3em;
       display: inline; }
-    /* line 30, ../sass/_periodic_table.scss */
+    /* line 31, ../sass/_periodic_table.scss */
     .ss-gro li:nth-child(2) {
       margin-top: 51.80723%; }
