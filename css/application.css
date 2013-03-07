@@ -36,12 +36,12 @@ strong,
 b {
   font-weight: bold; }
 
-/* line 5, ../sass/_periodic_table.scss */
+/* line 8, ../sass/_periodic_table.scss */
 ul {
   margin: 0;
   padding: 0; }
 
-/* line 10, ../sass/_periodic_table.scss */
+/* line 13, ../sass/_periodic_table.scss */
 li {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -52,28 +52,78 @@ li {
   margin-bottom: 0.3em;
   padding: 1em;
   text-align: center;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  height: 4em;
+  width: 4em; }
 
-/* line 21, ../sass/_periodic_table.scss */
+/* line 26, ../sass/_periodic_table.scss */
 .ss-gro {
   width: 10.76524%;
   float: left;
   margin-right: 0.38911%;
   display: inline; }
-  /* line 23, ../sass/_periodic_table.scss */
+  /* line 28, ../sass/_periodic_table.scss */
   .ss-gro li {
     width: 48.19277%;
     float: left;
     margin-right: 3.61446%;
     display: inline;
     border-top-left-radius: 0; }
-    /* line 27, ../sass/_periodic_table.scss */
+    /* line 32, ../sass/_periodic_table.scss */
     .ss-gro li:nth-of-type(even) {
       width: 48.19277%;
       float: right;
       margin-right: 0;
       *margin-left: -0.3em;
       display: inline; }
-    /* line 31, ../sass/_periodic_table.scss */
+    /* line 36, ../sass/_periodic_table.scss */
     .ss-gro li:nth-child(2) {
       margin-top: 51.80723%; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.ss-grotesk {
+  border: 2px solid #ff6b6b; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.ss-humanist {
+  border: 2px solid #fa9c03; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.ss-geo {
+  border: 2px solid #c7f464; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.sr-didone {
+  border: 2px solid #45ada8; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.sr-ss {
+  border: 2px solid #9de0ad; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.sr-realist {
+  border: 2px solid #dad8a7; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.sr-garalde {
+  border: 2px solid #7e5bd5; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.sr-slab {
+  border: 2px solid #4ecdc4; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.gl-inscription {
+  border: 2px solid #928980; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.ss-display {
+  border: 2px solid #73c7ff; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.blackletter {
+  border: 2px solid #556270; }
+
+/* line 72, ../sass/_periodic_table.scss */
+.script {
+  border: 2px solid #ffa8ae; }

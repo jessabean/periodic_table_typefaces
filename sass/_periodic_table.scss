@@ -2,6 +2,9 @@
 // Periodic Table
 // ======================
 
+$type-height: 4em; // 64px
+$type-width: 4em; // 64px
+
 ul {
   margin: 0;
   padding: 0;
@@ -16,6 +19,8 @@ li {
   padding: 1em;
   text-align: center;
   text-transform: capitalize;
+    height: $type-height; // 64px
+    width: $type-width; // 64px
 }
 
 .ss-gro {
@@ -31,5 +36,40 @@ li {
     &:nth-child(2) {
       margin-top: 48.19277%+3.61446%;
     }
+  }
+}
+
+// Colors for each type class
+
+$ss-grotesk:  #FF6B6B;
+$ss-humanist: #FA9C03;
+$ss-geo:      #C7F464;
+$sr-didone:   #45ADA8;
+$sr-ss:       #9DE0AD;
+$sr-realist:  #DAD8A7;
+$sr-garalde:  #7E5BD5;
+$sr-slab:     #4ECDC4;
+$gl:          #928980;
+$ss-display:  #73C7FF;
+$blackletter: #556270;
+$script:      #FFA8AE;
+
+$type-family-list:
+  ss-grotesk $ss-grotesk,
+  ss-humanist $ss-humanist,
+  ss-geo $ss-geo,
+  sr-didone $sr-didone,
+  sr-ss $sr-ss,
+  sr-realist $sr-realist,
+  sr-garalde $sr-garalde,
+  sr-slab $sr-slab,
+  gl-inscription $gl,
+  ss-display $ss-display,
+  blackletter $blackletter,
+  script $script;
+
+@each $type in $type-family-list {
+  .#{nth($type, 1)} {
+    border: 2px solid nth($type, 2);
   }
 }
