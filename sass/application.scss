@@ -7,7 +7,9 @@
 @import "mixins/clearfix";
 
 // Base Styles
-@import "susy";
+@import "bourbon/bourbon";
+@import "grid_settings";
+@import "neat/neat";
 
 @import "base/base";
 @import "base/type";
