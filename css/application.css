@@ -17,7 +17,7 @@ aside {
 
 #main {
   *zoom: 1;
-  max-width: 1284px;
+  max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
   #main:before, #main:after {
@@ -43,10 +43,15 @@ li {
   line-height: 64px;
   list-style: none;
   margin-bottom: 2px;
+  overflow: hidden;
   text-align: center;
+  text-indent: 100%;
   text-transform: capitalize;
   height: 64px;
-  width: 64px; }
+  width: 64px;
+  white-space: nowrap; }
+  li:hover {
+    cursor: pointer; }
 
 .ss-gro li {
   border-top-left-radius: 0; }
@@ -98,3 +103,493 @@ li {
 .script {
   border: 2px solid #ffa8ae;
   border-radius: 5px; }
+
+li[data-bg=helvetica] {
+  background-image: url("../img/helvetica.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=futura] {
+  background-image: url("../img/futura.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=univers] {
+  background-image: url("../img/univers.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=akzidenz_grotesk] {
+  background-image: url("../img/akzidenz_grotesk.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=gill_sans] {
+  background-image: url("../img/gill_sans.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=optima] {
+  background-image: url("../img/optima.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=frutiger] {
+  background-image: url("../img/frutiger.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=syntax] {
+  background-image: url("../img/syntax.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=meta] {
+  background-image: url("../img/meta.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=avant_garde] {
+  background-image: url("../img/avant_garde.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=bodoni] {
+  background-image: url("../img/bodoni.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=bell_gothic] {
+  background-image: url("../img/bell_gothic.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=franklin_gothic] {
+  background-image: url("../img/franklin_gothic.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=myriad] {
+  background-image: url("../img/myriad.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=formata] {
+  background-image: url("../img/formata.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=prokyon] {
+  background-image: url("../img/prokyon.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=metro] {
+  background-image: url("../img/metro.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=antique_olive] {
+  background-image: url("../img/antique_olive.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=eurostile] {
+  background-image: url("../img/eurostile.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=didot] {
+  background-image: url("../img/didot.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=interstate] {
+  background-image: url("../img/interstate.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=din] {
+  background-image: url("../img/din.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=stone] {
+  background-image: url("../img/stone.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=thesis] {
+  background-image: url("../img/thesis.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=rotis] {
+  background-image: url("../img/rotis.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=times] {
+  background-image: url("../img/times.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=trinite] {
+  background-image: url("../img/trinite.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=baskerville] {
+  background-image: url("../img/baskerville.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=garamond] {
+  background-image: url("../img/garamond.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=caslon] {
+  background-image: url("../img/caslon.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=minion] {
+  background-image: url("../img/minion.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=lucida] {
+  background-image: url("../img/lucida.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=fleischmann] {
+  background-image: url("../img/fleischmann.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=dax] {
+  background-image: url("../img/dax.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=today_sans] {
+  background-image: url("../img/today_sans.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=info] {
+  background-image: url("../img/info.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=gotham] {
+  background-image: url("../img/gotham.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=walbaum] {
+  background-image: url("../img/walbaum.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=letter_gothic] {
+  background-image: url("../img/letter_gothic.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=avenir] {
+  background-image: url("../img/avenir.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=officina] {
+  background-image: url("../img/officina.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=scala] {
+  background-image: url("../img/scala.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=base] {
+  background-image: url("../img/base.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=arnhem] {
+  background-image: url("../img/arnhem.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=lexicon scotch_roman] {
+  background-image: url("../img/lexicon scotch_roman.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=sabon] {
+  background-image: url("../img/sabon.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=bembo] {
+  background-image: url("../img/bembo.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=jenson] {
+  background-image: url("../img/jenson.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=griffo_classico] {
+  background-image: url("../img/griffo_classico.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=garamond_classico] {
+  background-image: url("../img/garamond_classico.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=cheltenham] {
+  background-image: url("../img/cheltenham.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=amplitude] {
+  background-image: url("../img/amplitude.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=bell_centennial] {
+  background-image: url("../img/bell_centennial.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=neutraface] {
+  background-image: url("../img/neutraface.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=matrix] {
+  background-image: url("../img/matrix.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=trade_gothic] {
+  background-image: url("../img/trade_gothic.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=news_gothic] {
+  background-image: url("../img/news_gothic.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=fedra] {
+  background-image: url("../img/fedra.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=quadraat] {
+  background-image: url("../img/quadraat.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=clarendon] {
+  background-image: url("../img/clarendon.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=rockwell] {
+  background-image: url("../img/rockwell.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=ionic] {
+  background-image: url("../img/ionic.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=swift] {
+  background-image: url("../img/swift.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=joanna] {
+  background-image: url("../img/joanna.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=aldine] {
+  background-image: url("../img/aldine.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=kis] {
+  background-image: url("../img/kis.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=palatino] {
+  background-image: url("../img/palatino.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=cooper_black] {
+  background-image: url("../img/cooper_black.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=spectrum] {
+  background-image: url("../img/spectrum.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=proforma] {
+  background-image: url("../img/proforma.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=copperplate_gothic] {
+  background-image: url("../img/copperplate_gothic.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=trajan] {
+  background-image: url("../img/trajan.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=century] {
+  background-image: url("../img/century.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=ocr] {
+  background-image: url("../img/ocr.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=chicago] {
+  background-image: url("../img/chicago.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=peignot] {
+  background-image: url("../img/peignot.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=oakland] {
+  background-image: url("../img/oakland.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=blur] {
+  background-image: url("../img/blur.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=egyptian] {
+  background-image: url("../img/egyptian.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=courier] {
+  background-image: url("../img/courier.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=memphis] {
+  background-image: url("../img/memphis.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=caecilia] {
+  background-image: url("../img/caecilia.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=gutenberg] {
+  background-image: url("../img/gutenberg.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=gebetbuch] {
+  background-image: url("../img/gebetbuch.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=manuskript] {
+  background-image: url("../img/manuskript.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=breitkopf] {
+  background-image: url("../img/breitkopf.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=fette] {
+  background-image: url("../img/fette.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=wilhelm] {
+  background-image: url("../img/wilhelm.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=weiss] {
+  background-image: url("../img/weiss.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=fette_deutsche] {
+  background-image: url("../img/fette_deutsche.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=zapfino] {
+  background-image: url("../img/zapfino.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=mistral] {
+  background-image: url("../img/mistral.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=hands] {
+  background-image: url("../img/hands.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=snell_roundhand] {
+  background-image: url("../img/snell_roundhand.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=st_augustine] {
+  background-image: url("../img/st_augustine.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=bickham_script] {
+  background-image: url("../img/bickham_script.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=uncial] {
+  background-image: url("../img/uncial.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=beowulf] {
+  background-image: url("../img/beowulf.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }

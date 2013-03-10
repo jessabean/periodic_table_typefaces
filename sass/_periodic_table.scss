@@ -16,10 +16,17 @@ li {
   line-height: 64px;
   list-style: none;
   margin-bottom: 2px;
+  overflow: hidden;
   text-align: center;
+  text-indent: 100%;
   text-transform: capitalize;
     height: $type-height; // 64px
     width: $type-width; // 64px
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .ss-gro {
@@ -29,7 +36,6 @@ li {
 }
 
 // Colors for each type class
-
 $ss-grotesk:  #FF6B6B;
 $ss-humanist: #FA9C03;
 $ss-geo:      #C7F464;
@@ -76,5 +82,116 @@ $type-family-list:
   .#{nth($type, 1)} {
     border: 2px solid nth($type, 2);
     border-radius: nth($type, 3);
+  }
+}
+
+// Typeface list for background images
+
+$typeface-list:
+helvetica,
+futura,
+univers,
+akzidenz_grotesk,
+gill_sans,
+optima,
+frutiger,
+syntax,
+meta,
+avant_garde,
+bodoni,
+bell_gothic,
+franklin_gothic,
+myriad,
+formata,
+prokyon,
+metro,
+antique_olive,
+eurostile,
+didot,
+interstate,
+din,
+stone,
+thesis,
+rotis,
+times,
+trinite,
+baskerville,
+garamond,
+caslon,
+minion,
+lucida,
+fleischmann,
+dax,
+today_sans,
+info,
+gotham,
+walbaum,
+letter_gothic,
+avenir,
+officina,
+scala,
+base,
+arnhem,
+lexicon
+scotch_roman,
+sabon,
+bembo,
+jenson,
+griffo_classico,
+garamond_classico,
+cheltenham,
+amplitude,
+bell_centennial,
+neutraface,
+matrix,
+trade_gothic,
+news_gothic,
+fedra,
+quadraat,
+clarendon,
+rockwell,
+ionic,
+swift,
+joanna,
+aldine,
+kis,
+palatino,
+cooper_black,
+spectrum,
+proforma,
+copperplate_gothic,
+trajan,
+century,
+ocr,
+chicago,
+peignot,
+oakland,
+blur,
+egyptian,
+courier,
+memphis,
+caecilia,
+gutenberg,
+gebetbuch,
+manuskript,
+breitkopf,
+fette,
+wilhelm,
+weiss,
+fette_deutsche,
+zapfino,
+mistral,
+hands,
+snell_roundhand,
+st_augustine,
+bickham_script,
+uncial,
+beowulf;
+
+@each $typeface in $typeface-list {
+  li[data-bg=#{$typeface}] {
+    background-image: url('../img/#{$typeface}.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
