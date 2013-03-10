@@ -2,26 +2,26 @@
 // Periodic Table
 // ======================
 
-$type-height: 64px;
-$type-width: 64px;
 
-ul {
-  margin: 0;
+ol {
+  margin-left: -$gutter;
+  overflow: hidden;
   padding: 0;
 }
 
 li {
+  @include span(1, $max_columns);
   border: 2px solid $gray;
   display: inline-block;
-  line-height: 64px;
+  float: left;
+  height: 64px;
   list-style: none;
-  margin-bottom: 2px;
+  margin-left: $gutter;
+  margin-bottom: $gutter;
   overflow: hidden;
   text-align: center;
   text-indent: 100%;
   text-transform: capitalize;
-    height: $type-height; // 64px
-    width: $type-width; // 64px
   white-space: nowrap;
 
   &:hover {
@@ -29,10 +29,22 @@ li {
   }
 }
 
-.ss-gro {
-  li {
-    border-top-left-radius: 0;
-  }
+li[data-bg="futura"] {
+  margin-left: ($one_col * 15)+$gutter;
+  margin-right: $one_col;
+}
+
+li[data-bg="gill_sans"],
+li[data-bg="myriad"] {
+  margin-left: ($one_col * 9)+$gutter
+}
+
+li[data-bg="zapfino"] {
+  margin-left: ($one_col * 10)+$gutter;
+}
+
+li.script {
+  margin-top: $gutter*6;
 }
 
 // Colors for each type class
