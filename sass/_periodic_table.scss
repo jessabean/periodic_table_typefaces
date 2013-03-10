@@ -2,8 +2,8 @@
 // Periodic Table
 // ======================
 
-$type-height: 4em; // 64px
-$type-width: 4em; // 64px
+$type-height: 64px;
+$type-width: 64px;
 
 ul {
   margin: 0;
@@ -11,12 +11,11 @@ ul {
 }
 
 li {
-  @include rounded(5px);
   border: 2px solid $gray;
   display: inline-block;
+  line-height: 64px;
   list-style: none;
-  margin-bottom: 0.3em;
-  padding: 1em;
+  margin-bottom: 2px;
   text-align: center;
   text-transform: capitalize;
     height: $type-height; // 64px
@@ -24,18 +23,8 @@ li {
 }
 
 .ss-gro {
-  @include span-columns(2, 18);
   li {
-    @include span-columns(1, 2);
     border-top-left-radius: 0;
-
-    &:nth-of-type(even) {
-      @include span-columns(1 omega, 2);
-    }
-
-    &:nth-child(2) {
-      margin-top: 48.19277%+3.61446%;
-    }
   }
 }
 
@@ -54,22 +43,38 @@ $ss-display:  #73C7FF;
 $blackletter: #556270;
 $script:      #FFA8AE;
 
+// Border Radius
+$radius: 5px;
+$r-grotesk: 0 $radius $radius $radius;
+$r-humanist: $radius 0 $radius 0;
+$r-geo: $radius 0 $radius $radius;
+$r-didone: $radius $radius $radius 0;
+$r-ss: 0 $radius 0 0;
+$r-realist: 0 $radius 0 $radius;
+$r-garalde: $radius $radius 0 $radius;
+$r-slab: 0 0 0 $radius;
+$r-gl: 0;
+$r-display: 0 0 $radius 0;
+$r-blackletter: $radius 0 0 0;
+$r-script: $radius;
+
 $type-family-list:
-  ss-grotesk $ss-grotesk,
-  ss-humanist $ss-humanist,
-  ss-geo $ss-geo,
-  sr-didone $sr-didone,
-  sr-ss $sr-ss,
-  sr-realist $sr-realist,
-  sr-garalde $sr-garalde,
-  sr-slab $sr-slab,
-  gl-inscription $gl,
-  ss-display $ss-display,
-  blackletter $blackletter,
-  script $script;
+  ss-grotesk $ss-grotesk $r-grotesk,
+  ss-humanist $ss-humanist $r-humanist,
+  ss-geo $ss-geo $r-geo,
+  sr-didone $sr-didone $r-didone,
+  sr-ss $sr-ss $r-ss,
+  sr-realist $sr-realist $r-realist,
+  sr-garalde $sr-garalde $r-garalde,
+  sr-slab $sr-slab $r-slab,
+  gl-inscription $gl $r-gl,
+  ss-display $ss-display $r-display,
+  blackletter $blackletter $r-blackletter,
+  script $script $r-script;
 
 @each $type in $type-family-list {
   .#{nth($type, 1)} {
     border: 2px solid nth($type, 2);
+    border-radius: nth($type, 3);
   }
 }

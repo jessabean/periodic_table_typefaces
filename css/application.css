@@ -1,129 +1,100 @@
-/* line 5, ../sass/base/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 * {
   -webkit-text-size-adjust: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 20, ../sass/base/_base.scss */
 section,
 nav,
 header,
 aside {
   display: block; }
 
-/* line 30, ../sass/base/_base.scss */
 #main {
   *zoom: 1;
-  max-width: 77.1em;
-  _width: 77.1em;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
+  max-width: 1284px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 38, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  #main:before, #main:after {
+    content: " ";
+    display: table; }
   #main:after {
-    content: "";
-    display: table;
     clear: both; }
 
-/* line 48, ../sass/base/_type.scss */
 em {
   font-style: italic; }
 
-/* line 53, ../sass/base/_type.scss */
 strong,
 b {
   font-weight: bold; }
 
-/* line 8, ../sass/_periodic_table.scss */
 ul {
   margin: 0;
   padding: 0; }
 
-/* line 13, ../sass/_periodic_table.scss */
 li {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   border: 2px solid #555555;
   display: inline-block;
+  line-height: 64px;
   list-style: none;
-  margin-bottom: 0.3em;
-  padding: 1em;
+  margin-bottom: 2px;
   text-align: center;
   text-transform: capitalize;
-  height: 4em;
-  width: 4em; }
+  height: 64px;
+  width: 64px; }
 
-/* line 26, ../sass/_periodic_table.scss */
-.ss-gro {
-  width: 10.76524%;
-  float: left;
-  margin-right: 0.38911%;
-  display: inline; }
-  /* line 28, ../sass/_periodic_table.scss */
-  .ss-gro li {
-    width: 48.19277%;
-    float: left;
-    margin-right: 3.61446%;
-    display: inline;
-    border-top-left-radius: 0; }
-    /* line 32, ../sass/_periodic_table.scss */
-    .ss-gro li:nth-of-type(even) {
-      width: 48.19277%;
-      float: right;
-      margin-right: 0;
-      *margin-left: -0.3em;
-      display: inline; }
-    /* line 36, ../sass/_periodic_table.scss */
-    .ss-gro li:nth-child(2) {
-      margin-top: 51.80723%; }
+.ss-gro li {
+  border-top-left-radius: 0; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .ss-grotesk {
-  border: 2px solid #ff6b6b; }
+  border: 2px solid #ff6b6b;
+  border-radius: 0 5px 5px 5px; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .ss-humanist {
-  border: 2px solid #fa9c03; }
+  border: 2px solid #fa9c03;
+  border-radius: 5px 0 5px 0; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .ss-geo {
-  border: 2px solid #c7f464; }
+  border: 2px solid #c7f464;
+  border-radius: 5px 0 5px 5px; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .sr-didone {
-  border: 2px solid #45ada8; }
+  border: 2px solid #45ada8;
+  border-radius: 5px 5px 5px 0; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .sr-ss {
-  border: 2px solid #9de0ad; }
+  border: 2px solid #9de0ad;
+  border-radius: 0 5px 0 0; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .sr-realist {
-  border: 2px solid #dad8a7; }
+  border: 2px solid #dad8a7;
+  border-radius: 0 5px 0 5px; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .sr-garalde {
-  border: 2px solid #7e5bd5; }
+  border: 2px solid #7e5bd5;
+  border-radius: 5px 5px 0 5px; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .sr-slab {
-  border: 2px solid #4ecdc4; }
+  border: 2px solid #4ecdc4;
+  border-radius: 0 0 0 5px; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .gl-inscription {
-  border: 2px solid #928980; }
+  border: 2px solid #928980;
+  border-radius: 0; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .ss-display {
-  border: 2px solid #73c7ff; }
+  border: 2px solid #73c7ff;
+  border-radius: 0 0 5px 0; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .blackletter {
-  border: 2px solid #556270; }
+  border: 2px solid #556270;
+  border-radius: 5px 0 0 0; }
 
-/* line 72, ../sass/_periodic_table.scss */
 .script {
-  border: 2px solid #ffa8ae; }
+  border: 2px solid #ffa8ae;
+  border-radius: 5px; }
