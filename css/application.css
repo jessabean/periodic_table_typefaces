@@ -325,8 +325,13 @@ li[data-bg=arnhem] {
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=lexicon scotch_roman] {
-  background-image: url("../img/lexicon scotch_roman.svg");
+li[data-bg=lexicon] {
+  background-image: url("../img/lexicon.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=scotch_roman] {
+  background-image: url("../img/scotch_roman.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
@@ -522,6 +527,11 @@ li[data-bg=gutenberg] {
 
 li[data-bg=gebetbuch] {
   background-image: url("../img/gebetbuch.svg");
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+li[data-bg=unger_fraktur] {
+  background-image: url("../img/unger_fraktur.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
