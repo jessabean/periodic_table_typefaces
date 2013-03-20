@@ -2,28 +2,35 @@
 // Periodic Table
 // ======================
 
+#page_header {
+  text-align: center;
+}
+
+#main {
+  position: relative;
+}
 
 ol {
+  @extend %clearfix;
   margin-left: -$gutter;
-  overflow: hidden;
   padding: 0;
+  position: relative;
 }
 
 li {
   @include span(1, $max_columns);
   border: 2px solid $gray;
+  color: transparent;
   display: inline-block;
   float: left;
   height: 64px;
   list-style: none;
   margin-left: $gutter;
   margin-bottom: $gutter;
-  overflow: hidden;
   text-align: center;
   text-indent: 100%;
   text-transform: capitalize;
   white-space: nowrap;
-
   &:hover {
     cursor: pointer;
   }

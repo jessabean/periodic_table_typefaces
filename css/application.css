@@ -21,21 +21,47 @@ strong,
 b {
   font-weight: bold; }
 
+.is-visible,
+.block {
+  display: block; }
+
+.is-hidden {
+  display: none; }
+
+.hide-text {
+  text-indent: -100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+ol {
+  zoom: 1; }
+  ol:before, ol:after {
+    content: "";
+    display: table; }
+  ol:after {
+    clear: both; }
+
+#page_header {
+  text-align: center; }
+
+#main {
+  position: relative; }
+
 ol {
   margin-left: -0.5%;
-  overflow: hidden;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 li {
   width: 5.05556%;
   border: 2px solid #555555;
+  color: transparent;
   display: inline-block;
   float: left;
   height: 64px;
   list-style: none;
   margin-left: 0.5%;
   margin-bottom: 0.5%;
-  overflow: hidden;
   text-align: center;
   text-indent: 100%;
   text-transform: capitalize;
