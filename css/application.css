@@ -83,6 +83,15 @@ li[data-bg="zapfino"] {
 li.script {
   margin-top: 3%; }
 
+.typeface-meta {
+  width: 38.38889%;
+  height: 33.83333%;
+  margin-left: 17.16667%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1010; }
+
 .ss-grotesk {
   border: 2px solid #ff6b6b;
   border-radius: 0 5px 5px 5px; }

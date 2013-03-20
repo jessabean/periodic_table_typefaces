@@ -54,6 +54,16 @@ li.script {
   margin-top: $gutter*6;
 }
 
+.typeface-meta {
+  @include span(7, $max_columns);
+  height: ($one_col * 6)+$gutter;
+  margin-left: ($one_col * 3)+$gutter;
+  position: absolute;
+    left: 0;
+    top: 0;
+  z-index: 1010;
+}
+
 // Colors for each type class
 $ss-grotesk:  #FF6B6B;
 $ss-humanist: #FA9C03;
