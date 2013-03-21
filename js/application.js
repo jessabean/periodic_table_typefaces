@@ -1,24 +1,19 @@
 $(document).ready(function() {
   $('li').hover(
     function () {
+      var rank = $(this).data('rank');
       var name = $(this).data('title');
       var family = $(this).data('family');
-
-      // $(name, family).appendTo($('.typeface-meta'));
+      var designer = $(this).data('designer');
+      var year = $(this).data('year');
 
       $('.typeface-meta').html(
-        '<span class="type-title">' + name + '</span>' +
-        '<span class="type-family">' + family + '</span>'
+        '<span class="rank">' + rank + '</span>' +
+        '<span class="title">' + name + '</span>' +
+        '<span class="family">' + family + '</span>' +
+        '<span class="designer">' + designer + '</span>' +
+        '<span class="year">' + year + '</span>'
       );
-
-      // $([$('<span>', {
-      //   className: 'type-title',
-      //   html: name
-      // }),
-      // $('<span>', {
-      //   className: 'type-family',
-      //   html: family
-      // })]).appendTo($('.typeface-meta'));
 
       $('.typeface-meta').toggleClass('is-hidden');
     }
