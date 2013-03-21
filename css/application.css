@@ -93,52 +93,88 @@ li.script {
   z-index: 1010; }
 
 .ss-grotesk {
-  border: 2px solid #ff6b6b;
-  border-radius: 0 5px 5px 5px; }
+  border: 2px solid #ffd8a5;
+  border-radius: 0 5px 5px 5px;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .ss-grotesk:hover {
+    background-color: #ffd8a5; }
 
 .ss-humanist {
-  border: 2px solid #fa9c03;
-  border-radius: 5px 0 5px 0; }
+  border: 2px solid #ff8e6b;
+  border-radius: 5px 0 5px 0;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .ss-humanist:hover {
+    background-color: #ff8e6b; }
 
 .ss-geo {
-  border: 2px solid #c7f464;
-  border-radius: 5px 0 5px 5px; }
+  border: 2px solid #ebcfdb;
+  border-radius: 5px 0 5px 5px;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .ss-geo:hover {
+    background-color: #ebcfdb; }
 
 .sr-didone {
-  border: 2px solid #45ada8;
-  border-radius: 5px 5px 5px 0; }
+  border: 2px solid #00bda3;
+  border-radius: 5px 5px 5px 0;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .sr-didone:hover {
+    background-color: #00bda3; }
 
 .sr-ss {
   border: 2px solid #9de0ad;
-  border-radius: 0 5px 0 0; }
+  border-radius: 0 5px 0 0;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .sr-ss:hover {
+    background-color: #9de0ad; }
 
 .sr-realist {
-  border: 2px solid #dad8a7;
-  border-radius: 0 5px 0 5px; }
+  border: 2px solid #9edced;
+  border-radius: 0 5px 0 5px;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .sr-realist:hover {
+    background-color: #9edced; }
 
 .sr-garalde {
-  border: 2px solid #7e5bd5;
-  border-radius: 5px 5px 0 5px; }
+  border: 2px solid #c2ace7;
+  border-radius: 5px 5px 0 5px;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .sr-garalde:hover {
+    background-color: #c2ace7; }
 
 .sr-slab {
-  border: 2px solid #4ecdc4;
-  border-radius: 0 0 0 5px; }
+  border: 2px solid #dad8a7;
+  border-radius: 0 0 0 5px;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .sr-slab:hover {
+    background-color: #dad8a7; }
 
 .gl-inscription {
-  border: 2px solid #928980;
-  border-radius: 0; }
+  border: 2px solid #ade9dd;
+  border-radius: 0;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .gl-inscription:hover {
+    background-color: #ade9dd; }
 
 .ss-display {
-  border: 2px solid #73c7ff;
-  border-radius: 0 0 5px 0; }
+  border: 2px solid #00a8da;
+  border-radius: 0 0 5px 0;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .ss-display:hover {
+    background-color: #00a8da; }
 
 .blackletter {
-  border: 2px solid #556270;
-  border-radius: 5px 0 0 0; }
+  border: 2px solid #89e872;
+  border-radius: 5px 0 0 0;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .blackletter:hover {
+    background-color: #89e872; }
 
 .script {
-  border: 2px solid #ffa8ae;
-  border-radius: 5px; }
+  border: 2px solid #ff9ca6;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.8s ease-in-out; }
+  .script:hover {
+    background-color: #ff9ca6; }
 
 li[data-bg=helvetica] {
   background-image: url("../img/helvetica.svg");

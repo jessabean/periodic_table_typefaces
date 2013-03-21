@@ -65,18 +65,18 @@ li.script {
 }
 
 // Colors for each type class
-$ss-grotesk:  #FF6B6B;
-$ss-humanist: #FA9C03;
-$ss-geo:      #C7F464;
-$sr-didone:   #45ADA8;
+$ss-grotesk:  #FFD8A5;
+$ss-humanist: #FF8E6B;
+$ss-geo:      #EBCFDB;
+$sr-didone:   #00BDA3;
 $sr-ss:       #9DE0AD;
-$sr-realist:  #DAD8A7;
-$sr-garalde:  #7E5BD5;
-$sr-slab:     #4ECDC4;
-$gl:          #928980;
-$ss-display:  #73C7FF;
-$blackletter: #556270;
-$script:      #FFA8AE;
+$sr-realist:  #9EDCED;
+$sr-garalde:  #C2ACE7;
+$sr-slab:     #DAD8A7;
+$gl:          #ADE9DD;
+$ss-display:  #00A8DA;
+$blackletter: #89E872;
+$script:      #FF9CA6;
 
 // Border Radius
 $radius: 5px;
@@ -111,6 +111,10 @@ $type-family-list:
   .#{nth($type, 1)} {
     border: 2px solid nth($type, 2);
     border-radius: nth($type, 3);
+    -webkit-transition: background-color 0.8s ease-in-out;
+    &:hover {
+      background-color: nth($type, 2);
+    }
   }
 }
 
