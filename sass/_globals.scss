@@ -15,4 +15,23 @@ $gray:    #555555;
 // Typography
 // =============================
 
+// =============================
+// Mixins
+// =============================
 
+// Columns
+// -----------------------------
+$max_columns: 18;
+$gutter: 0.5%;
+$one_col: (100%) / $max_columns;
+
+@mixin span($num, $max_columns) {
+  width: ($one_col * $num) - $gutter;
+}
+
+// Hat tip to Chris Coyier of CSS Tricks http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+// -----------------------------
+@mixin font-size($sizeValue: 1.6){
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}

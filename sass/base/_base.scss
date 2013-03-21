@@ -26,12 +26,3 @@ aside {
   margin: 0 auto;
 }
 
-// Set up columns
-
-$max_columns: 18;
-$gutter: 0.5%; 
-$one_col: (100%) / $max_columns;
-
-@mixin span($num, $max_columns) {
-  width: ($one_col * $num) - $gutter;
-}
