@@ -26,6 +26,9 @@ body {
 #main {
   position: relative; }
 
+body {
+  color: #222222; }
+
 em {
   font-style: italic; }
 
@@ -48,7 +51,7 @@ ol {
 
 li {
   width: 5.05556%;
-  border: 2px solid #555555;
+  border: 2px solid #222222;
   color: transparent;
   display: inline-block;
   float: left;
