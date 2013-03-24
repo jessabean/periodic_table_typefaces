@@ -1,6 +1,9 @@
 // ======================
 // Periodic Table
 // ======================
+body {
+  background: $base_bg url(../img/bg/texture.jpg);
+}
 
 #page_header {
   text-align: center;
@@ -56,6 +59,8 @@ li.script {
 
 .typeface-meta {
   @include span(7, $max_columns);
+  background: $base_bg;
+  border: 1px solid darken($base_bg, 10);
   height: ($one_col * 6)+$gutter;
   margin-left: ($one_col * 3)+$gutter;
   position: absolute;

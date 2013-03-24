@@ -41,6 +41,9 @@ ol {
   ol:after {
     clear: both; }
 
+body {
+  background: #dfdbcf url(../img/bg/texture.jpg); }
+
 #page_header {
   text-align: center; }
 
@@ -85,6 +88,8 @@ li.script {
 
 .typeface-meta {
   width: 38.38889%;
+  background: #dfdbcf;
+  border: 1px solid #cbc4b0;
   height: 33.83333%;
   margin-left: 17.16667%;
   position: absolute;
