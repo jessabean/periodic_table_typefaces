@@ -2,6 +2,46 @@
 // Periodic Table
 // ======================
 
+// Banner
+// -----------------------------
+
+#page_header {
+  margin: 40px auto;
+  text-align: center;
+
+  h1 {
+    font-family: $display_font;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    em {
+      font-family: $base_font;
+      font-style: italic;
+      font-weight: 400;
+      text-transform: lowercase;
+    }
+  }
+
+  h2 {
+    border-top: 2px solid $gray;
+    font-family: $base_font;
+    font-style: italic;
+    font-weight: 400px;
+    line-height: 26px;
+
+    span {
+      background: $base_bg url(../img/bg/texture.jpg);
+      line-height: 26px;
+      padding: 0 20px;
+      position: relative;
+      top: -13px;
+    }
+  }
+}
+
+// The List
+// -----------------------------
+
 ol {
   @extend %clearfix;
   margin-left: -$gutter;
@@ -43,17 +83,66 @@ li {
   }
 }
 
+// Element Card
+// -----------------------------
+
 .typeface-meta {
+  @include font-size(1.8);
   @include span(7, $max_columns);
-  background: $base_bg;
-  border: 1px solid darken($base_bg, 10);
   height: ($one_col * 6)+$gutter;
   margin-left: ($one_col * 3)+$gutter;
+  padding-left: ($one_col*3)+$gutter;
   position: absolute;
     left: 0;
     top: 0;
   z-index: 1010;
+
+  .card {
+    @include span(7, $max_columns);
+    background: $base_bg;
+    border: 1px solid darken($base_bg, 10);
+    height: 100%;
+    padding-top: 30px;
+    position: absolute;
+      left: 0;
+      top: 0;
+  }
+  .rank,
+  .family,
+  .designer,
+  .year {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .rank {
+    margin-bottom: 0;
+    position: absolute;
+      top: 10px;
+      right: 10px;
+  }
+
+  .family {
+    font-style: italic;
+  }
+
+  .title {
+    @include font-size(1.8);
+    display: block;
+    text-align: center;
+  }
+
+  i {
+    background-size: contain;
+    display: block;
+    margin: 10px auto;
+    height: 96px;
+    width: 96px;
+  }
 }
+
+// Styling the elements
+// -----------------------------
 
 // Colors for each type class
 $ss-grotesk:  #ffa952;
@@ -217,7 +306,8 @@ uncial,
 beowulf;
 
 @each $typeface in $typeface-list {
-  li[data-bg=#{$typeface}] {
+  li[data-bg=#{$typeface}],
+  .#{$typeface} {
     background-image: url('../img/#{$typeface}.svg');
     background-position: center center;
     background-repeat: no-repeat;

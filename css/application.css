@@ -10,24 +10,40 @@ header,
 aside {
   display: block; }
 
-#main {
-  max-width: 1260px;
-  margin: 0 auto; }
-
 body {
   background: #dfdbcf url(../img/bg/texture.jpg); }
   @media (-webkit-min-device-pixel-ratio: 2) {
     body {
       background: #dfdbcf url(../img/bg/texture@2x.jpg); } }
 
+#main,
 #page_header {
-  text-align: center; }
+  max-width: 1260px;
+  margin: 0 auto; }
 
 #main {
   position: relative; }
 
+html {
+  font-size: 62.5%; }
+
 body {
-  color: #222222; }
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #222222;
+  font-family: "Vollkorn", Georgia, Times, serif;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0; }
+
+h1 {
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+h2 {
+  font-size: 26px;
+  font-size: 2.6rem; }
 
 em {
   font-style: italic; }
@@ -36,6 +52,9 @@ strong,
 b {
   font-weight: bold; }
 
+.is-hidden {
+  display: none; }
+
 ol {
   zoom: 1; }
   ol:before, ol:after {
@@ -43,6 +62,31 @@ ol {
     display: table; }
   ol:after {
     clear: both; }
+
+#page_header {
+  margin: 40px auto;
+  text-align: center; }
+  #page_header h1 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase; }
+    #page_header h1 em {
+      font-family: "Vollkorn", Georgia, Times, serif;
+      font-style: italic;
+      font-weight: 400;
+      text-transform: lowercase; }
+  #page_header h2 {
+    border-top: 2px solid #222222;
+    font-family: "Vollkorn", Georgia, Times, serif;
+    font-style: italic;
+    font-weight: 400px;
+    line-height: 26px; }
+    #page_header h2 span {
+      background: #dfdbcf url(../img/bg/texture.jpg);
+      line-height: 26px;
+      padding: 0 20px;
+      position: relative;
+      top: -13px; }
 
 ol {
   margin-left: -0.5%;
@@ -76,15 +120,49 @@ li {
     margin-top: 3%; }
 
 .typeface-meta {
+  font-size: 18px;
+  font-size: 1.8rem;
   width: 38.38889%;
-  background: #dfdbcf;
-  border: 1px solid #cbc4b0;
   height: 33.83333%;
   margin-left: 17.16667%;
+  padding-left: 17.16667%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1010; }
+  .typeface-meta .card {
+    width: 38.38889%;
+    background: #dfdbcf;
+    border: 1px solid #cbc4b0;
+    height: 100%;
+    padding-top: 30px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .typeface-meta .rank,
+  .typeface-meta .family,
+  .typeface-meta .designer,
+  .typeface-meta .year {
+    display: block;
+    margin-bottom: 10px; }
+  .typeface-meta .rank {
+    margin-bottom: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .typeface-meta .family {
+    font-style: italic; }
+  .typeface-meta .title {
+    font-size: 18px;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center; }
+  .typeface-meta i {
+    background-size: contain;
+    display: block;
+    margin: 10px auto;
+    height: 96px;
+    width: 96px; }
 
 .ss-grotesk {
   -moz-transition: border 0.5s ease-in-out;
@@ -194,502 +272,602 @@ li {
   .script:hover {
     border: 2px solid #72263d; }
 
-li[data-bg=helvetica] {
+li[data-bg=helvetica],
+.helvetica {
   background-image: url("../img/helvetica.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=futura] {
+li[data-bg=futura],
+.futura {
   background-image: url("../img/futura.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=univers] {
+li[data-bg=univers],
+.univers {
   background-image: url("../img/univers.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=akzidenz_grotesk] {
+li[data-bg=akzidenz_grotesk],
+.akzidenz_grotesk {
   background-image: url("../img/akzidenz_grotesk.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=gill_sans] {
+li[data-bg=gill_sans],
+.gill_sans {
   background-image: url("../img/gill_sans.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=optima] {
+li[data-bg=optima],
+.optima {
   background-image: url("../img/optima.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=frutiger] {
+li[data-bg=frutiger],
+.frutiger {
   background-image: url("../img/frutiger.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=syntax] {
+li[data-bg=syntax],
+.syntax {
   background-image: url("../img/syntax.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=meta] {
+li[data-bg=meta],
+.meta {
   background-image: url("../img/meta.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=avant_garde] {
+li[data-bg=avant_garde],
+.avant_garde {
   background-image: url("../img/avant_garde.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=bodoni] {
+li[data-bg=bodoni],
+.bodoni {
   background-image: url("../img/bodoni.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=bell_gothic] {
+li[data-bg=bell_gothic],
+.bell_gothic {
   background-image: url("../img/bell_gothic.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=franklin_gothic] {
+li[data-bg=franklin_gothic],
+.franklin_gothic {
   background-image: url("../img/franklin_gothic.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=myriad] {
+li[data-bg=myriad],
+.myriad {
   background-image: url("../img/myriad.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=formata] {
+li[data-bg=formata],
+.formata {
   background-image: url("../img/formata.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=prokyon] {
+li[data-bg=prokyon],
+.prokyon {
   background-image: url("../img/prokyon.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=metro] {
+li[data-bg=metro],
+.metro {
   background-image: url("../img/metro.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=antique_olive] {
+li[data-bg=antique_olive],
+.antique_olive {
   background-image: url("../img/antique_olive.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=eurostile] {
+li[data-bg=eurostile],
+.eurostile {
   background-image: url("../img/eurostile.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=didot] {
+li[data-bg=didot],
+.didot {
   background-image: url("../img/didot.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=interstate] {
+li[data-bg=interstate],
+.interstate {
   background-image: url("../img/interstate.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=din] {
+li[data-bg=din],
+.din {
   background-image: url("../img/din.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=stone] {
+li[data-bg=stone],
+.stone {
   background-image: url("../img/stone.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=thesis] {
+li[data-bg=thesis],
+.thesis {
   background-image: url("../img/thesis.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=rotis] {
+li[data-bg=rotis],
+.rotis {
   background-image: url("../img/rotis.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=times] {
+li[data-bg=times],
+.times {
   background-image: url("../img/times.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=trinite] {
+li[data-bg=trinite],
+.trinite {
   background-image: url("../img/trinite.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=baskerville] {
+li[data-bg=baskerville],
+.baskerville {
   background-image: url("../img/baskerville.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=garamond] {
+li[data-bg=garamond],
+.garamond {
   background-image: url("../img/garamond.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=caslon] {
+li[data-bg=caslon],
+.caslon {
   background-image: url("../img/caslon.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=minion] {
+li[data-bg=minion],
+.minion {
   background-image: url("../img/minion.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=lucida] {
+li[data-bg=lucida],
+.lucida {
   background-image: url("../img/lucida.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=fleischmann] {
+li[data-bg=fleischmann],
+.fleischmann {
   background-image: url("../img/fleischmann.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=dax] {
+li[data-bg=dax],
+.dax {
   background-image: url("../img/dax.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=today_sans] {
+li[data-bg=today_sans],
+.today_sans {
   background-image: url("../img/today_sans.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=info] {
+li[data-bg=info],
+.info {
   background-image: url("../img/info.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=gotham] {
+li[data-bg=gotham],
+.gotham {
   background-image: url("../img/gotham.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=walbaum] {
+li[data-bg=walbaum],
+.walbaum {
   background-image: url("../img/walbaum.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=letter_gothic] {
+li[data-bg=letter_gothic],
+.letter_gothic {
   background-image: url("../img/letter_gothic.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=avenir] {
+li[data-bg=avenir],
+.avenir {
   background-image: url("../img/avenir.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=officina] {
+li[data-bg=officina],
+.officina {
   background-image: url("../img/officina.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=scala] {
+li[data-bg=scala],
+.scala {
   background-image: url("../img/scala.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=base] {
+li[data-bg=base],
+.base {
   background-image: url("../img/base.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=arnhem] {
+li[data-bg=arnhem],
+.arnhem {
   background-image: url("../img/arnhem.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=lexicon] {
+li[data-bg=lexicon],
+.lexicon {
   background-image: url("../img/lexicon.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=scotch_roman] {
+li[data-bg=scotch_roman],
+.scotch_roman {
   background-image: url("../img/scotch_roman.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=sabon] {
+li[data-bg=sabon],
+.sabon {
   background-image: url("../img/sabon.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=bembo] {
+li[data-bg=bembo],
+.bembo {
   background-image: url("../img/bembo.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=jenson] {
+li[data-bg=jenson],
+.jenson {
   background-image: url("../img/jenson.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=griffo_classico] {
+li[data-bg=griffo_classico],
+.griffo_classico {
   background-image: url("../img/griffo_classico.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=garamond_classico] {
+li[data-bg=garamond_classico],
+.garamond_classico {
   background-image: url("../img/garamond_classico.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=cheltenham] {
+li[data-bg=cheltenham],
+.cheltenham {
   background-image: url("../img/cheltenham.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=amplitude] {
+li[data-bg=amplitude],
+.amplitude {
   background-image: url("../img/amplitude.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=bell_centennial] {
+li[data-bg=bell_centennial],
+.bell_centennial {
   background-image: url("../img/bell_centennial.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=neutraface] {
+li[data-bg=neutraface],
+.neutraface {
   background-image: url("../img/neutraface.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=matrix] {
+li[data-bg=matrix],
+.matrix {
   background-image: url("../img/matrix.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=trade_gothic] {
+li[data-bg=trade_gothic],
+.trade_gothic {
   background-image: url("../img/trade_gothic.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=news_gothic] {
+li[data-bg=news_gothic],
+.news_gothic {
   background-image: url("../img/news_gothic.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=fedra] {
+li[data-bg=fedra],
+.fedra {
   background-image: url("../img/fedra.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=quadraat] {
+li[data-bg=quadraat],
+.quadraat {
   background-image: url("../img/quadraat.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=clarendon] {
+li[data-bg=clarendon],
+.clarendon {
   background-image: url("../img/clarendon.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=rockwell] {
+li[data-bg=rockwell],
+.rockwell {
   background-image: url("../img/rockwell.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=ionic] {
+li[data-bg=ionic],
+.ionic {
   background-image: url("../img/ionic.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=swift] {
+li[data-bg=swift],
+.swift {
   background-image: url("../img/swift.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=joanna] {
+li[data-bg=joanna],
+.joanna {
   background-image: url("../img/joanna.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=aldine] {
+li[data-bg=aldine],
+.aldine {
   background-image: url("../img/aldine.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=kis] {
+li[data-bg=kis],
+.kis {
   background-image: url("../img/kis.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=palatino] {
+li[data-bg=palatino],
+.palatino {
   background-image: url("../img/palatino.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=cooper_black] {
+li[data-bg=cooper_black],
+.cooper_black {
   background-image: url("../img/cooper_black.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=spectrum] {
+li[data-bg=spectrum],
+.spectrum {
   background-image: url("../img/spectrum.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=proforma] {
+li[data-bg=proforma],
+.proforma {
   background-image: url("../img/proforma.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=copperplate_gothic] {
+li[data-bg=copperplate_gothic],
+.copperplate_gothic {
   background-image: url("../img/copperplate_gothic.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=trajan] {
+li[data-bg=trajan],
+.trajan {
   background-image: url("../img/trajan.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=century] {
+li[data-bg=century],
+.century {
   background-image: url("../img/century.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=ocr] {
+li[data-bg=ocr],
+.ocr {
   background-image: url("../img/ocr.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=chicago] {
+li[data-bg=chicago],
+.chicago {
   background-image: url("../img/chicago.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=peignot] {
+li[data-bg=peignot],
+.peignot {
   background-image: url("../img/peignot.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=oakland] {
+li[data-bg=oakland],
+.oakland {
   background-image: url("../img/oakland.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=blur] {
+li[data-bg=blur],
+.blur {
   background-image: url("../img/blur.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=egyptian] {
+li[data-bg=egyptian],
+.egyptian {
   background-image: url("../img/egyptian.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=courier] {
+li[data-bg=courier],
+.courier {
   background-image: url("../img/courier.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=memphis] {
+li[data-bg=memphis],
+.memphis {
   background-image: url("../img/memphis.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=caecilia] {
+li[data-bg=caecilia],
+.caecilia {
   background-image: url("../img/caecilia.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=gutenberg] {
+li[data-bg=gutenberg],
+.gutenberg {
   background-image: url("../img/gutenberg.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=gebetbuch] {
+li[data-bg=gebetbuch],
+.gebetbuch {
   background-image: url("../img/gebetbuch.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=unger_fraktur] {
+li[data-bg=unger_fraktur],
+.unger_fraktur {
   background-image: url("../img/unger_fraktur.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=manuskript] {
+li[data-bg=manuskript],
+.manuskript {
   background-image: url("../img/manuskript.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=breitkopf] {
+li[data-bg=breitkopf],
+.breitkopf {
   background-image: url("../img/breitkopf.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=fette] {
+li[data-bg=fette],
+.fette {
   background-image: url("../img/fette.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=wilhelm] {
+li[data-bg=wilhelm],
+.wilhelm {
   background-image: url("../img/wilhelm.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=weiss] {
+li[data-bg=weiss],
+.weiss {
   background-image: url("../img/weiss.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=fette_deutsche] {
+li[data-bg=fette_deutsche],
+.fette_deutsche {
   background-image: url("../img/fette_deutsche.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=zapfino] {
+li[data-bg=zapfino],
+.zapfino {
   background-image: url("../img/zapfino.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=mistral] {
+li[data-bg=mistral],
+.mistral {
   background-image: url("../img/mistral.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=hands] {
+li[data-bg=hands],
+.hands {
   background-image: url("../img/hands.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=snell_roundhand] {
+li[data-bg=snell_roundhand],
+.snell_roundhand {
   background-image: url("../img/snell_roundhand.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=st_augustine] {
+li[data-bg=st_augustine],
+.st_augustine {
   background-image: url("../img/st_augustine.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=bickham_script] {
+li[data-bg=bickham_script],
+.bickham_script {
   background-image: url("../img/bickham_script.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=uncial] {
+li[data-bg=uncial],
+.uncial {
   background-image: url("../img/uncial.svg");
   background-position: center center;
   background-repeat: no-repeat; }
 
-li[data-bg=beowulf] {
+li[data-bg=beowulf],
+.beowulf {
   background-image: url("../img/beowulf.svg");
   background-position: center center;
   background-repeat: no-repeat; }
