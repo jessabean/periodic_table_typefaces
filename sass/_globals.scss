@@ -36,3 +36,11 @@ $one_col: (100%) / $max_columns;
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
+
+// Media Queries
+// -----------------------------
+@mixin respond-to($val, $query) {
+  @media ($val: $query) {
+    @content
+  }
+}

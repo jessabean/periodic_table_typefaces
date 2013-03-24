@@ -3,6 +3,9 @@
 // ======================
 body {
   background: $base_bg url(../img/bg/texture.jpg);
+  @include respond-to(-webkit-min-device-pixel-ratio, 2) {
+    background: $base_bg url(../img/bg/texture@2x.jpg);
+  }
 }
 
 #page_header {
@@ -70,18 +73,18 @@ li.script {
 }
 
 // Colors for each type class
-$ss-grotesk:  #FFD8A5;
-$ss-humanist: #FF8E6B;
-$ss-geo:      #EBCFDB;
-$sr-didone:   #00BDA3;
-$sr-ss:       #9DE0AD;
-$sr-realist:  #9EDCED;
-$sr-garalde:  #C2ACE7;
-$sr-slab:     #DAD8A7;
-$gl:          #ADE9DD;
-$ss-display:  #00A8DA;
-$blackletter: #89E872;
-$script:      #FF9CA6;
+$ss-grotesk:  #ffa952;
+$ss-humanist: #a4d768;
+$ss-geo:      #f3ca66;
+$sr-didone:   #c3afe5;
+$sr-ss:       #60b0e6;
+$sr-realist:  #fd94ab;
+$sr-garalde:  #b65519;
+$sr-slab:     #5a8e23;
+$gl:          #a07d0c;
+$ss-display:  #796692;
+$blackletter: #005194;
+$script:      #72263d;
 
 // Border Radius
 $radius: 5px;

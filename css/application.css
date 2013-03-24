@@ -43,6 +43,9 @@ ol {
 
 body {
   background: #dfdbcf url(../img/bg/texture.jpg); }
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      background: #dfdbcf url(../img/bg/texture@2x.jpg); } }
 
 #page_header {
   text-align: center; }
@@ -104,7 +107,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 0 5px 5px 5px; }
   .ss-grotesk:hover {
-    border: 2px solid #ffd8a5; }
+    border: 2px solid #ffa952; }
 
 .ss-humanist {
   -moz-transition: border 0.5s ease-in-out;
@@ -113,7 +116,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 5px 0 5px 0; }
   .ss-humanist:hover {
-    border: 2px solid #ff8e6b; }
+    border: 2px solid #a4d768; }
 
 .ss-geo {
   -moz-transition: border 0.5s ease-in-out;
@@ -122,7 +125,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 5px 0 5px 5px; }
   .ss-geo:hover {
-    border: 2px solid #ebcfdb; }
+    border: 2px solid #f3ca66; }
 
 .sr-didone {
   -moz-transition: border 0.5s ease-in-out;
@@ -131,7 +134,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 5px 5px 5px 0; }
   .sr-didone:hover {
-    border: 2px solid #00bda3; }
+    border: 2px solid #c3afe5; }
 
 .sr-ss {
   -moz-transition: border 0.5s ease-in-out;
@@ -140,7 +143,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 0 5px 0 0; }
   .sr-ss:hover {
-    border: 2px solid #9de0ad; }
+    border: 2px solid #60b0e6; }
 
 .sr-realist {
   -moz-transition: border 0.5s ease-in-out;
@@ -149,7 +152,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 0 5px 0 5px; }
   .sr-realist:hover {
-    border: 2px solid #9edced; }
+    border: 2px solid #fd94ab; }
 
 .sr-garalde {
   -moz-transition: border 0.5s ease-in-out;
@@ -158,7 +161,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 5px 5px 0 5px; }
   .sr-garalde:hover {
-    border: 2px solid #c2ace7; }
+    border: 2px solid #b65519; }
 
 .sr-slab {
   -moz-transition: border 0.5s ease-in-out;
@@ -167,7 +170,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 0 0 0 5px; }
   .sr-slab:hover {
-    border: 2px solid #dad8a7; }
+    border: 2px solid #5a8e23; }
 
 .gl-inscription {
   -moz-transition: border 0.5s ease-in-out;
@@ -176,7 +179,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 0; }
   .gl-inscription:hover {
-    border: 2px solid #ade9dd; }
+    border: 2px solid #a07d0c; }
 
 .ss-display {
   -moz-transition: border 0.5s ease-in-out;
@@ -185,7 +188,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 0 0 5px 0; }
   .ss-display:hover {
-    border: 2px solid #00a8da; }
+    border: 2px solid #796692; }
 
 .blackletter {
   -moz-transition: border 0.5s ease-in-out;
@@ -194,7 +197,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 5px 0 0 0; }
   .blackletter:hover {
-    border: 2px solid #89e872; }
+    border: 2px solid #005194; }
 
 .script {
   -moz-transition: border 0.5s ease-in-out;
@@ -203,7 +206,7 @@ li.script {
   transition: border 0.5s ease-in-out;
   border-radius: 5px; }
   .script:hover {
-    border: 2px solid #ff9ca6; }
+    border: 2px solid #72263d; }
 
 li[data-bg=helvetica] {
   background-image: url("../img/helvetica.svg");
