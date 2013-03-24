@@ -109,13 +109,16 @@ $type-family-list:
 
 @each $type in $type-family-list {
   .#{nth($type, 1)} {
-    border: 2px solid nth($type, 2);
+       -moz-transition: border 0.5s ease-in-out;
+    -webkit-transition: border 0.5s ease-in-out;
+         -o-transition: border 0.5s ease-in-out;
+            transition: border 0.5s ease-in-out;
     border-radius: nth($type, 3);
-    -webkit-transition: background-color 0.8s ease-in-out;
     &:hover {
-      background-color: nth($type, 2);
+      border: 2px solid nth($type, 2);
     }
   }
+
 }
 
 // Typeface list for background images

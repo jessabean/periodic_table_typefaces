@@ -93,88 +93,112 @@ li.script {
   z-index: 1010; }
 
 .ss-grotesk {
-  border: 2px solid #ffd8a5;
-  border-radius: 0 5px 5px 5px;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 0 5px 5px 5px; }
   .ss-grotesk:hover {
-    background-color: #ffd8a5; }
+    border: 2px solid #ffd8a5; }
 
 .ss-humanist {
-  border: 2px solid #ff8e6b;
-  border-radius: 5px 0 5px 0;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 5px 0 5px 0; }
   .ss-humanist:hover {
-    background-color: #ff8e6b; }
+    border: 2px solid #ff8e6b; }
 
 .ss-geo {
-  border: 2px solid #ebcfdb;
-  border-radius: 5px 0 5px 5px;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 5px 0 5px 5px; }
   .ss-geo:hover {
-    background-color: #ebcfdb; }
+    border: 2px solid #ebcfdb; }
 
 .sr-didone {
-  border: 2px solid #00bda3;
-  border-radius: 5px 5px 5px 0;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 5px 5px 5px 0; }
   .sr-didone:hover {
-    background-color: #00bda3; }
+    border: 2px solid #00bda3; }
 
 .sr-ss {
-  border: 2px solid #9de0ad;
-  border-radius: 0 5px 0 0;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 0 5px 0 0; }
   .sr-ss:hover {
-    background-color: #9de0ad; }
+    border: 2px solid #9de0ad; }
 
 .sr-realist {
-  border: 2px solid #9edced;
-  border-radius: 0 5px 0 5px;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 0 5px 0 5px; }
   .sr-realist:hover {
-    background-color: #9edced; }
+    border: 2px solid #9edced; }
 
 .sr-garalde {
-  border: 2px solid #c2ace7;
-  border-radius: 5px 5px 0 5px;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 5px 5px 0 5px; }
   .sr-garalde:hover {
-    background-color: #c2ace7; }
+    border: 2px solid #c2ace7; }
 
 .sr-slab {
-  border: 2px solid #dad8a7;
-  border-radius: 0 0 0 5px;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 0 0 0 5px; }
   .sr-slab:hover {
-    background-color: #dad8a7; }
+    border: 2px solid #dad8a7; }
 
 .gl-inscription {
-  border: 2px solid #ade9dd;
-  border-radius: 0;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 0; }
   .gl-inscription:hover {
-    background-color: #ade9dd; }
+    border: 2px solid #ade9dd; }
 
 .ss-display {
-  border: 2px solid #00a8da;
-  border-radius: 0 0 5px 0;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 0 0 5px 0; }
   .ss-display:hover {
-    background-color: #00a8da; }
+    border: 2px solid #00a8da; }
 
 .blackletter {
-  border: 2px solid #89e872;
-  border-radius: 5px 0 0 0;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 5px 0 0 0; }
   .blackletter:hover {
-    background-color: #89e872; }
+    border: 2px solid #89e872; }
 
 .script {
-  border: 2px solid #ff9ca6;
-  border-radius: 5px;
-  -webkit-transition: background-color 0.8s ease-in-out; }
+  -moz-transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out;
+  transition: border 0.5s ease-in-out;
+  border-radius: 5px; }
   .script:hover {
-    background-color: #ff9ca6; }
+    border: 2px solid #ff9ca6; }
 
 li[data-bg=helvetica] {
   background-image: url("../img/helvetica.svg");
