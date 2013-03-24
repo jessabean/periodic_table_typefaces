@@ -4,20 +4,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-section,
-nav,
-header,
-aside {
-  display: block; }
-
-body {
-  background: #dfdbcf url(../img/bg/texture.jpg); }
+.wrapper {
+  background: #dfdbcf url(../img/bg/texture.jpg);
+  margin-bottom: 150px;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2; }
   @media (-webkit-min-device-pixel-ratio: 2) {
-    body {
+    .wrapper {
       background: #dfdbcf url(../img/bg/texture@2x.jpg); } }
 
 #main,
-#page_header {
+#page_header,
+.container {
   max-width: 1260px;
   margin: 0 auto; }
 
@@ -45,6 +44,14 @@ h2 {
   font-size: 26px;
   font-size: 2.6rem; }
 
+a {
+  color: #60b0e6;
+  text-decoration: none; }
+  a:active, a:visited {
+    color: #60b0e6; }
+  a:hover {
+    color: #b65519; }
+
 em {
   font-style: italic; }
 
@@ -55,16 +62,21 @@ b {
 .is-hidden {
   display: none; }
 
-ol {
+.ico-twitter a, .ico-github a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.typefaces {
   zoom: 1; }
-  ol:before, ol:after {
+  .typefaces:before, .typefaces:after {
     content: "";
     display: table; }
-  ol:after {
+  .typefaces:after {
     clear: both; }
 
 #page_header {
-  margin: 40px auto;
+  margin-bottom: 40px;
   text-align: center; }
   #page_header h1 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -88,12 +100,12 @@ ol {
       position: relative;
       top: -13px; }
 
-ol {
+.typefaces {
   margin-left: -0.5%;
   padding: 0;
   position: relative; }
 
-li {
+.typefaces li {
   width: 5.05556%;
   border: 2px solid #222222;
   color: transparent;
@@ -107,16 +119,16 @@ li {
   text-indent: 100%;
   text-transform: capitalize;
   white-space: nowrap; }
-  li:hover {
+  .typefaces li:hover {
     cursor: pointer; }
-  li[data-bg="futura"] {
+  .typefaces li[data-bg="futura"] {
     margin-left: 83.83333%;
     margin-right: 5.55556%; }
-  li[data-bg="gill_sans"], li[data-bg="myriad"] {
+  .typefaces li[data-bg="gill_sans"], .typefaces li[data-bg="myriad"] {
     margin-left: 50.5%; }
-  li[data-bg="zapfino"] {
+  .typefaces li[data-bg="zapfino"] {
     margin-left: 56.05556%; }
-  li.script {
+  .typefaces li.script {
     margin-top: 3%; }
 
 .typeface-meta {
@@ -163,6 +175,58 @@ li {
     margin: 10px auto;
     height: 96px;
     width: 96px; }
+
+#page_footer {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background: #222222;
+  color: white;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  position: fixed;
+  z-index: 1; }
+
+p,
+address {
+  width: 49.5%;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top; }
+
+address {
+  font-style: normal;
+  text-align: right; }
+  address ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0; }
+  address li {
+    display: inline-block;
+    line-height: 36px;
+    margin-left: 10px; }
+
+.ico-twitter a, .ico-github a {
+  display: block;
+  opacity: 0.5;
+  height: 52px;
+  width: 52px;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
+  .ico-twitter a:hover, .ico-github a:hover {
+    opacity: 1; }
+.ico-twitter a {
+  background-image: url(../img/icons/twitter.svg);
+  background-repeat: no-repeat;
+  background-size: 51px 36px; }
+.ico-github a {
+  background-image: url(../img/icons/github.svg);
+  background-repeat: no-repeat;
+  background-size: 42px 36px; }
 
 .ss-grotesk {
   -moz-transition: border 0.5s ease-in-out;

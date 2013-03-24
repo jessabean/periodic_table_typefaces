@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('li').hover(
+  $('.typefaces li').hover(
     function () {
       var rank = $(this).data('rank');
       var bg = $(this).data('bg');

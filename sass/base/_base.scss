@@ -14,22 +14,20 @@
 // Page Layout
 // ======================
 
-section,
-nav,
-header,
-aside {
-  display: block;
-}
-
-body {
+.wrapper {
   background: $base_bg url(../img/bg/texture.jpg);
+  margin-bottom: 150px;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
   @include respond-to(-webkit-min-device-pixel-ratio, 2) {
     background: $base_bg url(../img/bg/texture@2x.jpg);
   }
 }
 
 #main,
-#page_header {
+#page_header,
+.container {
   max-width: 1260px;
   margin: 0 auto;  
 }

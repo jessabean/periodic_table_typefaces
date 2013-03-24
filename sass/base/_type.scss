@@ -47,6 +47,17 @@ h5 {
 // ======================
 
 a {
+  color: $link_color;
+  text-decoration: none;
+
+  &:active,
+  &:visited {
+    color: $link_color;
+  }
+
+  &:hover {
+    color: $link_hover;
+  }
 }
 
 
