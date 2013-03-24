@@ -26,3 +26,18 @@ aside {
   margin: 0 auto;
 }
 
+body {
+  background: $base_bg url(../img/bg/texture.jpg);
+  @include respond-to(-webkit-min-device-pixel-ratio, 2) {
+    background: $base_bg url(../img/bg/texture@2x.jpg);
+  }
+}
+
+#page_header {
+  text-align: center;
+}
+
+#main {
+  position: relative;
+}
+

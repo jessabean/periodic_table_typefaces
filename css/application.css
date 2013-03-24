@@ -14,33 +14,6 @@ aside {
   max-width: 1260px;
   margin: 0 auto; }
 
-em {
-  font-style: italic; }
-
-strong,
-b {
-  font-weight: bold; }
-
-.is-visible,
-.block {
-  display: block; }
-
-.is-hidden {
-  display: none; }
-
-.hide-text {
-  text-indent: -100%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-ol {
-  zoom: 1; }
-  ol:before, ol:after {
-    content: "";
-    display: table; }
-  ol:after {
-    clear: both; }
-
 body {
   background: #dfdbcf url(../img/bg/texture.jpg); }
   @media (-webkit-min-device-pixel-ratio: 2) {
@@ -52,6 +25,21 @@ body {
 
 #main {
   position: relative; }
+
+em {
+  font-style: italic; }
+
+strong,
+b {
+  font-weight: bold; }
+
+ol {
+  zoom: 1; }
+  ol:before, ol:after {
+    content: "";
+    display: table; }
+  ol:after {
+    clear: both; }
 
 ol {
   margin-left: -0.5%;
@@ -74,20 +62,15 @@ li {
   white-space: nowrap; }
   li:hover {
     cursor: pointer; }
-
-li[data-bg="futura"] {
-  margin-left: 83.83333%;
-  margin-right: 5.55556%; }
-
-li[data-bg="gill_sans"],
-li[data-bg="myriad"] {
-  margin-left: 50.5%; }
-
-li[data-bg="zapfino"] {
-  margin-left: 56.05556%; }
-
-li.script {
-  margin-top: 3%; }
+  li[data-bg="futura"] {
+    margin-left: 83.83333%;
+    margin-right: 5.55556%; }
+  li[data-bg="gill_sans"], li[data-bg="myriad"] {
+    margin-left: 50.5%; }
+  li[data-bg="zapfino"] {
+    margin-left: 56.05556%; }
+  li.script {
+    margin-top: 3%; }
 
 .typeface-meta {
   width: 38.38889%;

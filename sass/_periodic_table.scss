@@ -1,20 +1,6 @@
 // ======================
 // Periodic Table
 // ======================
-body {
-  background: $base_bg url(../img/bg/texture.jpg);
-  @include respond-to(-webkit-min-device-pixel-ratio, 2) {
-    background: $base_bg url(../img/bg/texture@2x.jpg);
-  }
-}
-
-#page_header {
-  text-align: center;
-}
-
-#main {
-  position: relative;
-}
 
 ol {
   @extend %clearfix;
@@ -40,24 +26,21 @@ li {
   &:hover {
     cursor: pointer;
   }
-}
 
-li[data-bg="futura"] {
-  margin-left: ($one_col * 15)+$gutter;
-  margin-right: $one_col;
-}
-
-li[data-bg="gill_sans"],
-li[data-bg="myriad"] {
-  margin-left: ($one_col * 9)+$gutter
-}
-
-li[data-bg="zapfino"] {
-  margin-left: ($one_col * 10)+$gutter;
-}
-
-li.script {
-  margin-top: $gutter*6;
+  &[data-bg="futura"] {
+    margin-left: ($one_col * 15)+$gutter;
+    margin-right: $one_col;
+  }
+  &[data-bg="gill_sans"],
+  &[data-bg="myriad"] {
+    margin-left: ($one_col * 9)+$gutter
+  }
+  &[data-bg="zapfino"] {
+    margin-left: ($one_col * 10)+$gutter;
+  }
+  &.script {
+    margin-top: $gutter*6;
+  }
 }
 
 .typeface-meta {

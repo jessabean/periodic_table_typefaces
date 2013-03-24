@@ -2,20 +2,20 @@
 // Misc classes
 // ======================
 
-.is-visible,
-.block {
+%is-visible,
+%block {
   display: block;
 }
 
-.is-hidden {
+%is-hidden {
   display: none;
 }
 
-.utility {
+%utility {
 
 }
 
-.hide-text {
+%hide-text {
   text-indent: -100%;
   white-space: nowrap;
   overflow: hidden;
