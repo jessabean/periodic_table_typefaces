@@ -102,7 +102,7 @@
     background: $base_bg;
     border: 1px solid darken($base_bg, 10);
     height: 100%;
-    padding-top: 30px;
+    padding-top: 50px;
     position: absolute;
       left: 0;
       top: 0;
@@ -133,11 +133,10 @@
   }
 
   i {
-    background-size: contain;
+    background-size: auto 100%;
     display: block;
     margin: 10px auto;
-    height: 96px;
-    width: 96px;
+    height: 64px;
   }
 }
 
@@ -201,13 +200,13 @@ a {
   }
 
   .ico-twitter & {
-    background-image: url(../img/icons/twitter.svg);
+    background-image: url(../img/social/twitter.svg);
     background-repeat: no-repeat;
     background-size: 51px 36px;
   }
 
   .ico-github & {
-    background-image: url(../img/icons/github.svg);
+    background-image: url(../img/social/github.svg);
     background-repeat: no-repeat;
     background-size: 42px 36px;
   }

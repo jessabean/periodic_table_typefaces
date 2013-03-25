@@ -147,7 +147,7 @@ b {
     background: #dfdbcf;
     border: 1px solid #cbc4b0;
     height: 100%;
-    padding-top: 30px;
+    padding-top: 50px;
     position: absolute;
     left: 0;
     top: 0; }
@@ -170,11 +170,10 @@ b {
     display: block;
     text-align: center; }
   .typeface-meta i {
-    background-size: contain;
+    background-size: auto 100%;
     display: block;
     margin: 10px auto;
-    height: 96px;
-    width: 96px; }
+    height: 64px; }
 
 #page_footer {
   font-size: 18px;
