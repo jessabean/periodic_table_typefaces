@@ -115,6 +115,7 @@ b {
   list-style: none;
   margin-left: 0.5%;
   margin-bottom: 0.5%;
+  overflow: hidden;
   text-align: center;
   text-indent: 100%;
   text-transform: capitalize;
