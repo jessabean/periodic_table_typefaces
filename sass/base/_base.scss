@@ -21,7 +21,7 @@
   position: relative;
   z-index: 2;
   @include respond-to(-webkit-min-device-pixel-ratio, 2) {
-    background: $base_bg url(../img/bg/texture@2x.jpg);
+    background: $base_bg url(../img/bg/texture@2X.jpg);
   }
 }
 
@@ -29,7 +29,7 @@
 #page_header,
 .container {
   max-width: 1260px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 #main {

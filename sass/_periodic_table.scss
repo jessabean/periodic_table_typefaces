@@ -35,6 +35,9 @@
       padding: 0 20px;
       position: relative;
       top: -13px;
+      @include respond-to(-webkit-min-device-pixel-ratio, 2) {
+        background: $base_bg url(../img/bg/texture@2X.jpg);
+      }
     }
   }
 }
