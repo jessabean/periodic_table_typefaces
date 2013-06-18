@@ -4,6 +4,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  background: #222222; }
+
 .wrapper {
   background: #dfdbcf url(../img/bg/texture.jpg);
   margin-bottom: 150px;
@@ -12,7 +15,7 @@
   z-index: 2; }
   @media (-webkit-min-device-pixel-ratio: 2) {
     .wrapper {
-      background: #dfdbcf url(../img/bg/texture@2x.jpg); } }
+      background: #dfdbcf url(../img/bg/texture@2X.jpg); } }
 
 #main,
 #page_header,
@@ -99,6 +102,9 @@ b {
       padding: 0 20px;
       position: relative;
       top: -13px; }
+      @media (-webkit-min-device-pixel-ratio: 2) {
+        #page_header h2 span {
+          background: #dfdbcf url(../img/bg/texture@2X.jpg); } }
 
 .typefaces {
   margin-left: -0.5%;
@@ -179,7 +185,6 @@ b {
 #page_footer {
   font-size: 18px;
   font-size: 1.8rem;
-  background: #222222;
   color: white;
   height: 150px;
   bottom: 0;
