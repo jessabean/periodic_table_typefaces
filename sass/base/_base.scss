@@ -14,6 +14,10 @@
 // Page Layout
 // ======================
 
+body {
+    background: $gray;
+}
+
 .wrapper {
   background: $base_bg url(../img/bg/texture.jpg);
   margin-bottom: 150px;
