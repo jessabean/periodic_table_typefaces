@@ -45,6 +45,9 @@ application-ck.js
 intermediate
 publish
 .idea
+_site
+node_modules
+.tmp
 
 # build script local files
 build/buildinfo.properties
