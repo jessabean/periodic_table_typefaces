@@ -19,7 +19,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
 
-gulp.task('browser-sync', ['jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -27,21 +27,21 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
     });
 });
 
-// gulp.task('sass', function () {
-//     return gulp.src('_scss/main.scss')
-//         .pipe(sass({
-//             includePaths: ['scss'],
-//             onError: browserSync.notify
-//         }))
-//         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-//         .pipe(gulp.dest('_site/css'))
-//         .pipe(browserSync.reload({stream:true}))
-//         .pipe(gulp.dest('css'));
-// });
+gulp.task('sass', function () {
+    return gulp.src('_scss/main.scss')
+        .pipe(sass({
+            includePaths: ['scss'],
+            onError: browserSync.notify
+        }))
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(gulp.dest('_site/css'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('css'));
+});
 
 gulp.task('watch', function () {
-    // gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch(['*.html', '_layouts/*.html'], ['jekyll-rebuild']);
 });
 
 

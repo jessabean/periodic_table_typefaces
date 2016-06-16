@@ -1,7 +1,6 @@
 * {
   -webkit-text-size-adjust: none;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -65,7 +64,8 @@ b {
 .is-hidden {
   display: none; }
 
-.ico-twitter a, .ico-github a {
+.ico-twitter a,
+.ico-github a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
@@ -185,7 +185,7 @@ b {
 #page_footer {
   font-size: 18px;
   font-size: 1.8rem;
-  color: white;
+  color: #ffffff;
   height: 150px;
   bottom: 0;
   left: 0;
@@ -213,131 +213,121 @@ address {
     line-height: 36px;
     margin-left: 10px; }
 
-.ico-twitter a, .ico-github a {
+.ico-twitter a,
+.ico-github a {
   display: block;
   opacity: 0.5;
   height: 52px;
   width: 52px;
-  -moz-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out; }
-  .ico-twitter a:hover, .ico-github a:hover {
+  .ico-twitter a:hover,
+  .ico-github a:hover {
     opacity: 1; }
+
 .ico-twitter a {
   background-image: url(../img/social/twitter.svg);
   background-repeat: no-repeat;
   background-size: 51px 36px; }
+
 .ico-github a {
   background-image: url(../img/social/github.svg);
   background-repeat: no-repeat;
   background-size: 42px 36px; }
 
 .ss-grotesk {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 0 5px 5px 5px; }
+  -webkit-border-radius: 0 5px 5px 5px;
+          border-radius: 0 5px 5px 5px; }
   .ss-grotesk:hover {
     border: 2px solid #ffa952; }
 
 .ss-humanist {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 5px 0 5px 0; }
+  -webkit-border-radius: 5px 0 5px 0;
+          border-radius: 5px 0 5px 0; }
   .ss-humanist:hover {
     border: 2px solid #a4d768; }
 
 .ss-geo {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 5px 0 5px 5px; }
+  -webkit-border-radius: 5px 0 5px 5px;
+          border-radius: 5px 0 5px 5px; }
   .ss-geo:hover {
     border: 2px solid #f3ca66; }
 
 .sr-didone {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 5px 5px 5px 0; }
+  -webkit-border-radius: 5px 5px 5px 0;
+          border-radius: 5px 5px 5px 0; }
   .sr-didone:hover {
     border: 2px solid #c3afe5; }
 
 .sr-ss {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 0 5px 0 0; }
+  -webkit-border-radius: 0 5px 0 0;
+          border-radius: 0 5px 0 0; }
   .sr-ss:hover {
     border: 2px solid #60b0e6; }
 
 .sr-realist {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 0 5px 0 5px; }
+  -webkit-border-radius: 0 5px 0 5px;
+          border-radius: 0 5px 0 5px; }
   .sr-realist:hover {
     border: 2px solid #fd94ab; }
 
 .sr-garalde {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 5px 5px 0 5px; }
+  -webkit-border-radius: 5px 5px 0 5px;
+          border-radius: 5px 5px 0 5px; }
   .sr-garalde:hover {
     border: 2px solid #b65519; }
 
 .sr-slab {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 0 0 0 5px; }
+  -webkit-border-radius: 0 0 0 5px;
+          border-radius: 0 0 0 5px; }
   .sr-slab:hover {
     border: 2px solid #5a8e23; }
 
 .gl-inscription {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 0; }
+  -webkit-border-radius: 0;
+          border-radius: 0; }
   .gl-inscription:hover {
     border: 2px solid #a07d0c; }
 
 .ss-display {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 0 0 5px 0; }
+  -webkit-border-radius: 0 0 5px 0;
+          border-radius: 0 0 5px 0; }
   .ss-display:hover {
     border: 2px solid #796692; }
 
 .blackletter {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 5px 0 0 0; }
+  -webkit-border-radius: 5px 0 0 0;
+          border-radius: 5px 0 0 0; }
   .blackletter:hover {
     border: 2px solid #005194; }
 
 .script {
-  -moz-transition: border 0.5s ease-in-out;
   -webkit-transition: border 0.5s ease-in-out;
-  -o-transition: border 0.5s ease-in-out;
   transition: border 0.5s ease-in-out;
-  border-radius: 5px; }
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
   .script:hover {
     border: 2px solid #72263d; }
 
