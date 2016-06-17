@@ -1,12 +1,12 @@
 var showMeta = function(event){
-  $target = event.target;
+  target = event.target;
 
-  var rank      = $target.data('rank');
-  var bg        = $target.data('bg');
-  var name      = $target.data('title');
-  var family    = $target.data('family');
-  var designer  = $target.data('designer');
-  var year      = $target.data('year');
+  var rank      = $(target).data('rank');
+  var bg        = $(target).data('bg');
+  var name      = $(target).data('title');
+  var family    = $(target).data('family');
+  var designer  = $(target).data('designer');
+  var year      = $(target).data('year');
 
   $('.typeface-meta').html(
     '<div class="card">' +
@@ -19,9 +19,9 @@ var showMeta = function(event){
     '<span class="year">' + year + '</span>'
   );
 
-  $('.typeface-meta').toggleClass('is-hidden ');
+  $('.typeface-meta').toggleClass('is-hidden');
 };
 
-$(document).ready(function() {
-  $('.typeface').on('hover', showMeta, false);
+$( document ).ready(function() {
+  $("li.typeface").hover(showMeta);  
 });
