@@ -179,6 +179,15 @@ b {
     margin: 10px auto;
     height: 64px; }
 
+.typeface-meta-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: pink; }
+
 #page_footer {
   font-size: 18px;
   font-size: 1.8rem;
