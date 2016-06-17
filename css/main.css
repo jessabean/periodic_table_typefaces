@@ -129,7 +129,8 @@ b {
   .typefaces li.script {
     margin-top: 3%; }
   .typefaces li.space {
-    border: none; }
+    border: none;
+    pointer-events: none; }
 
 .typeface:hover {
   cursor: pointer; }
