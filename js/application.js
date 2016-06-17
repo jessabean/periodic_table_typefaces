@@ -13,10 +13,7 @@ var showMeta = function(event){
     '<span class="rank">' + rank + '</span>' +
     '<i class="' + bg + '"></i>' +
     '<span class="title">' + name + '</span>' +
-    '</div>' +
-    '<span class="family">' + family + '</span>' +
-    '<span class="designer">' + designer + '</span>' +
-    '<span class="year">' + year + '</span>'
+    '</div>'
   );
 
   $('.typeface-meta').toggleClass('is-hidden');
