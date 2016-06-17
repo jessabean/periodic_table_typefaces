@@ -37,15 +37,18 @@ var showMetaFullScreen = function(event) {
     '</div>' +
     '<span class="family">' + family + '</span>' +
     '<span class="designer">' + designer + '</span>' +
-    '<span class="year">' + year + '</span>'
+    '<span class="year">' + year + '</span>' +
+    '<button class="close-btn" type="button">x</button>'
   );
 
-  $('.typeface-meta-fullscreen').toggleClass('is-hidden');
+  $('.typeface-meta-fullscreen').toggleClass('is-active');
 
 };
 
 $( document ).ready(function() {
   $("li.typeface").hover(showMeta);  
   $(document).on("click", "li.typeface", showMetaFullScreen);
+  $(document).on("click", ".close-btn", function(){
+    $('.typeface-meta-fullscreen').removeClass('is-active');
+  })
 });
-

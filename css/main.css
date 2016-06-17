@@ -165,7 +165,7 @@ b {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1010; }
+  z-index: 2; }
   .typeface-meta .card {
     width: 38.38889%;
     background: #dfdbcf;
@@ -206,7 +206,13 @@ b {
   right: 0;
   width: 0;
   height: 0;
-  background: pink; }
+  opacity: 0;
+  background: white; }
+  .typeface-meta-fullscreen.is-active {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1000; }
 
 #page_footer {
   font-size: 18px;

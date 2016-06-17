@@ -116,7 +116,7 @@
   position: absolute;
     left: 0;
     top: 0;
-  z-index: 1010;
+  z-index: 2;
 
   .card {
     @include span(7, $max_columns);
@@ -168,7 +168,15 @@
   right: 0;
   width: 0;
   height: 0;
-  background: pink;
+  opacity: 0;
+  background: white;
+
+  &.is-active {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1000;
+  }
 }
 
 // Footer and Attribution
