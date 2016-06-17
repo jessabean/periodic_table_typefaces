@@ -67,24 +67,16 @@
   text-indent: 100%;
   text-transform: capitalize;
   white-space: nowrap;
-  &:hover {
-    cursor: pointer;
-  }
-
-  &[data-bg="futura"] {
-    margin-left: ($one_col * 15)+$gutter;
-    margin-right: $one_col;
-  }
-  &[data-bg="gill_sans"],
-  &[data-bg="myriad"] {
-    margin-left: ($one_col * 9)+$gutter
-  }
-  &[data-bg="zapfino"] {
-    margin-left: ($one_col * 10)+$gutter;
-  }
   &.script {
     margin-top: $gutter*6;
   }
+  &.space {
+    border: none;
+  }
+}
+
+.typeface:hover {
+  cursor: pointer;
 }
 
 // Element Card

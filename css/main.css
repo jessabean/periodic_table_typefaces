@@ -126,17 +126,13 @@ b {
   text-indent: 100%;
   text-transform: capitalize;
   white-space: nowrap; }
-  .typefaces li:hover {
-    cursor: pointer; }
-  .typefaces li[data-bg="futura"] {
-    margin-left: 83.83333%;
-    margin-right: 5.55556%; }
-  .typefaces li[data-bg="gill_sans"], .typefaces li[data-bg="myriad"] {
-    margin-left: 50.5%; }
-  .typefaces li[data-bg="zapfino"] {
-    margin-left: 56.05556%; }
   .typefaces li.script {
     margin-top: 3%; }
+  .typefaces li.space {
+    border: none; }
+
+.typeface:hover {
+  cursor: pointer; }
 
 .typeface-meta {
   font-size: 18px;
