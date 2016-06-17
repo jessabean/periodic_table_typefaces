@@ -132,8 +132,28 @@ b {
     border: none;
     pointer-events: none; }
 
+.typeface {
+  position: relative; }
+  .typeface:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: url(../img/icons/expand.svg) center center no-repeat;
+    background-size: 32px 32px;
+    opacity: 0; }
+
 .typeface:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out; }
+  .typeface:hover:after {
+    opacity: 1; }
 
 .typeface-meta {
   font-size: 18px;
@@ -242,96 +262,96 @@ address {
   background-size: 42px 36px; }
 
 .ss-grotesk {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 0 5px 5px 5px;
           border-radius: 0 5px 5px 5px; }
   .ss-grotesk:hover {
     border: 2px solid #ffa952; }
 
 .ss-humanist {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 5px 0 5px 0;
           border-radius: 5px 0 5px 0; }
   .ss-humanist:hover {
     border: 2px solid #a4d768; }
 
 .ss-geo {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 5px 0 5px 5px;
           border-radius: 5px 0 5px 5px; }
   .ss-geo:hover {
     border: 2px solid #f3ca66; }
 
 .sr-didone {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 5px 5px 5px 0;
           border-radius: 5px 5px 5px 0; }
   .sr-didone:hover {
     border: 2px solid #c3afe5; }
 
 .sr-ss {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 0 5px 0 0;
           border-radius: 0 5px 0 0; }
   .sr-ss:hover {
     border: 2px solid #60b0e6; }
 
 .sr-realist {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 0 5px 0 5px;
           border-radius: 0 5px 0 5px; }
   .sr-realist:hover {
     border: 2px solid #fd94ab; }
 
 .sr-garalde {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 5px 5px 0 5px;
           border-radius: 5px 5px 0 5px; }
   .sr-garalde:hover {
     border: 2px solid #b65519; }
 
 .sr-slab {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 0 0 0 5px;
           border-radius: 0 0 0 5px; }
   .sr-slab:hover {
     border: 2px solid #5a8e23; }
 
 .gl-inscription {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 0;
           border-radius: 0; }
   .gl-inscription:hover {
     border: 2px solid #a07d0c; }
 
 .ss-display {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 0 0 5px 0;
           border-radius: 0 0 5px 0; }
   .ss-display:hover {
     border: 2px solid #796692; }
 
 .blackletter {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 5px 0 0 0;
           border-radius: 5px 0 0 0; }
   .blackletter:hover {
     border: 2px solid #005194; }
 
 .script {
-  -webkit-transition: border 0.5s ease-in-out;
-  transition: border 0.5s ease-in-out;
+  -webkit-transition: border 0.18s ease-out;
+  transition: border 0.18s ease-out;
   -webkit-border-radius: 5px;
           border-radius: 5px; }
   .script:hover {
