@@ -128,6 +128,43 @@
       left: 0;
       top: 0;
   }
+
+  .rank {
+    display: block;
+    margin-bottom: 0;
+    position: absolute;
+      top: 10px;
+      right: 10px;
+  }
+
+  i {
+    background-size: auto 100%;
+    display: block;
+    margin: 10px auto;
+    height: 64px;
+  }
+}
+
+.typeface-meta-fullscreen {
+  background: #005194;
+  color: white;
+
+  .card {
+    color: $gray;
+    width: 240px;
+    background: $base_bg;
+    border: 1px solid darken($base_bg, 10);
+    height: 100%;
+    padding: 50px 0;
+    position: relative;
+
+    i {
+      background-size: auto 100%;
+      display: block;
+      margin: 10px auto;
+      height: 64px;
+    }
+  }
   .rank,
   .family,
   .designer,
@@ -152,16 +189,24 @@
     display: block;
     text-align: center;
   }
-
-  i {
-    background-size: auto 100%;
-    display: block;
-    margin: 10px auto;
-    height: 64px;
-  }
 }
 
-.typeface-meta-fullscreen {
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media__figure {
+  margin-right: 2rem;
+}
+
+.media__body {
+  flex: auto;
+}
+
+// Modal
+// -----------------------------
+.modal-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -169,7 +214,7 @@
   width: 0;
   height: 0;
   opacity: 0;
-  background: white;
+  transition: opacity 0.1s ease-out;
 
   &.is-active {
     width: 100%;
@@ -177,6 +222,32 @@
     opacity: 1;
     z-index: 1000;
   }
+}
+
+.modal {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.modal__actions {
+  color: white;
+  text-align: right;
+}
+
+.modal__close {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.ico-close {
+  display: inline-block;
+  background: url('../img/icons/close.svg') center center no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
 }
 
 // Footer and Attribution

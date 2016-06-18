@@ -78,6 +78,16 @@ b {
   .typefaces:after {
     clear: both; }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
 #page_header {
   margin-bottom: 40px;
   text-align: center; }
@@ -175,24 +185,12 @@ b {
     position: absolute;
     left: 0;
     top: 0; }
-  .typeface-meta .rank,
-  .typeface-meta .family,
-  .typeface-meta .designer,
-  .typeface-meta .year {
-    display: block;
-    margin-bottom: 10px; }
   .typeface-meta .rank {
+    display: block;
     margin-bottom: 0;
     position: absolute;
     top: 10px;
     right: 10px; }
-  .typeface-meta .family {
-    font-style: italic; }
-  .typeface-meta .title {
-    font-size: 18px;
-    font-size: 1.8rem;
-    display: block;
-    text-align: center; }
   .typeface-meta i {
     background-size: auto 100%;
     display: block;
@@ -200,6 +198,60 @@ b {
     height: 64px; }
 
 .typeface-meta-fullscreen {
+  background: #005194;
+  color: white; }
+  .typeface-meta-fullscreen .card {
+    color: #222222;
+    width: 240px;
+    background: #dfdbcf;
+    border: 1px solid #cbc4b0;
+    height: 100%;
+    padding: 50px 0;
+    position: relative; }
+    .typeface-meta-fullscreen .card i {
+      background-size: auto 100%;
+      display: block;
+      margin: 10px auto;
+      height: 64px; }
+  .typeface-meta-fullscreen .rank,
+  .typeface-meta-fullscreen .family,
+  .typeface-meta-fullscreen .designer,
+  .typeface-meta-fullscreen .year {
+    display: block;
+    margin-bottom: 10px; }
+  .typeface-meta-fullscreen .rank {
+    margin-bottom: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .typeface-meta-fullscreen .family {
+    font-style: italic; }
+  .typeface-meta-fullscreen .title {
+    font-size: 18px;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center; }
+
+.media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.media__figure {
+  margin-right: 2rem; }
+
+.media__body {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto; }
+
+.modal-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -207,12 +259,35 @@ b {
   width: 0;
   height: 0;
   opacity: 0;
-  background: white; }
-  .typeface-meta-fullscreen.is-active {
+  -webkit-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out; }
+  .modal-container.is-active {
     width: 100%;
     height: 100%;
     opacity: 1;
     z-index: 1000; }
+
+.modal {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 100px; }
+
+.modal__actions {
+  color: white;
+  text-align: right; }
+
+.modal__close {
+  background: transparent;
+  border: none;
+  outline: none; }
+
+.ico-close {
+  display: inline-block;
+  background: url("../img/icons/close.svg") center center no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px; }
 
 #page_footer {
   font-size: 18px;
