@@ -1,0 +1,139 @@
+{ "typefaces": [
+  {
+    "name": "Helvetica",
+    "abbreviation": "h",
+    "family": "San-Serif Grotesk",
+    "designer": "Max Miedienger",
+    "year": "1957",
+    "rank": "1"
+  },
+  {
+    "name": "Futura",
+    "abbreviation": "f",
+    "family": "San-Serif Geometric",
+    "designer": "Paul Renner",
+    "year": "1927",
+    "rank": "2"
+  },
+  {
+    "name": "Bodoni",
+    "abbreviation": "b",
+    "family": "Serif Didone",
+    "designer": "Giambattista Bodoni",
+    "year": "1790",
+    "rank": "3"
+  }, 
+  {
+    "name": "Univers",
+    "abbreviation": "u",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Adrian Frutiger",
+    "year": "1954",
+    "rank": "4"
+  },
+  {
+    "name": "Akzidenz-Grotesk",
+    "abbreviation": "ak",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Ferdinand Theinhardt, Hermann Berthold, Gunter G. Lange",
+    "year": "1880-1972",
+    "rank": "5"
+  },
+  {
+    "name": "Garamond",
+    "abbreviation": "g",
+    "family": "Serif Garalde",
+    "designer": "Claude Garamond",
+    "year": "1530",
+    "rank": "6"
+  },
+  {
+    "name": "Times",
+    "abbreviation": "t",
+    "family": "Serif Realist",
+    "designer": "Stanley Morison",
+    "year": "1931",
+    "rank": "7"
+  },
+  {
+    "name": "Gill Sans",
+    "abbreviation": "gs",
+    "family": "San-Serif Humanist",
+    "designer": "Eric Gill",
+    "year": "1930",
+    "rank": "8"
+  },
+  {
+    "name": "Optima",
+    "abbreviation": "o",
+    "family": "San-Serif Humanist",
+    "designer": "Hermann Zapf",
+    "year": "1954",
+    "rank": "9"
+  },
+  {
+    "name": "Caslon",
+    "abbreviation": "c",
+    "family": "Serif Garalde",
+    "designer": "William Caslon",
+    "year": "1725",
+    "rank": "10"
+  },
+  {
+    "name": "Minion",
+    "abbreviation": "m",
+    "family": "Serif Garalde",
+    "designer": "Robert Slimbach",
+    "year": "1990",
+    "rank": "11"
+  },
+  {
+    "name": "Lucida",
+    "abbreviation": "l",
+    "family": "Serif Garalde",
+    "designer": "Charles Bigelow, Kris Holmes",
+    "year": "1985",
+    "rank": "12"
+  },
+  {
+    "name": "Didot",
+    "abbreviation": "d",
+    "family": "Serif Didone",
+    "designer": "Firmin Didot",
+    "year": "1799",
+    "rank": "13"
+  },
+  {
+    "name": "Frutiger",
+    "abbreviation": "fr",
+    "family": "San-Serif Humanist",
+    "designer": "Adrian Frutiger",
+    "year": "1977",
+    "rank": "14"
+  },
+  {
+    "name": "Fleischmann",
+    "abbreviation": "fl",
+    "family": "Serif Garalde",
+    "designer": "Erhard Kaiser",
+    "year": "1997",
+    "rank": "15"
+  },
+  {
+    "name": "Bell Gothic",
+    "abbreviation": "bg",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Chauncey H. Griffith",
+    "year": "1938",
+    "rank": "16"
+  },
+  {
+    "name": "Trinité",
+    "abbreviation": "tr",
+    "family": "Serif Realist",
+    "designer": "Bram de Does",
+    "year": "1972",
+    "rank": "17"
+  }
+]
+}
