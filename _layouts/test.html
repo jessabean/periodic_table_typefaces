@@ -55,6 +55,13 @@
        function (typefaceData, textStatus, jqXHr) {
          $.get('templates/typeface-table.mustache.html',
          function (template, textStatus, jqXhr) {
+          
+          typefaceData.lower = function () {
+              return function (text, render) {
+               return render(text).replace(/\s+/g, '-').toLowerCase();
+              }
+            };
+
            var typefaceTableHtml = Mustache.render(template, typefaceData);
            $('#main').append(typefaceTableHtml);
          });

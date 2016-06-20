@@ -1,139 +1,903 @@
 { "typefaces": [
-  {
+  { 
     "name": "Helvetica",
     "abbreviation": "h",
     "family": "San-Serif Grotesk",
     "designer": "Max Miedienger",
     "year": "1957",
-    "rank": "1"
+    "rank": "1",
+    "spacers": 15
   },
-  {
+  { 
     "name": "Futura",
     "abbreviation": "f",
     "family": "San-Serif Geometric",
     "designer": "Paul Renner",
     "year": "1927",
-    "rank": "2"
+    "rank": "2",
+    "spacers": 1
   },
-  {
-    "name": "Bodoni",
-    "abbreviation": "b",
-    "family": "Serif Didone",
-    "designer": "Giambattista Bodoni",
-    "year": "1790",
-    "rank": "3"
-  }, 
-  {
+  { 
     "name": "Univers",
     "abbreviation": "u",
-    "family": "Sans-Serif Grotesk",
+    "family": "San-Serif Grotesk",
     "designer": "Adrian Frutiger",
     "year": "1954",
-    "rank": "4"
+    "rank": "4",
+    "spacers": 0
   },
-  {
+  { 
     "name": "Akzidenz-Grotesk",
     "abbreviation": "ak",
     "family": "Sans-Serif Grotesk",
     "designer": "Ferdinand Theinhardt, Hermann Berthold, Gunter G. Lange",
     "year": "1880-1972",
-    "rank": "5"
+    "rank": "5",
+    "spacers": 9
   },
-  {
-    "name": "Garamond",
-    "abbreviation": "g",
-    "family": "Serif Garalde",
-    "designer": "Claude Garamond",
-    "year": "1530",
-    "rank": "6"
-  },
-  {
-    "name": "Times",
-    "abbreviation": "t",
-    "family": "Serif Realist",
-    "designer": "Stanley Morison",
-    "year": "1931",
-    "rank": "7"
-  },
-  {
+  { 
     "name": "Gill Sans",
     "abbreviation": "gs",
-    "family": "San-Serif Humanist",
+    "family": "Sans-Serif Humanist",
     "designer": "Eric Gill",
     "year": "1930",
-    "rank": "8"
+    "rank": "8",
+    "spacers": 0
   },
-  {
+  { 
     "name": "Optima",
     "abbreviation": "o",
-    "family": "San-Serif Humanist",
+    "family": "Sans-Serif Humanist",
     "designer": "Hermann Zapf",
     "year": "1954",
-    "rank": "9"
+    "rank": "9",
+    "spacers": 0
   },
-  {
-    "name": "Caslon",
-    "abbreviation": "c",
-    "family": "Serif Garalde",
-    "designer": "William Caslon",
-    "year": "1725",
-    "rank": "10"
-  },
-  {
-    "name": "Minion",
-    "abbreviation": "m",
-    "family": "Serif Garalde",
-    "designer": "Robert Slimbach",
-    "year": "1990",
-    "rank": "11"
-  },
-  {
-    "name": "Lucida",
-    "abbreviation": "l",
-    "family": "Serif Garalde",
-    "designer": "Charles Bigelow, Kris Holmes",
-    "year": "1985",
-    "rank": "12"
-  },
-  {
-    "name": "Didot",
-    "abbreviation": "d",
-    "family": "Serif Didone",
-    "designer": "Firmin Didot",
-    "year": "1799",
-    "rank": "13"
-  },
-  {
+  { 
     "name": "Frutiger",
     "abbreviation": "fr",
-    "family": "San-Serif Humanist",
+    "family": "Sans-Serif Humanist",
     "designer": "Adrian Frutiger",
     "year": "1977",
-    "rank": "14"
+    "rank": "14",
+    "spacers": 0
   },
-  {
-    "name": "Fleischmann",
-    "abbreviation": "fl",
-    "family": "Serif Garalde",
-    "designer": "Erhard Kaiser",
-    "year": "1997",
-    "rank": "15"
+  { 
+    "name": "Syntax",
+    "abbreviation": "s",
+    "family": "Sans-Serif Humanist",
+    "designer": "Hans Eduard Meier",
+    "year": "1968",
+    "rank": "18",
+    "spacers": 0
   },
-  {
+  { 
+    "name": "Meta",
+    "abbreviation": "me",
+    "family": "Sans-Serif Humanist",
+    "designer": "Erik Spiekermann",
+    "year": "1991",
+    "rank": "20",
+    "spacers": 0
+  },
+  { 
+    "name": "Avant Garde",
+    "abbreviation": "ag",
+    "family": "San-Serif Geometric",
+    "designer": "Herb Lubalin",
+    "year": "1968",
+    "rank": "22",
+    "spacers": 0
+  },
+  { 
+    "name": "Bodoni",
+    "abbreviation": "b",
+    "family": "Serif Didone",
+    "designer": "Giambattista Bodoni",
+    "year": "1790",
+    "rank": "3",
+    "spacers": 0
+  },
+  { 
     "name": "Bell Gothic",
     "abbreviation": "bg",
     "family": "Sans-Serif Grotesk",
     "designer": "Chauncey H. Griffith",
     "year": "1938",
-    "rank": "16"
+    "rank": "16",
+    "spacers": 0
   },
-  {
-    "name": "Trinité",
+  { 
+    "name": "Franklin Gothic",
+    "abbreviation": "fg",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Morris F. Benton",
+    "year": "1902",
+    "rank": "27",
+    "spacers": 9
+  },
+  { 
+    "name": "Myriad",
+    "abbreviation": "my",
+    "family": "Sans-Serif Humanist",
+    "designer": "Robert Slimbach, Carol Twombly",
+    "year": "1992",
+    "rank": "32",
+    "spacers": 0
+  },
+  { 
+    "name": "Formata",
+    "abbreviation": "fo",
+    "family": "Sans-Serif Humanist",
+    "designer": "Bernd M&ouml;llenst&auml;dt",
+    "year": "1984",
+    "rank": "65",
+    "spacers": 0
+  },
+  { 
+    "name": "Prokyon",
+    "abbreviation": "pr",
+    "family": "Sans-Serif Humanist",
+    "designer": "Erhard Kaiser",
+    "year": "2002",
+    "rank": "71",
+    "spacers": 0
+  },
+  { 
+    "name": "Metro",
+    "abbreviation": "mt",
+    "family": "Sans-Serif Humanist",
+    "designer": "William A. Dwiggins",
+    "year": "1929",
+    "rank": "72",
+    "spacers": 0
+  },
+  { 
+    "name": "Antique Olive",
+    "abbreviation": "ao",
+    "family": "Sans-Serif Humanist",
+    "designer": "Roger Excoffon",
+    "year": "1962",
+    "rank": "74",
+    "spacers": 0
+  },
+  { 
+    "name": "Eurostile",
+    "abbreviation": "eu",
+    "family": "San-Serif Geometric",
+    "designer": "Aldo Novarese",
+    "year": "1962",
+    "rank": "47",
+    "spacers": 0
+  },
+  { 
+    "name": "Didot",
+    "abbreviation": "d",
+    "family": "Serif Didone",
+    "designer": "Firmin Didot",
+    "year": "1799",
+    "rank": "13",
+    "spacers": 0
+  },
+  { 
+    "name": "Interstate",
+    "abbreviation": "in",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Tobias Frere-Jones",
+    "year": "1993",
+    "rank": "31",
+    "spacers": 0
+  },
+  { 
+    "name": "Din",
+    "abbreviation": "di",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Ludwig Goller",
+    "year": "1926",
+    "rank": "40",
+    "spacers": 0
+  },
+  { 
+    "name": "Stone",
+    "abbreviation": "st",
+    "family": "Serif Sans-Serif",
+    "designer": "Sumner Stone",
+    "year": "1987",
+    "rank": "21",
+    "spacers": 0
+  },
+  { 
+    "name": "Thesis",
+    "abbreviation": "th",
+    "family": "Serif Sans-Serif",
+    "designer": "Lucas de Groot",
+    "year": "1994",
+    "rank": "26",
+    "spacers": 0
+  },
+  { 
+    "name": "Rotis",
+    "abbreviation": "r",
+    "family": "Serif Sans-Serif",
+    "designer": "Otl Aicher",
+    "year": "1988",
+    "rank": "30",
+    "spacers": 0
+  },
+  { 
+    "name": "Times",
+    "abbreviation": "t",
+    "family": "Serif Realist",
+    "designer": "Stanley Morison",
+    "year": "1931",
+    "rank": "7",
+    "spacers": 0
+  },
+  { 
+    "name": "Trinit&eacute;",
     "abbreviation": "tr",
     "family": "Serif Realist",
     "designer": "Bram de Does",
     "year": "1972",
-    "rank": "17"
+    "rank": "17",
+    "spacers": 0
+  },
+  { 
+    "name": "Baskerville",
+    "abbreviation": "ba",
+    "family": "Serif Realist",
+    "designer": "John Baskerville",
+    "year": "1754",
+    "rank": "19",
+    "spacers": 0
+  },
+  { 
+    "name": "Garamond",
+    "abbreviation": "g",
+    "family": "Serif Garalde",
+    "designer": "Claude Garamond",
+    "year": "1530",
+    "rank": "6",
+    "spacers": 0
+  },
+  { 
+    "name": "Caslon",
+    "abbreviation": "c",
+    "family": "Serif Garalde",
+    "designer": "William Caslon",
+    "year": "1725",
+    "rank": "10",
+    "spacers": 0
+  },
+  { 
+    "name": "Minion",
+    "abbreviation": "m",
+    "family": "Serif Garalde",
+    "designer": "Robert Slimbach",
+    "year": "1990",
+    "rank": "11",
+    "spacers": 0
+  },
+  { 
+    "name": "Lucida",
+    "abbreviation": "l",
+    "family": "Serif Garalde",
+    "designer": "Charles Bigelow, Kris Holmes",
+    "year": "1985",
+    "rank": "12",
+    "spacers": 0
+  },
+  { 
+    "name": "Fleischmann",
+    "abbreviation": "fl",
+    "family": "Serif Garalde",
+    "designer": "Erhard Kaiser",
+    "year": "1997",
+    "rank": "15",
+    "spacers": 0
+  },
+  { 
+    "name": "Dax",
+    "abbreviation": "da",
+    "family": "Sans-Serif Humanist",
+    "designer": "Hans Reichel",
+    "year": "1995",
+    "rank": "75",
+    "spacers": 0
+  },
+  { 
+    "name": "Today Sans",
+    "abbreviation": "ts",
+    "family": "Sans-Serif Humanist",
+    "designer": "Volker K&uuml;ster",
+    "year": "1988",
+    "rank": "78",
+    "spacers": 0
+  },
+  { 
+    "name": "Info",
+    "abbreviation": "if",
+    "family": "Sans-Serif Humanist",
+    "designer": "Erik Spiekermann",
+    "year": "1996",
+    "rank": "87",
+    "spacers": 0
+  },
+  { 
+    "name": "Gotham",
+    "abbreviation": "go",
+    "family": "Sans-Serif Geometric",
+    "designer": "Tobias Frere-Jones",
+    "year": "2000",
+    "rank": "60",
+    "spacers": 0
+  },
+  { 
+    "name": "Walbaum",
+    "abbreviation": "w",
+    "family": "Serif Didone",
+    "designer": "Justus Walbaum",
+    "year": "1800",
+    "rank": "44",
+    "spacers": 0
+  },
+  { 
+    "name": "Letter Gothic",
+    "abbreviation": "lg",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Roger Roberson",
+    "year": "1956",
+    "rank": "54",
+    "spacers": 0
+  },
+  { 
+    "name": "Avenir",
+    "abbreviation": "av",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Adrian Frutiger",
+    "year": "1988",
+    "rank": "58",
+    "spacers": 0
+  },
+  { 
+    "name": "Officina",
+    "abbreviation": "of",
+    "family": "Serif Sans-Serif",
+    "designer": "Erik Spiekermann",
+    "year": "1990",
+    "rank": "38",
+    "spacers": 0
+  },
+  { 
+    "name": "Scala",
+    "abbreviation": "sc",
+    "family": "Serif Sans-Serif",
+    "designer": "Martin Majoor",
+    "year": "1991",
+    "rank": "49",
+    "spacers": 0
+  },
+  { 
+    "name": "Base",
+    "abbreviation": "bs",
+    "family": "Serif Sans-Serif",
+    "designer": "Zuzana Licko",
+    "year": "1995",
+    "rank": "55",
+    "spacers": 0
+  },
+  { 
+    "name": "Arnhem",
+    "abbreviation": "ar",
+    "family": "Serif Realist",
+    "designer": "Fred Smeijers",
+    "year": "1998",
+    "rank": "57",
+    "spacers": 0
+  },
+  { 
+    "name": "Lexicon",
+    "abbreviation": "le",
+    "family": "Serif Realist",
+    "designer": "Bram de Does",
+    "year": "1992",
+    "rank": "68",
+    "spacers": 0
+  },
+  { 
+    "name": "Scotch Roman",
+    "abbreviation": "sr",
+    "family": "Serif Realist",
+    "designer": "A.D. Farmer",
+    "year": "1904",
+    "rank": "73",
+    "spacers": 0
+  },
+  { 
+    "name": "Sabon",
+    "abbreviation": "sa",
+    "family": "Serif Garalde",
+    "designer": "Jan Tschichold",
+    "year": "1964",
+    "rank": "23",
+    "spacers": 0
+  },
+  { 
+    "name": "Bembo",
+    "abbreviation": "be",
+    "family": "Serif Garalde",
+    "designer": "Francesco Griffo",
+    "year": "1496",
+    "rank": "28",
+    "spacers": 0
+  },
+  { 
+    "name": "Jenson",
+    "abbreviation": "j",
+    "family": "Serif Garalde",
+    "designer": "Robert Slimbach",
+    "year": "1995",
+    "rank": "34",
+    "spacers": 0
+  },
+  { 
+    "name": "Griffo Classico",
+    "abbreviation": "gr",
+    "family": "Serif Garalde",
+    "designer": "Franko Luin",
+    "year": "1993",
+    "rank": "35",
+    "spacers": 0
+  },
+  { 
+    "name": "Garamond Classico",
+    "abbreviation": "gc",
+    "family": "Serif Garalde",
+    "designer": "Franko Luin",
+    "year": "1993",
+    "rank": "36",
+    "spacers": 0
+  },
+  { 
+    "name": "Cheltenham",
+    "abbreviation": "ch",
+    "family": "Serif Garalde",
+    "designer": "Bertram G. Goodhue, Ingalls Kimball",
+    "year": "1896",
+    "rank": "37",
+    "spacers": 0
+  },
+  { 
+    "name": "Amplitude",
+    "abbreviation": "am",
+    "family": "Sans-Serif Humanist",
+    "designer": "Christian Schwartz",
+    "year": "2003",
+    "rank": "90",
+    "spacers": 0
+  },
+  { 
+    "name": "Bell Centennial",
+    "abbreviation": "bc",
+    "family": "Sans-Serif Humanist",
+    "designer": "Matthew Carter",
+    "year": "1978",
+    "rank": "91",
+    "spacers": 0
+  },
+  { 
+    "name": "Neutraface",
+    "abbreviation": "n",
+    "family": "Sans-Serif Geometric",
+    "designer": "Christian Schwartz",
+    "year": "2002",
+    "rank": "96",
+    "spacers": 0
+  },
+  { 
+    "name": "Matrix",
+    "abbreviation": "ma",
+    "family": "Serif Didone",
+    "designer": "Zuzana Licko",
+    "year": "1986",
+    "rank": "48",
+    "spacers": 0
+  },
+  { 
+    "name": "Trade Gothic",
+    "abbreviation": "tg",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Jackson Burke",
+    "year": "1948",
+    "rank": "66",
+    "spacers": 0
+  },
+  { 
+    "name": "News Gothic",
+    "abbreviation": "ng",
+    "family": "Sans-Serif Grotesk",
+    "designer": "Morris Fuller Benton",
+    "year": "1908",
+    "rank": "100",
+    "spacers": 0
+  },
+  { 
+    "name": "Fedra",
+    "abbreviation": "fe",
+    "family": "Serif Sans-Serif",
+    "designer": "Peter Bil'ak",
+    "year": "2002",
+    "rank": "62",
+    "spacers": 0
+  },
+  { 
+    "name": "Quadraat",
+    "abbreviation": "q",
+    "family": "Serif Sans-Serif",
+    "designer": "Fred Smeijers",
+    "year": "1992",
+    "rank": "99",
+    "spacers": 0
+  },
+  { 
+    "name": "Clarendon",
+    "abbreviation": "cl",
+    "family": "Slab Serif",
+    "designer": "Benjamin Fox",
+    "year": "1845",
+    "rank": "29",
+    "spacers": 0
+  },
+  { 
+    "name": "Rockwell",
+    "abbreviation": "ro",
+    "family": "Slab Serif",
+    "designer": "Frank H. Pierpont",
+    "year": "1934",
+    "rank": "43",
+    "spacers": 0
+  },
+  { 
+    "name": "Ionic No. 5",
+    "abbreviation": "io",
+    "family": "Slab Serif",
+    "designer": "Chauncey H. Griffith",
+    "year": "1925",
+    "rank": "53",
+    "spacers": 0
+  },
+  { 
+    "name": "Swift",
+    "abbreviation": "sw",
+    "family": "Serif Realist",
+    "designer": "Gerard Unger",
+    "year": "1987",
+    "rank": "80",
+    "spacers": 0
+  },
+  { 
+    "name": "Joanna",
+    "abbreviation": "jo",
+    "family": "Serif Garalde",
+    "designer": "Eric Gill",
+    "year": "1930",
+    "rank": "41",
+    "spacers": 0
+  },
+  { 
+    "name": "Aldine",
+    "abbreviation": "a",
+    "family": "Serif Garalde",
+    "designer": "Aldus Manutius",
+    "year": "1501",
+    "rank": "42",
+    "spacers": 0
+  },
+  { 
+    "name": "Kis",
+    "abbreviation": "k",
+    "family": "Serif Garalde",
+    "designer": "Nicolas Kis",
+    "year": "1690",
+    "rank": "52",
+    "spacers": 0
+  },
+  { 
+    "name": "Palatino",
+    "abbreviation": "pa",
+    "family": "Serif Garalde",
+    "designer": "Hermann Zapf",
+    "year": "1950",
+    "rank": "64",
+    "spacers": 0
+  },
+  { 
+    "name": "Cooper Black",
+    "abbreviation": "cb",
+    "family": "Serif Garalde",
+    "designer": "Oswald B. Cooper",
+    "year": "1920",
+    "rank": "76",
+    "spacers": 0
+  },
+  { 
+    "name": "Spectrum",
+    "abbreviation": "sp",
+    "family": "Serif Garalde",
+    "designer": "Jan van Krimpen",
+    "year": "1943",
+    "rank": "88",
+    "spacers": 0
+  },
+  { 
+    "name": "Proforma",
+    "abbreviation": "po",
+    "family": "Serif Garalde",
+    "designer": "Petr van Blokland",
+    "year": "1988",
+    "rank": "89",
+    "spacers": 0
+  },
+  { 
+    "name": "Copperplate Gothic",
+    "abbreviation": "cg",
+    "family": "Sans-Serif Humanist",
+    "designer": "Frederic W. Goudy",
+    "year": "1901",
+    "rank": "94",
+    "spacers": 0
+  },
+  { 
+    "name": "Trajan",
+    "abbreviation": "ta",
+    "family": "Glyphic Inscriptional",
+    "designer": "Carol Twombly",
+    "year": "1989",
+    "rank": "25",
+    "spacers": 0
+  },
+  { 
+    "name": "Century",
+    "abbreviation": "ce",
+    "family": "Serif Didone",
+    "designer": "Morris Fuller Benton",
+    "year": "1919",
+    "rank": "50",
+    "spacers": 0
+  },
+  { 
+    "name": "OCR",
+    "abbreviation": "oc",
+    "family": "San-Serif Display",
+    "designer": "American Type Founders",
+    "year": "1965",
+    "rank": "24",
+    "spacers": 0
+  },
+  { 
+    "name": "Chicago",
+    "abbreviation": "ci",
+    "family": "San-Serif Display",
+    "designer": "Susan Kare",
+    "year": "1984",
+    "rank": "45",
+    "spacers": 0
+  },
+  { 
+    "name": "Peignot",
+    "abbreviation": "p",
+    "family": "San-Serif Display",
+    "designer": "A.M. Cassandre",
+    "year": "1937",
+    "rank": "46",
+    "spacers": 0
+  },
+  { 
+    "name": "Oakland",
+    "abbreviation": "oa",
+    "family": "San-Serif Display",
+    "designer": "Zuzana Licko",
+    "year": "1985",
+    "rank": "92",
+    "spacers": 0
+  },
+  { 
+    "name": "Blur",
+    "abbreviation": "bl",
+    "family": "San-Serif Display",
+    "designer": "Neville Brody",
+    "year": "1992",
+    "rank": "97",
+    "spacers": 0
+  },
+  { 
+    "name": "Egyptian",
+    "abbreviation": "eg",
+    "family": "Slab Serif",
+    "designer": "Andr&eacute; G&uuml;rtler",
+    "year": "1967",
+    "rank": "61",
+    "spacers": 0
+  },
+  { 
+    "name": "Courier",
+    "abbreviation": "co",
+    "family": "Slab Serif",
+    "designer": "Howard Kettler",
+    "year": "1955",
+    "rank": "63",
+    "spacers": 0
+  },
+  { 
+    "name": "Memphis",
+    "abbreviation": "mm",
+    "family": "Slab Serif",
+    "designer": "Emil Rudolf Weiss",
+    "year": "1929",
+    "rank": "79",
+    "spacers": 0
+  },
+  { 
+    "name": "Caecilia",
+    "abbreviation": "ca",
+    "family": "Slab Serif",
+    "designer": "Peter M. Noordzij",
+    "year": "1990",
+    "rank": "84",
+    "spacers": 0
+  },
+  { 
+    "name": "Gutenberg B-42",
+    "abbreviation": "gu",
+    "family": "Blackletter",
+    "designer": "Johannes Gutenberg",
+    "year": "1450",
+    "rank": "33",
+    "spacers": 10
+  },
+  { 
+    "name": "Gebetbuch Fraktur",
+    "abbreviation": "gf",
+    "family": "Blackletter",
+    "designer": "Hans Sch&ouml;nsperger",
+    "year": "1514",
+    "rank": "39",
+    "spacers": 0
+  },
+  { 
+    "name": "Unger Fraktur",
+    "abbreviation": "uf",
+    "family": "Blackletter",
+    "designer": "Johann F. Unger",
+    "year": "1793",
+    "rank": "56",
+    "spacers": 0
+  },
+  { 
+    "name": "Manuskript-Gotisch",
+    "abbreviation": "mg",
+    "family": "Blackletter",
+    "designer": "Wolfgang Hopyl",
+    "year": "1514",
+    "rank": "59",
+    "spacers": 0
+  },
+  { 
+    "name": "Breitkopf Fraktur",
+    "abbreviation": "bf",
+    "family": "Blackletter",
+    "designer": "Johann G.I. Breitkopf",
+    "year": "1793",
+    "rank": "67",
+    "spacers": 0
+  },
+  { 
+    "name": "Fette Fraktur",
+    "abbreviation": "ff",
+    "family": "Blackletter",
+    "designer": "Johann C. Bauer",
+    "year": "1850",
+    "rank": "82",
+    "spacers": 0
+  },
+  { 
+    "name": "Wilhelm Klingspor Gotisch",
+    "abbreviation": "wg",
+    "family": "Blackletter",
+    "designer": "Rudolf Koch",
+    "year": "1925",
+    "rank": "85",
+    "spacers": 0
+  },
+  { 
+    "name": "Weiss Rundgotisch",
+    "abbreviation": "wr",
+    "family": "Blackletter",
+    "designer": "Emil Rudolf Weiss",
+    "year": "1936",
+    "rank": "86",
+    "spacers": 0
+  },
+  { 
+    "name": "Fette Deutsche Schrift",
+    "abbreviation": "fs",
+    "family": "Blackletter",
+    "designer": "Rudolf Koch",
+    "year": "1910",
+    "rank": "93",
+    "spacers": 0
+  },
+  { 
+    "name": "Zapfino",
+    "abbreviation": "z",
+    "family": "Script",
+    "designer": "Hermann Zapf",
+    "year": "1998",
+    "rank": "51",
+    "spacers": 0
+  },
+  { 
+    "name": "Mistral",
+    "abbreviation": "mi",
+    "family": "Script",
+    "designer": "Roger Excoffon",
+    "year": "1953",
+    "rank": "69",
+    "spacers": 0
+  },
+  { 
+    "name": "Hands",
+    "abbreviation": "ha",
+    "family": "Script",
+    "designer": "LettError",
+    "year": "1991",
+    "rank": "70",
+    "spacers": 0
+  },
+  { 
+    "name": "Snell Roundhand",
+    "abbreviation": "sn",
+    "family": "Script",
+    "designer": "Matthew Carter",
+    "year": "1966",
+    "rank": "77",
+    "spacers": 0
+  },
+  { 
+    "name": "St. Augustine Civilit&eacute;",
+    "abbreviation": "ac",
+    "family": "Script",
+    "designer": "Robert Granjon",
+    "year": "1652",
+    "rank": "81",
+    "spacers": 0
+  },
+  { 
+    "name": "Bickham Script",
+    "abbreviation": "bi",
+    "family": "Script",
+    "designer": "Richard Lipton",
+    "year": "1997",
+    "rank": "83",
+    "spacers": 0
+  },
+  { 
+    "name": "Uncial",
+    "abbreviation": "un",
+    "family": "Script",
+    "designer": "Victor Hammer",
+    "year": "1923",
+    "rank": "95",
+    "spacers": 0
+  },
+  { 
+    "name": "Beowulf",
+    "abbreviation": "bo",
+    "family": "Script",
+    "designer": "Peter Baker",
+    "year": "1996",
+    "rank": "98",
+    "spacers": 0
   }
 ]
 }

@@ -325,16 +325,16 @@ a {
 // -----------------------------
 
 // Colors for each type class
-$ss-grotesk:  #ffa952;
-$ss-humanist: #a4d768;
-$ss-geo:      #f3ca66;
-$sr-didone:   #c3afe5;
-$sr-ss:       #60b0e6;
-$sr-realist:  #fd94ab;
-$sr-garalde:  #b65519;
-$sr-slab:     #5a8e23;
-$gl:          #a07d0c;
-$ss-display:  #796692;
+$sans-serif-grotesk:  #ffa952;
+$sans-serif-humanist: #a4d768;
+$sans-serif-geometric:      #f3ca66;
+$serif-didone:   #c3afe5;
+$serif-sans-serif:       #60b0e6;
+$serif-realist:  #fd94ab;
+$serif-garalde:  #b65519;
+$serif-slab:     #5a8e23;
+$glyphic-inscriptional:          #a07d0c;
+$sans-serif-display:  #796692;
 $blackletter: #005194;
 $script:      #72263d;
 
@@ -354,21 +354,21 @@ $r-blackletter: $radius 0 0 0;
 $r-script: $radius;
 
 $type-family-list:
-  ss-grotesk $ss-grotesk $r-grotesk,
-  ss-humanist $ss-humanist $r-humanist,
-  ss-geo $ss-geo $r-geo,
-  sr-didone $sr-didone $r-didone,
-  sr-ss $sr-ss $r-ss,
-  sr-realist $sr-realist $r-realist,
-  sr-garalde $sr-garalde $r-garalde,
-  sr-slab $sr-slab $r-slab,
-  gl-inscription $gl $r-gl,
-  ss-display $ss-display $r-display,
+  sans-serif-grotesk $sans-serif-grotesk $r-grotesk,
+  sans-serif-humanist $sans-serif-humanist $r-humanist,
+  sans-serif-geometric $sans-serif-geometric $r-geo,
+  serif-didone $serif-didone $r-didone,
+  serif-sans-serif $serif-sans-serif $r-ss,
+  serif-realist $serif-realist $r-realist,
+  serif-garalde $serif-garalde $r-garalde,
+  serif-slab $serif-slab $r-slab,
+  glyphic-inscriptional $glyphic-inscriptional $r-gl,
+  sans-serif-display $sans-serif-display $r-display,
   blackletter $blackletter $r-blackletter,
   script $script $r-script;
 
 @each $type in $type-family-list {
-  .#{nth($type, 1)} {
+  li[data-family="#{nth($type, 1)}"] {
     transition: border 0.18s ease-out;
     border-radius: nth($type, 3);
     &:hover {
