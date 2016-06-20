@@ -50,24 +50,49 @@
   <script>
     $( document ).ready(function() {
 
-      $.getJSON(
-       './js/typefaces.json', {},
-       function (typefaceData, textStatus, jqXHr) {
+      $.getJSON('./js/typefaces.json', {}, function (typefaceData, textStatus, jqXHr) {
          $.get('templates/typeface-table.mustache.html',
          function (template, textStatus, jqXhr) {
           
           typefaceData.lower = function () {
-              return function (text, render) {
-                text = render(text).replace(/\é/g,"e");
-                return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
-              }
-            };
+            return function (text, render) {
+              text = render(text).replace(/\é/g,"e");
+              return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
+            }
+          };
 
            var typefaceTableHtml = Mustache.render(template, typefaceData);
            $('#main').append(typefaceTableHtml);
          });
        });
 
+      var showMetaFullScreen = function(event) {
+          var target = event.target;
+
+        $.get('templates/typeface-meta.mustache.html',
+        function (template, textStatus, jqXhr) {
+
+          var typefaceData = {
+            name: $(target).data('title'),
+            abbreviation: $(target).textContent,
+            rank: $(target).data('rank'),
+            family: $(target).data('family'),
+            designer: $(target).data('designer'),
+            year: $(target).data('year')
+          }
+         
+          var typefaceMetaHtml = Mustache.render(template, typefaceData);
+          $('.typeface-meta-fullscreen').html(typefaceMetaHtml);
+        });
+
+        $('.typeface-meta-fullscreen').toggleClass('is-active');
+      };
+
+      $(document).on("click", "li.typeface", showMetaFullScreen);
+
+      $(document).on("click", ".modal__close", function(){
+        $('.modal-container').removeClass('is-active');
+      })
     });
     
   </script>

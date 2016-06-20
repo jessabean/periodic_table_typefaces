@@ -1,16 +1,19 @@
-{{#typefaces}}
-    <div class="media">
-      <div class="media__figure">
-        <div class="card">
-          <span class="rank">{{rank}}</span>
-          <i class="{{abbreviation}}"></i>
-          <span class="title">{{name}}</span>
-        </div>
-      </div>
-      <div class="media__body">
-        <span class="family">{{family}}</span>
-        <span class="designer">{{designer}}</span>
-        <span class="year">{{year}}</span>
+<div class="modal">
+  <div class="modal__actions">
+    <button class="modal__close" type="button"><i class="ico ico-close"></i><span class="visually-hidden">close</span></button>
+  </div>
+  <div class="media">
+    <div class="media__figure">
+      <div class="card">
+        <span class="rank">{{rank}}</span>
+        <i class="{{abbreviation}}"></i>
+        <span class="title">{{name}}</span>
       </div>
     </div>
-{{/typefaces}}
+    <div class="media__body">
+      <span class="family">{{family}}</span>
+      <span class="designer">{{designer}}</span>
+      <span class="year">{{year}}</span>
+    </div>
+  </div>
+</div>
