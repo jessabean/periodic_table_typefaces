@@ -483,7 +483,8 @@ uncial,
 beowulf;
 
 @each $typeface in $typeface-list {
-  li[data-bg=#{$typeface}] {
+  li[data-bg=#{$typeface}],
+  i.#{$typeface} {
     background-image: url('../img/#{$typeface}.svg');
     background-position: center center;
     background-repeat: no-repeat;

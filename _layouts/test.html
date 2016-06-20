@@ -80,6 +80,13 @@
             designer: $(target).data('designer'),
             year: $(target).data('year')
           }
+
+          typefaceData.lower = function () {
+            return function (text, render) {
+              text = render(text).replace(/\é/g,"e");
+              return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
+            }
+          };
          
           var typefaceMetaHtml = Mustache.render(template, typefaceData);
           $('.typeface-meta-fullscreen').html(typefaceMetaHtml);
