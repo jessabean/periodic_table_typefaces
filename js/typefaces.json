@@ -2,7 +2,7 @@
   { 
     "name": "Helvetica",
     "abbreviation": "h",
-    "family": "San-Serif Grotesk",
+    "family": "Sans-Serif Grotesk",
     "designer": "Max Miedienger",
     "year": "1957",
     "rank": "1",
@@ -11,7 +11,7 @@
   { 
     "name": "Futura",
     "abbreviation": "f",
-    "family": "San-Serif Geometric",
+    "family": "Sans-Serif Geometric",
     "designer": "Paul Renner",
     "year": "1927",
     "rank": "2",
@@ -20,7 +20,7 @@
   { 
     "name": "Univers",
     "abbreviation": "u",
-    "family": "San-Serif Grotesk",
+    "family": "Sans-Serif Grotesk",
     "designer": "Adrian Frutiger",
     "year": "1954",
     "rank": "4",
@@ -83,7 +83,7 @@
   { 
     "name": "Avant Garde",
     "abbreviation": "ag",
-    "family": "San-Serif Geometric",
+    "family": "Sans-Serif Geometric",
     "designer": "Herb Lubalin",
     "year": "1968",
     "rank": "22",
@@ -164,7 +164,7 @@
   { 
     "name": "Eurostile",
     "abbreviation": "eu",
-    "family": "San-Serif Geometric",
+    "family": "Sans-Serif Geometric",
     "designer": "Aldo Novarese",
     "year": "1962",
     "rank": "47",
@@ -234,7 +234,7 @@
     "spacers": 0
   },
   { 
-    "name": "Trinit&eacute;",
+    "name": "Trinité",
     "abbreviation": "tr",
     "family": "Serif Realist",
     "designer": "Bram de Does",
@@ -668,7 +668,7 @@
   { 
     "name": "OCR",
     "abbreviation": "oc",
-    "family": "San-Serif Display",
+    "family": "Sans-Serif Display",
     "designer": "American Type Founders",
     "year": "1965",
     "rank": "24",
@@ -677,7 +677,7 @@
   { 
     "name": "Chicago",
     "abbreviation": "ci",
-    "family": "San-Serif Display",
+    "family": "Sans-Serif Display",
     "designer": "Susan Kare",
     "year": "1984",
     "rank": "45",
@@ -686,7 +686,7 @@
   { 
     "name": "Peignot",
     "abbreviation": "p",
-    "family": "San-Serif Display",
+    "family": "Sans-Serif Display",
     "designer": "A.M. Cassandre",
     "year": "1937",
     "rank": "46",
@@ -695,7 +695,7 @@
   { 
     "name": "Oakland",
     "abbreviation": "oa",
-    "family": "San-Serif Display",
+    "family": "Sans-Serif Display",
     "designer": "Zuzana Licko",
     "year": "1985",
     "rank": "92",
@@ -704,7 +704,7 @@
   { 
     "name": "Blur",
     "abbreviation": "bl",
-    "family": "San-Serif Display",
+    "family": "Sans-Serif Display",
     "designer": "Neville Brody",
     "year": "1992",
     "rank": "97",
@@ -864,7 +864,7 @@
     "spacers": 0
   },
   { 
-    "name": "St. Augustine Civilit&eacute;",
+    "name": "St. Augustine Civilité",
     "abbreviation": "ac",
     "family": "Script",
     "designer": "Robert Granjon",

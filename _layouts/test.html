@@ -58,7 +58,8 @@
           
           typefaceData.lower = function () {
               return function (text, render) {
-               return render(text).replace(/\s+/g, '-').toLowerCase();
+                text = render(text).replace(/\é/g,"e");
+                return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
               }
             };
 
