@@ -1,30 +1,18 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
-var cp          = require('child_process');
 var prefix      = require('gulp-autoprefixer');
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
-gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-        .on('close', done);
-});
-
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
-});
-
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass'], function() {
     browserSync({
         server: {
-            baseDir: '_site'
+            baseDir: './'
         }
     });
+});
+
+gulp.task('browser-reload', function() {
+  browserSync.reload();
 });
 
 gulp.task('sass', function () {
@@ -48,7 +36,7 @@ gulp.task('express', function() {
 
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html'], ['browser-reload']);
 });
 
 
