@@ -1,5 +1,107 @@
----
-layout: test
-title: Periodic Table of Typefaces
----
+<!doctype html>
+<html class="no-js"> 
 
+<head>
+  <title>Periodic Table of Typefaces</title>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="content" />
+  <meta name="keywords" content="tags" />
+
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="vendor/css/normalize.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="typeface-meta-fullscreen modal-container"></div>
+    <header role="banner" id="page_header">
+      <hgroup>
+        <h1>Periodic Table <em>of</em> Typefaces</h1>
+        <h2><span>Popular, Influential, &amp; Notorious</span></h2>
+      </hgroup>
+    </header>
+    <div id="main" role="main"> 
+      
+    </div>
+  </div>
+
+    <footer role="contentinfo" id="page_footer">
+      <div class="container">
+        <p>Based on Squidspot's <a href="http://squidspot.com/Periodic_Table_of_Typefaces.html">Periodic Table of Typefaces</a></p>
+
+        <address>
+          Made with enthusiasm by <a href="http://jessica-eldredge.com">jessabean</a>
+          <ul>
+            <li class="ico-github"><a href="http://github.com/jessabean">Github</a></li>
+            <li class="ico-twitter"><a href="http://twitter.com/jessabean">Twitter</a></li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+
+  <script src="vendor/js/jquery_1.9.1-min.js"></script>
+  <script src="vendor/js/mustache.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+
+      $.getJSON('./js/typefaces.json', {}, function (typefaceData, textStatus, jqXHr) {
+         $.get('templates/typeface-table.mustache.html',
+         function (template, textStatus, jqXhr) {
+          
+          typefaceData.lower = function () {
+            return function (text, render) {
+              text = render(text).replace(/\é/g,"e");
+              return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
+            }
+          };
+
+           var typefaceTableHtml = Mustache.render(template, typefaceData);
+           $('#main').append(typefaceTableHtml);
+         });
+       });
+
+      var showMetaFullScreen = function(event) {
+          var target = event.target;
+
+        $.get('templates/typeface-meta.mustache.html',
+        function (template, textStatus, jqXhr) {
+
+          var typefaceData = {
+            name: $(target).data('title'),
+            abbreviation: $(target).textContent,
+            rank: $(target).data('rank'),
+            family: $(target).data('family'),
+            designer: $(target).data('designer'),
+            year: $(target).data('year')
+          }
+
+          typefaceData.lower = function () {
+            return function (text, render) {
+              text = render(text).replace(/\é/g,"e");
+              return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
+            }
+          };
+         
+          var typefaceMetaHtml = Mustache.render(template, typefaceData);
+          $('.typeface-meta-fullscreen').html(typefaceMetaHtml);
+        });
+
+        $('.typeface-meta-fullscreen').toggleClass('is-active');
+      };
+
+      $(document).on("click", "li.typeface", showMetaFullScreen);
+
+      $(document).on("click", ".modal__close", function(){
+        $('.modal-container').removeClass('is-active');
+      })
+    });
+    
+  </script>
+
+</body>

@@ -39,10 +39,17 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task('express', function() {
+  var express = require('express');
+  var app = express();
+  app.use(express.static(__dirname));
+  app.listen(4000, '0.0.0.0');
+});
+
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html'], ['jekyll-rebuild']);
 });
 
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['express', 'browser-sync', 'watch']);
