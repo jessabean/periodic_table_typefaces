@@ -36,7 +36,7 @@ gulp.task('express', function() {
 
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html'], ['browser-reload']);
+    gulp.watch(['*.html', '_layouts/*.html', 'templates/*.html'], ['browser-reload']);
 });
 
 
