@@ -121,28 +121,26 @@ b {
   position: relative; }
 
 .typefaces li {
-  width: 5%;
-  border: 2px solid #222222;
-  color: transparent;
+  width: 5.05556%;
   display: inline-block;
   float: left;
   height: 64px;
   list-style: none;
   margin-left: 0.5%;
-  margin-bottom: 0.5%;
-  overflow: hidden;
-  text-align: center;
-  text-indent: 100%;
-  text-transform: capitalize;
-  white-space: nowrap; }
-  .typefaces li.script {
-    margin-top: 3%; }
+  margin-bottom: 0.5%; }
   .typefaces li.spacer {
     border: none;
     pointer-events: none; }
 
 .typeface {
-  position: relative; }
+  position: relative;
+  border: 2px solid #222222;
+  color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  text-indent: 100%;
+  text-transform: capitalize; }
   .typeface:after {
     content: "";
     display: block;
@@ -155,6 +153,8 @@ b {
     background: url(/img/icons/expand.svg) center center no-repeat;
     background-size: 32px 32px;
     opacity: 0; }
+  .typeface[data-family="Script"] {
+    margin-top: 3%; }
 
 .typeface:hover {
   cursor: pointer;

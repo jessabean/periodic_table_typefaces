@@ -42,7 +42,7 @@
   }
 }
 
-// The List
+// The Table
 // -----------------------------
 
 .typefaces {
@@ -52,26 +52,18 @@
   position: relative;
 }
 
-$typeface-width: 5%;
+$table-columns: 18;
+$typeface-width: ((100%) / $table-columns) - $gutter;
 
 .typefaces li {
   width: $typeface-width;
-  border: 2px solid $gray;
-  color: transparent;
   display: inline-block;
   float: left;
   height: 64px;
   list-style: none;
   margin-left: $gutter;
   margin-bottom: $gutter;
-  overflow: hidden;
-  text-align: center;
-  text-indent: 100%;
-  text-transform: capitalize;
-  white-space: nowrap;
-  &.script {
-    margin-top: $gutter*6;
-  }
+
   &.spacer {
     border: none;
     pointer-events: none;
@@ -80,6 +72,13 @@ $typeface-width: 5%;
 
 .typeface {
   position: relative;
+  border: 2px solid $gray;
+  color: transparent;  
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  text-indent: 100%;
+  text-transform: capitalize;
 
   &:after {
     content: "";
@@ -93,6 +92,10 @@ $typeface-width: 5%;
     background: url(/img/icons/expand.svg) center center no-repeat;
     background-size: 32px 32px;
     opacity: 0;
+  }
+
+  &[data-family="Script"] {
+    margin-top: $gutter * 6;
   }
 }
 
