@@ -121,7 +121,7 @@ b {
   position: relative; }
 
 .typefaces li {
-  width: 5.05556%;
+  width: 5%;
   border: 2px solid #222222;
   color: transparent;
   display: inline-block;
@@ -137,7 +137,7 @@ b {
   white-space: nowrap; }
   .typefaces li.script {
     margin-top: 3%; }
-  .typefaces li.space {
+  .typefaces li.spacer {
     border: none;
     pointer-events: none; }
 
@@ -152,7 +152,7 @@ b {
     left: 0;
     top: 0;
     z-index: 1;
-    background: url(../img/icons/expand.svg) center center no-repeat;
+    background: url(/img/icons/expand.svg) center center no-repeat;
     background-size: 32px 32px;
     opacity: 0; }
 

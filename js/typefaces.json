@@ -753,7 +753,7 @@
     "designer": "Johannes Gutenberg",
     "year": "1450",
     "rank": "33",
-    "spacers": 10
+    "spacers": 0
   },
   { 
     "name": "Gebetbuch Fraktur",
@@ -825,7 +825,7 @@
     "designer": "Rudolf Koch",
     "year": "1910",
     "rank": "93",
-    "spacers": 0
+    "spacers": 10
   },
   { 
     "name": "Zapfino",

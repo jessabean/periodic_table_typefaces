@@ -60,8 +60,22 @@ var buildPeriodicTable = function() {
         };
       };
 
-       var typefaceTableHtml = Mustache.render(template, typefaceData);
-       $('#main').prepend(typefaceTableHtml);
+      var typefaceTableHtml = Mustache.render(template, typefaceData);
+      $('#main').prepend(typefaceTableHtml);
+
+      $(".typeface").each(function(){
+        var spacerCount = parseInt($(this).attr('data-spacer'));
+        var spacers = [];
+
+        if(spacerCount > 0) {
+          for(i=0; i<spacerCount; i++) {
+            spacers.push('<li class="spacer"></li>');
+            $(this).after(spacers.join('\n'));
+            spacers = [];
+          }
+        }
+      });
+
      });
    });
 };
