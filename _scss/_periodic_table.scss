@@ -151,14 +151,14 @@ $typeface-width: ((100%) / $table-columns) - $gutter;
 }
 
 .typeface-meta-fullscreen {
-  background: #005194;
-  color: white;
+  background: white;
+  color: $gray;
 
   .card {
     color: $gray;
     width: 240px;
-    background: $base_bg;
-    border: 1px solid darken($base_bg, 10);
+    background: transparent;
+    border: 1px solid $gray;
     height: 100%;
     padding: 50px 0;
     position: relative;
@@ -183,14 +183,16 @@ $typeface-width: ((100%) / $table-columns) - $gutter;
     position: absolute;
       top: 10px;
       right: 10px;
+    @include font-size(2.4);
   }
 
   .family {
+    @include font-size(1.8);
     font-style: italic;
   }
 
   .title {
-    @include font-size(1.8);
+    @include font-size(2.4);
     display: block;
     text-align: center;
   }
@@ -347,6 +349,9 @@ $families: (
 @each $label, $map in $families {
   .#{$label} {
     background-color: map-get($map, basecolor);
+  }
+
+  .typeface.#{$label} {
     border-radius: map-get($map, radius);
   }
 };

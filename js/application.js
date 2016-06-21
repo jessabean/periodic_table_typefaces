@@ -22,7 +22,7 @@ var showMeta = function(event){
 // Build the typeface meta modal and toggle visibility
 var showMetaFullScreen = function(event) {
   var target = event.target; // li.typeface
-
+  var family = $(target).data('family').replace(/\é/g,"e").replace(/(\.\s)|\s/g, '-').toLowerCase();
   $.get('templates/typeface-meta.mustache.html',
     function (template, textStatus, jqXhr) {
 
@@ -46,7 +46,7 @@ var showMetaFullScreen = function(event) {
     $('.typeface-meta-fullscreen').html(typefaceMetaHtml);
   });
 
-  $('.typeface-meta-fullscreen').toggleClass('is-active');
+  $('.typeface-meta-fullscreen').toggleClass('is-active ' + family);
 };
 
 // Build the typefaces table from JSON file
