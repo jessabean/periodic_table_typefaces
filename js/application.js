@@ -32,14 +32,14 @@ var showMetaFullScreen = function(event) {
         rank: $(target).data('rank'),
         family: $(target).data('family'),
         designer: $(target).data('designer'),
-        year: $(target).data('year')
-      }
+        year: $(target).data('year'),
+      };
 
       typefaceData.lower = function () {
         return function (text, render) {
           text = render(text).replace(/\é/g,"e");
           return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
-        }
+        };
       };
    
     var typefaceMetaHtml = Mustache.render(template, typefaceData);
@@ -49,23 +49,25 @@ var showMetaFullScreen = function(event) {
   $('.typeface-meta-fullscreen').toggleClass('is-active');
 };
 
-$( document ).ready(function() {
-  // Build the typefaces table from JSON file
+// Build the typefaces table from JSON file
+var buildPeriodicTable = function() {
   $.getJSON('./js/typefaces.json', {}, function (typefaceData, textStatus, jqXHr) {
-     $.get('templates/typeface-table.mustache.html',
-     function (template, textStatus, jqXhr) {
-      
+     $.get('templates/typeface-table.mustache.html', function (template, textStatus, jqXhr) {
       typefaceData.lower = function () {
         return function (text, render) {
           text = render(text).replace(/\é/g,"e");
           return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
-        }
+        };
       };
 
        var typefaceTableHtml = Mustache.render(template, typefaceData);
        $('#main').prepend(typefaceTableHtml);
      });
    });
+};
+
+$( document ).ready(function() {
+  buildPeriodicTable();
 
   $("li.typeface").hover(showMeta);  
 
@@ -74,5 +76,4 @@ $( document ).ready(function() {
   $(document).on("click", ".modal__close", function(){
     $('.modal-container').removeClass('is-active');
   })
-
 });
