@@ -30,7 +30,7 @@
     line-height: 26px;
 
     span {
-      background: $base_bg url(../img/bg/texture.jpg);
+      background: #F5F3ED;
       line-height: 26px;
       padding: 0 20px;
       position: relative;
@@ -72,7 +72,7 @@ $typeface-width: ((100%) / $table-columns) - $gutter;
 
 .typeface {
   position: relative;
-  border: 2px solid $gray;
+  border: 2px solid #d8d7d2;
   color: transparent;  
   overflow: hidden;
   white-space: nowrap;
@@ -328,24 +328,25 @@ a {
 
 // Styling the elements
 // -----------------------------
+
 $families: (
-  sans-serif-grotesk:     (basecolor: #ffa952, radius: 0 5px 5px 5px),
-  sans-serif-humanist:    (basecolor: #a4d768, radius: 5px 0 5px 0),
-  sans-serif-geometric:   (basecolor: #f3ca66, radius: 5px 0 5px 5px),
-  serif-didone:           (basecolor: #c3afe5, radius: 5px 5px 5px 0),
-  serif-sans-serif:       (basecolor: #60b0e6, radius: 0 5px 0 0),
-  serif-realist:          (basecolor: #fd94ab, radius: 0 5px 0 5px),
-  serif-garalde:          (basecolor: #b65519, radius: 5px 5px 0 5px),
-  serif-slab:             (basecolor: #5a8e23, radius: 0 0 0 5px),
-  glyphic-inscriptional:  (basecolor: #a07d0c, radius: 0),
-  sans-serif-display:     (basecolor: #796692, radius: 0 0 5px 0),
-  blackletter:            (basecolor: #005194, radius: 5px 0 0 0),
-  script:                 (basecolor: #72263d, radius: 5px),
+  sans-serif-grotesk:     (basecolor: #c8e9f9, radius: 0 5px 5px 5px),
+  sans-serif-humanist:    (basecolor: #fddfdf, radius: 5px 0 5px 0),
+  sans-serif-geometric:   (basecolor: #e4defd, radius: 5px 0 5px 5px),
+  serif-didone:           (basecolor: #c3b9f5, radius: 5px 5px 5px 0),
+  serif-sans-serif:       (basecolor: #96c9e3, radius: 0 5px 0 0),
+  serif-realist:          (basecolor: #e9fdde, radius: 0 5px 0 5px),
+  serif-garalde:          (basecolor: #fcf7de, radius: 5px 5px 0 5px),
+  slab-serif:             (basecolor: #b8f4bd, radius: 0 0 0 5px),
+  glyphic-inscriptional:  (basecolor: #d0a6ee, radius: 0),
+  sans-serif-display:     (basecolor: #f4bab9, radius: 0 0 5px 0),
+  blackletter:            (basecolor: #b8f3ee, radius: 5px 0 0 0),
+  script:                 (basecolor: #89d9d3, radius: 5px),
 );
 
 @each $label, $map in $families {
   .#{$label} {
-    border-color: map-get($map, basecolor);
+    background-color: map-get($map, basecolor);
     border-radius: map-get($map, radius);
   }
 };

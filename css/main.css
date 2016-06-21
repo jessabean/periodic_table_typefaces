@@ -6,7 +6,7 @@ body {
   background: #222222; }
 
 .wrapper {
-  background: #dfdbcf url(../img/bg/texture.jpg);
+  background: #F5F3ED;
   margin-bottom: 150px;
   padding: 40px 0;
   position: relative;
@@ -46,12 +46,12 @@ h2 {
   font-size: 2.6rem; }
 
 a {
-  color: #60b0e6;
+  color: #96c9e3;
   text-decoration: none; }
   a:active, a:visited {
-    color: #60b0e6; }
+    color: #96c9e3; }
   a:hover {
-    color: #b65519; }
+    color: #eda8a7; }
 
 em {
   font-style: italic; }
@@ -106,7 +106,7 @@ b {
     font-weight: 400px;
     line-height: 26px; }
     #page_header h2 span {
-      background: #dfdbcf url(../img/bg/texture.jpg);
+      background: #F5F3ED;
       line-height: 26px;
       padding: 0 20px;
       position: relative;
@@ -134,7 +134,7 @@ b {
 
 .typeface {
   position: relative;
-  border: 2px solid #222222;
+  border: 2px solid #d8d7d2;
   color: transparent;
   overflow: hidden;
   white-space: nowrap;
@@ -333,51 +333,51 @@ address {
   background-size: 42px 36px; }
 
 .sans-serif-grotesk {
-  border-color: #ffa952;
+  background-color: #c8e9f9;
   border-radius: 0 5px 5px 5px; }
 
 .sans-serif-humanist {
-  border-color: #a4d768;
+  background-color: #fddfdf;
   border-radius: 5px 0 5px 0; }
 
 .sans-serif-geometric {
-  border-color: #f3ca66;
+  background-color: #e4defd;
   border-radius: 5px 0 5px 5px; }
 
 .serif-didone {
-  border-color: #c3afe5;
+  background-color: #c3b9f5;
   border-radius: 5px 5px 5px 0; }
 
 .serif-sans-serif {
-  border-color: #60b0e6;
+  background-color: #96c9e3;
   border-radius: 0 5px 0 0; }
 
 .serif-realist {
-  border-color: #fd94ab;
+  background-color: #e9fdde;
   border-radius: 0 5px 0 5px; }
 
 .serif-garalde {
-  border-color: #b65519;
+  background-color: #fcf7de;
   border-radius: 5px 5px 0 5px; }
 
-.serif-slab {
-  border-color: #5a8e23;
+.slab-serif {
+  background-color: #b8f4bd;
   border-radius: 0 0 0 5px; }
 
 .glyphic-inscriptional {
-  border-color: #a07d0c;
+  background-color: #d0a6ee;
   border-radius: 0; }
 
 .sans-serif-display {
-  border-color: #796692;
+  background-color: #f4bab9;
   border-radius: 0 0 5px 0; }
 
 .blackletter {
-  border-color: #005194;
+  background-color: #b8f3ee;
   border-radius: 5px 0 0 0; }
 
 .script {
-  border-color: #72263d;
+  background-color: #89d9d3;
   border-radius: 5px; }
 
 li[data-bg=helvetica],
