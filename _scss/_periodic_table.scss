@@ -373,7 +373,7 @@ $type-family-list:
   script $script $r-script;
 
 @each $type in $type-family-list {
-  li[data-family="#{nth($type, 1)}"] {
+  li.#{nth($type, 1)} {
     transition: border 0.18s ease-out;
     border-radius: nth($type, 3);
     &:hover {

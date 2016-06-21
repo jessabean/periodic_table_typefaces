@@ -332,76 +332,76 @@ address {
   background-repeat: no-repeat;
   background-size: 42px 36px; }
 
-li[data-family="sans-serif-grotesk"] {
+li.sans-serif-grotesk {
   transition: border 0.18s ease-out;
   border-radius: 0 5px 5px 5px; }
-  li[data-family="sans-serif-grotesk"]:hover {
+  li.sans-serif-grotesk:hover {
     border: 2px solid #ffa952; }
 
-li[data-family="sans-serif-humanist"] {
+li.sans-serif-humanist {
   transition: border 0.18s ease-out;
   border-radius: 5px 0 5px 0; }
-  li[data-family="sans-serif-humanist"]:hover {
+  li.sans-serif-humanist:hover {
     border: 2px solid #a4d768; }
 
-li[data-family="sans-serif-geometric"] {
+li.sans-serif-geometric {
   transition: border 0.18s ease-out;
   border-radius: 5px 0 5px 5px; }
-  li[data-family="sans-serif-geometric"]:hover {
+  li.sans-serif-geometric:hover {
     border: 2px solid #f3ca66; }
 
-li[data-family="serif-didone"] {
+li.serif-didone {
   transition: border 0.18s ease-out;
   border-radius: 5px 5px 5px 0; }
-  li[data-family="serif-didone"]:hover {
+  li.serif-didone:hover {
     border: 2px solid #c3afe5; }
 
-li[data-family="serif-sans-serif"] {
+li.serif-sans-serif {
   transition: border 0.18s ease-out;
   border-radius: 0 5px 0 0; }
-  li[data-family="serif-sans-serif"]:hover {
+  li.serif-sans-serif:hover {
     border: 2px solid #60b0e6; }
 
-li[data-family="serif-realist"] {
+li.serif-realist {
   transition: border 0.18s ease-out;
   border-radius: 0 5px 0 5px; }
-  li[data-family="serif-realist"]:hover {
+  li.serif-realist:hover {
     border: 2px solid #fd94ab; }
 
-li[data-family="serif-garalde"] {
+li.serif-garalde {
   transition: border 0.18s ease-out;
   border-radius: 5px 5px 0 5px; }
-  li[data-family="serif-garalde"]:hover {
+  li.serif-garalde:hover {
     border: 2px solid #b65519; }
 
-li[data-family="serif-slab"] {
+li.serif-slab {
   transition: border 0.18s ease-out;
   border-radius: 0 0 0 5px; }
-  li[data-family="serif-slab"]:hover {
+  li.serif-slab:hover {
     border: 2px solid #5a8e23; }
 
-li[data-family="glyphic-inscriptional"] {
+li.glyphic-inscriptional {
   transition: border 0.18s ease-out;
   border-radius: 0; }
-  li[data-family="glyphic-inscriptional"]:hover {
+  li.glyphic-inscriptional:hover {
     border: 2px solid #a07d0c; }
 
-li[data-family="sans-serif-display"] {
+li.sans-serif-display {
   transition: border 0.18s ease-out;
   border-radius: 0 0 5px 0; }
-  li[data-family="sans-serif-display"]:hover {
+  li.sans-serif-display:hover {
     border: 2px solid #796692; }
 
-li[data-family="blackletter"] {
+li.blackletter {
   transition: border 0.18s ease-out;
   border-radius: 5px 0 0 0; }
-  li[data-family="blackletter"]:hover {
+  li.blackletter:hover {
     border: 2px solid #005194; }
 
-li[data-family="script"] {
+li.script {
   transition: border 0.18s ease-out;
   border-radius: 5px; }
-  li[data-family="script"]:hover {
+  li.script:hover {
     border: 2px solid #72263d; }
 
 li[data-bg=helvetica],
