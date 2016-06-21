@@ -328,60 +328,27 @@ a {
 
 // Styling the elements
 // -----------------------------
+$families: (
+  sans-serif-grotesk:     (basecolor: #ffa952, radius: 0 5px 5px 5px),
+  sans-serif-humanist:    (basecolor: #a4d768, radius: 5px 0 5px 0),
+  sans-serif-geometric:   (basecolor: #f3ca66, radius: 5px 0 5px 5px),
+  serif-didone:           (basecolor: #c3afe5, radius: 5px 5px 5px 0),
+  serif-sans-serif:       (basecolor: #60b0e6, radius: 0 5px 0 0),
+  serif-realist:          (basecolor: #fd94ab, radius: 0 5px 0 5px),
+  serif-garalde:          (basecolor: #b65519, radius: 5px 5px 0 5px),
+  serif-slab:             (basecolor: #5a8e23, radius: 0 0 0 5px),
+  glyphic-inscriptional:  (basecolor: #a07d0c, radius: 0),
+  sans-serif-display:     (basecolor: #796692, radius: 0 0 5px 0),
+  blackletter:            (basecolor: #005194, radius: 5px 0 0 0),
+  script:                 (basecolor: #72263d, radius: 5px),
+);
 
-// Colors for each type class
-$sans-serif-grotesk:  #ffa952;
-$sans-serif-humanist: #a4d768;
-$sans-serif-geometric:      #f3ca66;
-$serif-didone:   #c3afe5;
-$serif-sans-serif:       #60b0e6;
-$serif-realist:  #fd94ab;
-$serif-garalde:  #b65519;
-$serif-slab:     #5a8e23;
-$glyphic-inscriptional:          #a07d0c;
-$sans-serif-display:  #796692;
-$blackletter: #005194;
-$script:      #72263d;
-
-// Border Radius
-$radius: 5px;
-$r-grotesk: 0 $radius $radius $radius;
-$r-humanist: $radius 0 $radius 0;
-$r-geo: $radius 0 $radius $radius;
-$r-didone: $radius $radius $radius 0;
-$r-ss: 0 $radius 0 0;
-$r-realist: 0 $radius 0 $radius;
-$r-garalde: $radius $radius 0 $radius;
-$r-slab: 0 0 0 $radius;
-$r-gl: 0;
-$r-display: 0 0 $radius 0;
-$r-blackletter: $radius 0 0 0;
-$r-script: $radius;
-
-$type-family-list:
-  sans-serif-grotesk $sans-serif-grotesk $r-grotesk,
-  sans-serif-humanist $sans-serif-humanist $r-humanist,
-  sans-serif-geometric $sans-serif-geometric $r-geo,
-  serif-didone $serif-didone $r-didone,
-  serif-sans-serif $serif-sans-serif $r-ss,
-  serif-realist $serif-realist $r-realist,
-  serif-garalde $serif-garalde $r-garalde,
-  serif-slab $serif-slab $r-slab,
-  glyphic-inscriptional $glyphic-inscriptional $r-gl,
-  sans-serif-display $sans-serif-display $r-display,
-  blackletter $blackletter $r-blackletter,
-  script $script $r-script;
-
-@each $type in $type-family-list {
-  li.#{nth($type, 1)} {
-    transition: border 0.18s ease-out;
-    border-radius: nth($type, 3);
-    &:hover {
-      border: 2px solid nth($type, 2);
-    }
+@each $label, $map in $families {
+  .#{$label} {
+    border-color: map-get($map, basecolor);
+    border-radius: map-get($map, radius);
   }
-
-}
+};
 
 // Typeface list for background images
 

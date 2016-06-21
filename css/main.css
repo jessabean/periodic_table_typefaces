@@ -332,77 +332,53 @@ address {
   background-repeat: no-repeat;
   background-size: 42px 36px; }
 
-li.sans-serif-grotesk {
-  transition: border 0.18s ease-out;
+.sans-serif-grotesk {
+  border-color: #ffa952;
   border-radius: 0 5px 5px 5px; }
-  li.sans-serif-grotesk:hover {
-    border: 2px solid #ffa952; }
 
-li.sans-serif-humanist {
-  transition: border 0.18s ease-out;
+.sans-serif-humanist {
+  border-color: #a4d768;
   border-radius: 5px 0 5px 0; }
-  li.sans-serif-humanist:hover {
-    border: 2px solid #a4d768; }
 
-li.sans-serif-geometric {
-  transition: border 0.18s ease-out;
+.sans-serif-geometric {
+  border-color: #f3ca66;
   border-radius: 5px 0 5px 5px; }
-  li.sans-serif-geometric:hover {
-    border: 2px solid #f3ca66; }
 
-li.serif-didone {
-  transition: border 0.18s ease-out;
+.serif-didone {
+  border-color: #c3afe5;
   border-radius: 5px 5px 5px 0; }
-  li.serif-didone:hover {
-    border: 2px solid #c3afe5; }
 
-li.serif-sans-serif {
-  transition: border 0.18s ease-out;
+.serif-sans-serif {
+  border-color: #60b0e6;
   border-radius: 0 5px 0 0; }
-  li.serif-sans-serif:hover {
-    border: 2px solid #60b0e6; }
 
-li.serif-realist {
-  transition: border 0.18s ease-out;
+.serif-realist {
+  border-color: #fd94ab;
   border-radius: 0 5px 0 5px; }
-  li.serif-realist:hover {
-    border: 2px solid #fd94ab; }
 
-li.serif-garalde {
-  transition: border 0.18s ease-out;
+.serif-garalde {
+  border-color: #b65519;
   border-radius: 5px 5px 0 5px; }
-  li.serif-garalde:hover {
-    border: 2px solid #b65519; }
 
-li.serif-slab {
-  transition: border 0.18s ease-out;
+.serif-slab {
+  border-color: #5a8e23;
   border-radius: 0 0 0 5px; }
-  li.serif-slab:hover {
-    border: 2px solid #5a8e23; }
 
-li.glyphic-inscriptional {
-  transition: border 0.18s ease-out;
+.glyphic-inscriptional {
+  border-color: #a07d0c;
   border-radius: 0; }
-  li.glyphic-inscriptional:hover {
-    border: 2px solid #a07d0c; }
 
-li.sans-serif-display {
-  transition: border 0.18s ease-out;
+.sans-serif-display {
+  border-color: #796692;
   border-radius: 0 0 5px 0; }
-  li.sans-serif-display:hover {
-    border: 2px solid #796692; }
 
-li.blackletter {
-  transition: border 0.18s ease-out;
+.blackletter {
+  border-color: #005194;
   border-radius: 5px 0 0 0; }
-  li.blackletter:hover {
-    border: 2px solid #005194; }
 
-li.script {
-  transition: border 0.18s ease-out;
+.script {
+  border-color: #72263d;
   border-radius: 5px; }
-  li.script:hover {
-    border: 2px solid #72263d; }
 
 li[data-bg=helvetica],
 i.helvetica {
