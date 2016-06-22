@@ -1,0 +1,12 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon--typeface {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

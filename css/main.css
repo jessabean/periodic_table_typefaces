@@ -84,6 +84,18 @@ b {
   padding: 0;
   border: 0; }
 
+.icon {
+  display: inline-block;
+  vertical-align: middle; }
+
+.icon--typeface {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
 .card {
   position: relative;
   width: 180px;
@@ -122,6 +134,56 @@ b {
     font-size: 24px;
     font-size: 2.4rem; }
 
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.media__figure {
+  margin-right: 2rem; }
+
+.media__body {
+  -ms-flex: auto;
+      flex: auto; }
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease-out; }
+  .modal-container.is-active {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 1000; }
+
+.modal {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 100px; }
+
+.modal__actions {
+  color: white;
+  text-align: right; }
+
+.modal__close {
+  background: transparent;
+  border: none;
+  outline: none; }
+
+.ico-close {
+  display: inline-block;
+  background: url("../img/icons/close.svg") center center no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px; }
+
 #page_header {
   margin-bottom: 40px;
   text-align: center; }
@@ -146,18 +208,6 @@ b {
       padding: 0 20px;
       position: relative;
       top: -13px; }
-
-.icon {
-  display: inline-block;
-  vertical-align: middle; }
-
-.icon--typeface {
-  height: 40px;
-  width: 40px;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
 
 .typefaces {
   margin-left: -0.5%;
@@ -232,56 +282,6 @@ b {
   .typeface-meta-fullscreen .title {
     display: block;
     text-align: center; }
-
-.media {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start; }
-
-.media__figure {
-  margin-right: 2rem; }
-
-.media__body {
-  -ms-flex: auto;
-      flex: auto; }
-
-.modal-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  transition: opacity 0.1s ease-out; }
-  .modal-container.is-active {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    z-index: 1000; }
-
-.modal {
-  position: relative;
-  width: 700px;
-  margin: 0 auto;
-  padding-top: 100px; }
-
-.modal__actions {
-  color: white;
-  text-align: right; }
-
-.modal__close {
-  background: transparent;
-  border: none;
-  outline: none; }
-
-.ico-close {
-  display: inline-block;
-  background: url("../img/icons/close.svg") center center no-repeat;
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px; }
 
 #page_footer {
   font-size: 18px;

@@ -1,0 +1,12 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media__figure {
+  margin-right: 2rem;
+}
+
+.media__body {
+  flex: auto;
+}
