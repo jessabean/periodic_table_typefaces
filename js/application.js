@@ -1,22 +1,28 @@
-var showMeta = function(event){
+// Build the typeface card 
+var buildCard = function(event){
   target = event.target;
 
   var rank      = $(target).data('rank');
-  var bg        = $(target).data('bg');
   var name      = $(target).data('title');
-  var family    = $(target).data('family');
-  var designer  = $(target).data('designer');
-  var year      = $(target).data('year');
 
-  $('.typeface-meta').html(
-    '<div class="card">' +
-    '<span class="rank">' + rank + '</span>' +
-    '<i class="' + bg + '"></i>' +
-    '<span class="title">' + name + '</span>' +
-    '</div>'
-  );
+  $.get('templates/typeface-card.mustache.html',
+    function (template, textStatus, jqXhr) {
 
-  $('.typeface-meta').toggleClass('is-hidden');
+      var cardData = {
+        name: $(target).data('title'),
+        rank: $(target).data('rank')
+      };
+
+      cardData.lower = function () {
+        return function (text, render) {
+          text = render(text).replace(/\é/g,"e");
+          return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
+        };
+      };
+   
+    var typefaceCardHtml = Mustache.render(template, cardData);
+    $('.typeface-meta').html(typefaceCardHtml);
+  });
 };
 
 // Build the typeface meta modal and toggle visibility
@@ -83,7 +89,14 @@ var buildPeriodicTable = function() {
 $( document ).ready(function() {
   buildPeriodicTable();
 
-  $("li.typeface").hover(showMeta);  
+  $(document).on("mouseenter", "li.typeface", function(event){
+    buildCard(event);
+    $('.typeface-meta').removeClass('is-hidden');
+  });
+
+  $(document).on("mouseleave", "li.typeface", function(){
+    $('.typeface-meta').addClass('is-hidden');
+  });
 
   $(document).on("click", "li.typeface", showMetaFullScreen);
 
