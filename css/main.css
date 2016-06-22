@@ -11,9 +11,6 @@ body {
   padding: 40px 0;
   position: relative;
   z-index: 2; }
-  @media (-webkit-min-device-pixel-ratio: 2) {
-    .wrapper {
-      background: #dfdbcf url(../img/bg/texture@2X.jpg); } }
 
 #main,
 #page_header,
@@ -86,6 +83,44 @@ b {
   margin: -1px;
   padding: 0;
   border: 0; }
+
+.card {
+  position: relative;
+  width: 180px;
+  height: 100%;
+  padding: 50px 10px;
+  text-align: center;
+  border: 1px solid #222222;
+  background: transparent; }
+  .typeface-meta .card {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.card--large {
+  width: 240px; }
+
+.card__figure {
+  width: 100%;
+  height: 72px;
+  margin-bottom: 20px; }
+
+.card__rank {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  margin-bottom: 0; }
+  .card--large .card__rank {
+    font-size: 24px;
+    font-size: 2.4rem; }
+
+.card__title {
+  font-size: 18px;
+  font-size: 1.8rem; }
+  .card--large .card__title {
+    font-size: 24px;
+    font-size: 2.4rem; }
 
 #page_header {
   margin-bottom: 40px;
@@ -180,65 +215,21 @@ b {
   left: 0;
   top: 0;
   z-index: 2; }
-  .typeface-meta .card {
-    width: 38.38889%;
-    background: #dfdbcf;
-    border: 1px solid #cbc4b0;
-    height: 100%;
-    padding-top: 50px;
-    position: absolute;
-    left: 0;
-    top: 0; }
-  .typeface-meta .rank {
-    display: block;
-    margin-bottom: 0;
-    position: absolute;
-    top: 10px;
-    right: 10px; }
-  .typeface-meta i {
-    background-size: auto 100%;
-    display: block;
-    margin: 10px auto;
-    height: 64px; }
 
 .typeface-meta-fullscreen {
   background: white;
   color: #222222; }
-  .typeface-meta-fullscreen .card {
-    color: #222222;
-    width: 240px;
-    background: transparent;
-    border: 1px solid #222222;
-    height: 100%;
-    padding: 50px 10px;
-    position: relative;
-    text-align: center; }
-    .typeface-meta-fullscreen .card .icon--typeface {
-      width: 100%;
-      height: 72px;
-      margin: 10px 0;
-      -webkit-transform: translateY(0%);
-              transform: translateY(0%); }
   .typeface-meta-fullscreen .rank,
   .typeface-meta-fullscreen .family,
   .typeface-meta-fullscreen .designer,
   .typeface-meta-fullscreen .year {
     display: block;
     margin-bottom: 10px; }
-  .typeface-meta-fullscreen .rank {
-    margin-bottom: 0;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    font-size: 2.4rem; }
   .typeface-meta-fullscreen .family {
     font-size: 18px;
     font-size: 1.8rem;
     font-style: italic; }
   .typeface-meta-fullscreen .title {
-    font-size: 24px;
-    font-size: 2.4rem;
     display: block;
     text-align: center; }
 

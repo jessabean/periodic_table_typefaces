@@ -24,9 +24,6 @@ body {
   padding: 40px 0;
   position: relative;
   z-index: 2;
-  @include respond-to(-webkit-min-device-pixel-ratio, 2) {
-    background: $base_bg url(../img/bg/texture@2X.jpg);
-  }
 }
 
 #main,
