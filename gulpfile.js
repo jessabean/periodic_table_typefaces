@@ -35,7 +35,7 @@ gulp.task('express', function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch('_scss/**/*.scss', ['sass']);
     gulp.watch(['js/*.js', 'js/*.json'], ['browser-reload']);
     gulp.watch(['*.html', '_layouts/*.html', 'templates/*.html'], ['browser-reload']);
 });
