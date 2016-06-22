@@ -28,7 +28,8 @@ var buildCard = function(event){
 // Build the typeface meta modal and toggle visibility
 var showMetaFullScreen = function(event) {
   var target = event.target; // li.typeface
-  var family = $(target).data('family').replace(/\é/g,"e").replace(/(\.\s)|\s/g, '-').toLowerCase();
+  var metaFamily = $(target).data('family').replace(/\é/g,"e").replace(/(\.\s)|\s/g, '-').toLowerCase();
+
   $.get('templates/typeface-meta.mustache.html',
     function (template, textStatus, jqXhr) {
 
@@ -52,7 +53,7 @@ var showMetaFullScreen = function(event) {
     $('.typeface-meta-fullscreen').html(typefaceMetaHtml);
   });
 
-  $('.typeface-meta-fullscreen').toggleClass('is-active ' + family);
+  $('.typeface-meta-fullscreen').addClass('is-active ' + metaFamily);
 };
 
 // Build the typefaces table from JSON file
@@ -101,6 +102,6 @@ $( document ).ready(function() {
   $(document).on("click", "li.typeface", showMetaFullScreen);
 
   $(document).on("click", ".modal__close", function(){
-    $('.modal-container').removeClass('is-active');
+    $('.modal-container').removeClass().addClass('typeface-meta-fullscreen modal-container');
   })
 });
