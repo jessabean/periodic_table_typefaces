@@ -6,7 +6,9 @@
     <div class="media__figure">
       <div class="card">
         <span class="rank">{{rank}}</span>
-        <i class="{{#lower}}{{name}}{{/lower}}"></i>
+        <svg class="icon icon--typeface">
+          <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
+        </svg>
         <span class="title">{{name}}</span>
       </div>
     </div>

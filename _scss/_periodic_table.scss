@@ -35,11 +35,24 @@
       padding: 0 20px;
       position: relative;
       top: -13px;
-      @include respond-to(-webkit-min-device-pixel-ratio, 2) {
-        background: $base_bg url(../img/bg/texture@2X.jpg);
-      }
     }
   }
+}
+
+// Icons
+// -----------------------------
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon--typeface {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 // The Table
@@ -73,11 +86,8 @@ $typeface-width: ((100%) / $table-columns) - $gutter;
 .typeface {
   position: relative;
   border: 2px solid #d8d7d2;
-  color: transparent;  
-  overflow: hidden;
-  white-space: nowrap;
+  color: $gray;  
   text-align: center;
-  text-indent: 100%;
   text-transform: capitalize;
 
   &:after {
@@ -94,6 +104,7 @@ $typeface-width: ((100%) / $table-columns) - $gutter;
     opacity: 0;
   }
 
+  // Need extra margin for the special ones on the bottom row
   &[data-family="Script"] {
     margin-top: $gutter * 6;
   }
@@ -162,12 +173,13 @@ $typeface-width: ((100%) / $table-columns) - $gutter;
     height: 100%;
     padding: 50px 0;
     position: relative;
+    text-align: center;
 
-    i {
-      background-size: auto 100%;
-      display: block;
-      margin: 10px auto;
-      height: 64px;
+    .icon--typeface {
+      width: 72px;
+      height: 72px;
+      margin: 10px 0;
+      transform: translateY(0%);
     }
   }
   .rank,
@@ -355,116 +367,3 @@ $families: (
     border-radius: map-get($map, radius);
   }
 };
-
-// Typeface list for background images
-
-$typeface-list:
-helvetica,
-futura,
-univers,
-akzidenz-grotesk,
-gill-sans,
-optima,
-frutiger,
-syntax,
-meta,
-avant-garde,
-bodoni,
-bell-gothic,
-franklin-gothic,
-myriad,
-formata,
-prokyon,
-metro,
-antique-olive,
-eurostile,
-didot,
-interstate,
-din,
-stone,
-thesis,
-rotis,
-times,
-trinite,
-baskerville,
-garamond,
-caslon,
-minion,
-lucida,
-fleischmann,
-dax,
-today-sans,
-info,
-gotham,
-walbaum,
-letter-gothic,
-avenir,
-officina,
-scala,
-base,
-arnhem,
-lexicon,
-scotch-roman,
-sabon,
-bembo,
-jenson,
-griffo-classico,
-garamond-classico,
-cheltenham,
-amplitude,
-bell-centennial,
-neutraface,
-matrix,
-trade-gothic,
-news-gothic,
-fedra,
-quadraat,
-clarendon,
-rockwell,
-ionic-no-5,
-swift,
-joanna,
-aldine,
-kis,
-palatino,
-cooper-black,
-spectrum,
-proforma,
-copperplate-gothic,
-trajan,
-century,
-ocr,
-chicago,
-peignot,
-oakland,
-blur,
-egyptian,
-courier,
-memphis,
-caecilia,
-gutenberg-b-42,
-gebetbuch-fraktur,
-unger-fraktur,
-manuskript-gotisch,
-breitkopf-fraktur,
-fette-deutsche-schrift,
-wilhelm-klingspor-gotisch,
-weiss-rundgotisch,
-fette-fraktur,
-zapfino,
-mistral,
-hands,
-snell-roundhand,
-st-augustine-civilite,
-bickham-script,
-uncial,
-beowulf;
-
-@each $typeface in $typeface-list {
-  li[data-bg=#{$typeface}],
-  i.#{$typeface} {
-    background-image: url('../img/#{$typeface}.svg');
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-}

@@ -8,7 +8,14 @@
       data-year="{{year}}"
       data-rank="{{rank}}"
       data-spacer="{{spacers}}">
-    {{abbreviation}}
+
+    <svg class="icon icon--typeface">
+      <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
+    </svg>
+
+    <span class="visually-hidden">
+      {{abbreviation}}
+    </span>
   </li>
 {{/typefaces}}
 </ol>
