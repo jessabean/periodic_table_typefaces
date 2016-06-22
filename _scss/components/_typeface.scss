@@ -1,0 +1,58 @@
+.typefaces-container {
+  @extend %clearfix;
+  margin-left: -$gutter;
+  padding: 0;
+  position: relative;
+
+  li {
+    @include span(1, $max_columns);
+    display: inline-block;
+    float: left;
+    height: 64px;
+    list-style: none;
+    margin-left: $gutter;
+    margin-bottom: $gutter;
+
+    &.spacer {
+      border: none;
+      pointer-events: none;
+    }
+  }
+}
+
+.typeface {
+  position: relative;
+  border: 2px solid #d8d7d2;
+  color: $gray;  
+  text-align: center;
+  text-transform: capitalize;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: url(/img/icons/expand.svg) center center no-repeat;
+    background-size: 32px 32px;
+    opacity: 0;
+  }
+
+  // Need extra margin for the special ones on the bottom row
+  &[data-family="Script"] {
+    margin-top: $gutter * 6;
+  }
+}
+
+.typeface:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.5);
+  transition: background-color 0.2s ease-out;
+
+  &:after {
+    opacity: 1;
+  }
+}
