@@ -1,0 +1,33 @@
+#page_header {
+  margin-bottom: 40px;
+  text-align: center;
+
+  h1 {
+    font-family: $display_font;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    em {
+      font-family: $base_font;
+      font-style: italic;
+      font-weight: 400;
+      text-transform: lowercase;
+    }
+  }
+
+  h2 {
+    border-top: 2px solid $gray;
+    font-family: $base_font;
+    font-style: italic;
+    font-weight: 400px;
+    line-height: 26px;
+
+    span {
+      background: #F5F3ED;
+      line-height: 26px;
+      padding: 0 20px;
+      position: relative;
+      top: -13px;
+    }
+  }
+}

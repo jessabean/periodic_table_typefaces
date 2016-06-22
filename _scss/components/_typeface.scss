@@ -56,3 +56,69 @@
     opacity: 1;
   }
 }
+
+// Styling the elements
+// -----------------------------
+
+$families: (
+  sans-serif-grotesk:     (basecolor: #c8e9f9, radius: 0 5px 5px 5px),
+  sans-serif-humanist:    (basecolor: #fddfdf, radius: 5px 0 5px 0),
+  sans-serif-geometric:   (basecolor: #e4defd, radius: 5px 0 5px 5px),
+  serif-didone:           (basecolor: #c3b9f5, radius: 5px 5px 5px 0),
+  serif-sans-serif:       (basecolor: #96c9e3, radius: 0 5px 0 0),
+  serif-realist:          (basecolor: #e9fdde, radius: 0 5px 0 5px),
+  serif-garalde:          (basecolor: #fcf7de, radius: 5px 5px 0 5px),
+  slab-serif:             (basecolor: #b8f4bd, radius: 0 0 0 5px),
+  glyphic-inscriptional:  (basecolor: #d0a6ee, radius: 0),
+  sans-serif-display:     (basecolor: #f4bab9, radius: 0 0 5px 0),
+  blackletter:            (basecolor: #b8f3ee, radius: 5px 0 0 0),
+  script:                 (basecolor: #89d9d3, radius: 5px),
+);
+
+@each $label, $map in $families {
+  .#{$label},
+  .typeface-meta-fullscreen.#{$label} {
+    background-color: map-get($map, basecolor);
+  }
+
+  .typeface.#{$label} {
+    border-radius: map-get($map, radius);
+  }
+};
+
+// TODO: refactor these into better classes
+// -----------------------------
+.typeface-meta {
+  @include font-size(1.8);
+  @include span(7, $max_columns);
+  height: ($one_col * 6)+$gutter;
+  margin-left: ($one_col * 3)+$gutter;
+  padding-left: ($one_col*3)+$gutter;
+  position: absolute;
+    left: 0;
+    top: 0;
+  z-index: 2;
+}
+
+.typeface-meta-fullscreen {
+  background: white;
+  color: $gray;
+
+  .family,
+  .designer,
+  .year {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .family {
+    @include font-size(1.8);
+    font-style: italic;
+  }
+
+  .title {
+    
+    display: block;
+    text-align: center;
+  }
+}

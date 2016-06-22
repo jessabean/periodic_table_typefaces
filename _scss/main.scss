@@ -1,16 +1,16 @@
 
 // Variables and Mixins
-@import "globals";
+@import "base/globals";
 
 // Base Styles
 @import "base/base";
 @import "base/type";
 @import "base/misc";
 
-@import "components/typeface";
+@import "components/page-header";
+@import "components/page-footer";
 @import "components/icon";
 @import "components/card";
 @import "components/media";
 @import "components/modal";
-
-@import "periodic_table";
+@import "components/typeface";

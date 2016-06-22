@@ -1,0 +1,64 @@
+#page_footer {
+  @include font-size(1.8);
+  color: $white;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  position: fixed;
+  z-index: 1;
+}
+
+p,
+address {
+  @include span(9, $max_columns);
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+address {
+  font-style: normal;
+  text-align: right;
+
+  ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    line-height: 36px;
+    margin-left: 10px;
+  }
+}
+
+a {
+  .ico-twitter &,
+  .ico-github & {
+    @extend %hide-text;
+    display: block;
+    opacity: 0.5;
+    height: 52px;
+    width: 52px;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .ico-twitter & {
+    background-image: url(../img/social/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 51px 36px;
+  }
+
+  .ico-github & {
+    background-image: url(../img/social/github.svg);
+    background-repeat: no-repeat;
+    background-size: 42px 36px;
+  }
+}

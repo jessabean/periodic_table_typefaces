@@ -12,14 +12,6 @@ body {
   font-weight: 400;
 }
 
-p {
-}
-
-
-// ======================
-// Headings
-// ======================
-
 h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
@@ -33,18 +25,12 @@ h2 {
 }
 
 h3 {
+  @include font-size(2.0);
 }
 
 h4 {
+  @include font-size(1.8);
 }
-
-h5 { 
-}
-
-
-// ======================
-// Base Link Styles
-// ======================
 
 a {
   color: $link_color;
@@ -60,11 +46,6 @@ a {
   }
 }
 
-
-// ======================
-// Emphasis
-// ======================
-
 em {
   font-style: italic;
 }
@@ -72,45 +53,4 @@ em {
 strong,
 b {
   font-weight: bold;
-}
-
-.meta,
-.muted {
-}
-
-// ======================
-// Blockquotes
-// ======================
-
-blockquote {
-
-  &:before {
-  }
-
-  p,
-  cite {
-  }
-
-  p {
-
-  }
-
-  cite {
-
-  }
-}
-
-
-// ======================
-// Small Text
-// ======================
-
-.small {
-}
-
-// ======================
-// Intro/Lead Text
-// ======================
-
-.intro {
 }
