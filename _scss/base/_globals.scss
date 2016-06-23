@@ -43,6 +43,8 @@ $one_col: (100%) / $max_columns;
 
 // Media Queries
 // -----------------------------
+$break-medium: 830px;
+
 @mixin respond-to($val, $query) {
   @media ($val: $query) {
     @content
