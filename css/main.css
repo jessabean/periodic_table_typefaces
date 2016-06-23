@@ -82,6 +82,7 @@ b {
   .typefaces-container:after {
     clear: both; }
 
+.visually-hidden,
 .typeface__title {
   position: absolute;
   overflow: hidden;
