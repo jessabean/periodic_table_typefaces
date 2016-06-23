@@ -25,11 +25,19 @@
   margin: 0 auto;
   max-width: 700px;
   height: auto;
+
+  @include respond-to(max-width, $break-medium){
+    width: 90%;
+  }
 }
 
 .modal__actions {
   color: white;
   text-align: right;
+
+  @include respond-to(max-width, $break-medium){
+    margin-bottom: 20px;
+  }
 }
 
 .modal__close {

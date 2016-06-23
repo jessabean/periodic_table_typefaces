@@ -1,12 +1,30 @@
 .media {
   display: flex;
   align-items: flex-start;
+
+  @include respond-to(max-width, $break-medium){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .media__figure {
-  margin-right: 2rem;
+  margin-right: 40px;
+
+  @include respond-to(max-width, $break-medium){
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .media__body {
   flex: auto;
+
+  @include respond-to(max-width, $break-medium){
+    width: 100%;
+  }
 }
