@@ -1,30 +1,3 @@
-// Build the typeface card 
-var buildCard = function(event){
-  target = event.target;
-
-  var rank      = $(target).data('rank');
-  var name      = $(target).data('title');
-
-  $.get('templates/typeface-card.mustache.html',
-    function (template, textStatus, jqXhr) {
-
-      var cardData = {
-        name: $(target).data('title'),
-        rank: $(target).data('rank')
-      };
-
-      cardData.lower = function () {
-        return function (text, render) {
-          text = render(text).replace(/\é/g,"e");
-          return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
-        };
-      };
-   
-    var typefaceCardHtml = Mustache.render(template, cardData);
-    $('.typeface-meta').html(typefaceCardHtml);
-  });
-};
-
 // Build the typeface meta modal and toggle visibility
 var showMetaFullScreen = function(event) {
   var target = event.target; // li.typeface
@@ -89,15 +62,6 @@ var buildPeriodicTable = function() {
 
 $( document ).ready(function() {
   buildPeriodicTable();
-
-  $(document).on("mouseenter", "li.typeface", function(event){
-    buildCard(event);
-    $('.typeface-meta').removeClass('is-hidden');
-  });
-
-  $(document).on("mouseleave", "li.typeface", function(){
-    $('.typeface-meta').addClass('is-hidden');
-  });
 
   $(document).on("click", "li.typeface", showMetaFullScreen);
 

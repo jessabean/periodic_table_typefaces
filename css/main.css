@@ -562,21 +562,6 @@ address {
     .typeface.script {
       border-radius: 0; } }
 
-.typeface-meta {
-  font-size: 18px;
-  font-size: 1.8rem;
-  width: 38.38889%;
-  height: 33.83333%;
-  margin-left: 17.16667%;
-  padding-left: 17.16667%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2; }
-  @media (max-width: 830px) {
-    .typeface-meta {
-      display: none; } }
-
 .typeface-meta-fullscreen {
   background: white;
   color: #222222; }
