@@ -200,6 +200,10 @@ address {
     top: 0;
     left: 0; }
 
+.card--mini {
+  width: 100px;
+  padding: 30px 10px; }
+
 .card--large {
   width: 240px; }
 
@@ -207,6 +211,9 @@ address {
   width: 100%;
   height: 72px;
   margin-bottom: 20px; }
+  .card--mini .card__figure {
+    height: 36px;
+    margin-bottom: 10px; }
 
 .card__rank {
   position: absolute;
@@ -315,18 +322,17 @@ address {
 
 .tooltip__content {
   position: absolute;
-  width: 200px;
+  width: 320px;
   left: 50%;
-  margin: 0 0 20px -100px;
+  margin: 0 0 20px -160px;
   bottom: 100%;
   text-align: left;
-  font-size: 0.765em;
-  line-height: 1.4;
-  box-shadow: -5px -5px 15px rgba(48, 54, 61, 0.2);
-  background: #2a3035;
+  background: #222222;
   opacity: 0;
   cursor: default;
   pointer-events: none;
+  -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s; }
   .tooltip__content:after {
@@ -339,7 +345,7 @@ address {
     position: absolute;
     pointer-events: none;
     border-color: transparent;
-    border-top-color: #2a3035;
+    border-top-color: #222222;
     border-width: 10px;
     margin-left: -10px; }
   .tooltip:hover .tooltip__content {
@@ -352,16 +358,20 @@ address {
   background-color: #F5F3ED;
   display: block;
   float: left;
-  margin-right: 1em;
+  margin-right: 20px;
   position: relative; }
 
 .tooltip__text {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 20px 20px 20px 0;
+  color: #fff; }
+
+.tooltip__title {
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1.35;
   display: block;
-  padding: 1.31em 1.21em 1.21em 0;
-  color: #fff; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 .typefaces-container {
   margin-left: -0.5%;

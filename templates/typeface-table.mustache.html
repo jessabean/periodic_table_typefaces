@@ -9,31 +9,19 @@
       data-rank="{{rank}}"
       data-spacer="{{spacers}}">
     
-      <svg class="icon icon--typeface">
-        <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
-      </svg>
-
-      <span class="typeface__title">
-        {{name}}
-      </span>
+    <svg class="icon icon--typeface">
+      <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
+    </svg>
     <span class="tooltip__content">
-      <div class="tooltip__figure card card--mini">
+      <div class="tooltip__figure {{#lower}}{{family}}{{/lower}} card card--mini">
         <span class="card__rank">{{rank}}</span>
         <svg class="icon card__figure">
           <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
         </svg>
       </div>
       <span class="tooltip__text">
-        <dl>
-          <dt>Name</dt>
-          <dd>{{name}}</dd>
-          <dt>Designer</dt>
-          <dd>{{designer}}</dd>
-          <dt>Family</dt>
-          <dd>{{family}}</dd>
-          <dt>Year</dt>
-          <dd>{{year}}</dd>
-        </dl>
+        <span class="tooltip__title">{{name}}</span>
+        {{family}}
       </span>
     </span>
   </li>

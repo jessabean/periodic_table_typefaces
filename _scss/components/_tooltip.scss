@@ -1,14 +1,10 @@
-$tooltip_size: 200px;
+$tooltip_size: 320px;
 $tooltip_offset: -($tooltip_size/2);
 
 .tooltip {
   display: inline;
   position: relative;
   z-index: map-get($zindex, tooltip);
-}
-
-.tooltip__trigger {
-
 }
 
 .tooltip__content {
@@ -19,13 +15,11 @@ $tooltip_offset: -($tooltip_size/2);
   margin: 0 0 20px $tooltip_offset;
   bottom: 100%;
   text-align: left;
-  font-size: 0.765em;
-  line-height: 1.4;
-  box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
-  background: #2a3035;
+  background: $gray;
   opacity: 0;
   cursor: default;
   pointer-events: none;
+  transform: translate3d(0,-10px,0);
   transition: opacity 0.3s, transform 0.3s;
 
   &:after {
@@ -38,7 +32,7 @@ $tooltip_offset: -($tooltip_size/2);
     position: absolute;
     pointer-events: none;
     border-color: transparent;
-    border-top-color: #2a3035;
+    border-top-color: $gray;
     border-width: 10px;
     margin-left: -10px;
   }
@@ -54,14 +48,18 @@ $tooltip_offset: -($tooltip_size/2);
   background-color: $base_bg;
   display: block;
   float: left;
-  margin-right: 1em;
+  margin-right: 20px;
   position: relative;
 }
 
 .tooltip__text {
-  @include font-size(1.8);
-  line-height: 1.35;
-  display: block;
-  padding: 1.31em 1.21em 1.21em 0;
+  @include font-size(1.4);
+  padding: 20px 20px 20px 0;
   color: #fff;
+}
+
+.tooltip__title {
+  @include font-size(1.8);
+  display: block;
+  font-family: $display_font;
 }
