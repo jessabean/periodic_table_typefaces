@@ -21,6 +21,17 @@ $base_font: 'Vollkorn', Georgia, Times, serif;
 $display_font: 'Open Sans', Helvetica, Arial, sans-serif;
 
 // =============================
+// z-index
+// =============================
+$zindex: (
+  modal     : 9000, 
+  overlay   : 8000,
+  tooltip   : 7000,
+  header    : 6000,
+  footer    : 5000
+);
+
+// =============================
 // Mixins
 // =============================
 

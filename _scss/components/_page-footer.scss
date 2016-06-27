@@ -7,7 +7,7 @@
   right: 0;
   padding-top: 20px;
   position: fixed;
-  z-index: 1;
+  z-index: map-get($zindex, footer);
 }
 
 p,

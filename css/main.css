@@ -10,7 +10,7 @@ body {
   margin-bottom: 150px;
   padding: 40px 0;
   position: relative;
-  z-index: 2; }
+  z-index: 6000; }
 
 #main,
 #page_header,
@@ -128,7 +128,7 @@ b {
   right: 0;
   padding-top: 20px;
   position: fixed;
-  z-index: 1; }
+  z-index: 5000; }
 
 p,
 address {
@@ -277,7 +277,7 @@ address {
     opacity: 1;
     -webkit-transform: scale(1);
             transform: scale(1);
-    z-index: 1000; }
+    z-index: 9000; }
 
 .modal {
   width: 50%;
@@ -406,7 +406,6 @@ address {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
     background: url(/img/icons/expand.svg) center center no-repeat;
     background-size: 32px 32px;
     opacity: 0; }

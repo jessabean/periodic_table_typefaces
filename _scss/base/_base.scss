@@ -23,7 +23,7 @@ body {
   margin-bottom: 150px;
   padding: 40px 0;
   position: relative;
-  z-index: 2;
+  z-index: map-get($zindex, header);
 }
 
 #main,

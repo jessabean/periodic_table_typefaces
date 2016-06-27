@@ -4,7 +4,7 @@ $tooltip_offset: -($tooltip_size/2);
 .tooltip {
   display: inline;
   position: relative;
-  z-index: 7000;
+  z-index: map-get($zindex, tooltip);
 }
 
 .tooltip__trigger {
