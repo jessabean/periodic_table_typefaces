@@ -42,6 +42,10 @@ $tooltip_offset: -($tooltip_size/2);
     opacity: 1;
     transform: translate3d(0,0,0) rotate3d(0,0,0,0);
   }
+
+  .touchevents & {
+    display: none;
+  }
 }
 
 .tooltip__figure {

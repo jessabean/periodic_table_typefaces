@@ -353,6 +353,8 @@ address {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
             transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0); }
+  .touchevents .tooltip__content {
+    display: none; }
 
 .tooltip__figure {
   background-color: #F5F3ED;
@@ -419,6 +421,8 @@ address {
     background: url(/img/icons/expand.svg) center center no-repeat;
     background-size: 32px 32px;
     opacity: 0; }
+  .touchevents .typeface:after {
+    display: none; }
   .typeface[data-family="Script"] {
     margin-top: 3%; }
     @media (max-width: 830px) {

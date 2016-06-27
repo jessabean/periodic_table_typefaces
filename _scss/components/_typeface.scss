@@ -53,6 +53,10 @@
     opacity: 0;
   }
 
+  .touchevents &:after {
+    display: none;
+  }
+
   // Need extra margin for the special ones on the bottom row
   &[data-family="Script"] {
     margin-top: $gutter * 6;
