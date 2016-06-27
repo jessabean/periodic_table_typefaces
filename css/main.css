@@ -74,12 +74,12 @@ b {
   white-space: nowrap;
   overflow: hidden; }
 
-.typefaces-container {
+.tooltip__content, .typefaces-container {
   zoom: 1; }
-  .typefaces-container:before, .typefaces-container:after {
+  .tooltip__content:before, .typefaces-container:before, .tooltip__content:after, .typefaces-container:after {
     content: "";
     display: table; }
-  .typefaces-container:after {
+  .tooltip__content:after, .typefaces-container:after {
     clear: both; }
 
 .visually-hidden,
@@ -307,6 +307,61 @@ address {
   background-size: 24px 24px;
   width: 24px;
   height: 24px; }
+
+.tooltip {
+  display: inline;
+  position: relative;
+  z-index: 7000; }
+
+.tooltip__content {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin: 0 0 20px -100px;
+  bottom: 100%;
+  text-align: left;
+  font-size: 0.765em;
+  line-height: 1.4;
+  box-shadow: -5px -5px 15px rgba(48, 54, 61, 0.2);
+  background: #2a3035;
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s; }
+  .tooltip__content:after {
+    content: '';
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #2a3035;
+    border-width: 10px;
+    margin-left: -10px; }
+  .tooltip:hover .tooltip__content {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+            transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0); }
+
+.tooltip__figure {
+  background-color: #F5F3ED;
+  display: block;
+  float: left;
+  margin-right: 1em;
+  position: relative; }
+
+.tooltip__text {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.35;
+  display: block;
+  padding: 1.31em 1.21em 1.21em 0;
+  color: #fff; }
 
 .typefaces-container {
   margin-left: -0.5%;

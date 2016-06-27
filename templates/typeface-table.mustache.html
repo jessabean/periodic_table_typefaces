@@ -1,6 +1,6 @@
 <ol class="typefaces-container">
 {{#typefaces}}
-  <li class="typeface {{#lower}}{{family}}{{/lower}}"
+  <li class="typeface {{#lower}}{{family}}{{/lower}} tooltip js-tooltip"
       data-bg="{{#lower}}{{name}}{{/lower}}"
       data-family="{{family}}"
       data-title="{{name}}"
@@ -8,13 +8,33 @@
       data-year="{{year}}"
       data-rank="{{rank}}"
       data-spacer="{{spacers}}">
+    
+      <svg class="icon icon--typeface">
+        <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
+      </svg>
 
-    <svg class="icon icon--typeface">
-      <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
-    </svg>
-
-    <span class="typeface__title">
-      {{name}}
+      <span class="typeface__title">
+        {{name}}
+      </span>
+    <span class="tooltip__content">
+      <div class="tooltip__figure card card--mini">
+        <span class="card__rank">{{rank}}</span>
+        <svg class="icon card__figure">
+          <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
+        </svg>
+      </div>
+      <span class="tooltip__text">
+        <dl>
+          <dt>Name</dt>
+          <dd>{{name}}</dd>
+          <dt>Designer</dt>
+          <dd>{{designer}}</dd>
+          <dt>Family</dt>
+          <dd>{{family}}</dd>
+          <dt>Year</dt>
+          <dd>{{year}}</dd>
+        </dl>
+      </span>
     </span>
   </li>
 {{/typefaces}}
