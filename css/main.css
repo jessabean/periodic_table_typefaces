@@ -68,8 +68,8 @@ b {
 .is-hidden {
   display: none; }
 
-.ico-twitter a,
-.ico-github a {
+#page_footer .ico-twitter a,
+#page_footer .ico-github a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
@@ -130,46 +130,40 @@ b {
   padding-top: 20px;
   position: fixed;
   z-index: 5000; }
-
-p,
-address {
-  width: 49.5%;
-  display: inline-block;
-  margin: 0;
-  vertical-align: top; }
-
-address {
-  font-style: normal;
-  text-align: right; }
-  address ul {
-    list-style: none;
-    margin: 10px 0 0 0;
-    padding: 0; }
-  address li {
+  #page_footer p,
+  #page_footer address {
+    width: 49.5%;
     display: inline-block;
-    line-height: 36px;
-    margin-left: 10px; }
-
-.ico-twitter a,
-.ico-github a {
-  display: block;
-  opacity: 0.5;
-  height: 52px;
-  width: 52px;
-  transition: opacity 0.2s ease-in-out; }
-  .ico-twitter a:hover,
-  .ico-github a:hover {
-    opacity: 1; }
-
-.ico-twitter a {
-  background-image: url(../img/social/twitter.svg);
-  background-repeat: no-repeat;
-  background-size: 51px 36px; }
-
-.ico-github a {
-  background-image: url(../img/social/github.svg);
-  background-repeat: no-repeat;
-  background-size: 42px 36px; }
+    margin: 0;
+    vertical-align: top; }
+  #page_footer address {
+    font-style: normal;
+    text-align: right; }
+    #page_footer address ul {
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0; }
+    #page_footer address li {
+      display: inline-block;
+      line-height: 36px;
+      margin-left: 10px; }
+  #page_footer .ico-twitter a,
+  #page_footer .ico-github a {
+    background-repeat: no-repeat;
+    display: block;
+    opacity: 0.5;
+    height: 52px;
+    width: 52px;
+    transition: opacity 0.2s ease-in-out; }
+    #page_footer .ico-twitter a:hover,
+    #page_footer .ico-github a:hover {
+      opacity: 1; }
+  #page_footer .ico-twitter a {
+    background-image: url(../img/social/twitter.svg);
+    background-size: 51px 36px; }
+  #page_footer .ico-github a {
+    background-image: url(../img/social/github.svg);
+    background-size: 42px 36px; }
 
 .icon {
   display: inline-block;

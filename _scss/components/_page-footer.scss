@@ -8,37 +8,36 @@
   padding-top: 20px;
   position: fixed;
   z-index: map-get($zindex, footer);
-}
 
-p,
-address {
-  @include span(9, $max_columns);
-  display: inline-block;
-  margin: 0;
-  vertical-align: top;
-}
-
-address {
-  font-style: normal;
-  text-align: right;
-
-  ul {
-    list-style: none;
-    margin: 10px 0 0 0;
-    padding: 0;
-  }
-
-  li {
+  p,
+  address {
+    @include span(9, $max_columns);
     display: inline-block;
-    line-height: 36px;
-    margin-left: 10px;
+    margin: 0;
+    vertical-align: top;
   }
-}
 
-a {
-  .ico-twitter &,
-  .ico-github & {
+  address {
+    font-style: normal;
+    text-align: right;
+
+    ul {
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      line-height: 36px;
+      margin-left: 10px;
+    }
+  }
+
+  .ico-twitter a,
+  .ico-github a {
     @extend %hide-text;
+    background-repeat: no-repeat;
     display: block;
     opacity: 0.5;
     height: 52px;
@@ -49,16 +48,13 @@ a {
       opacity: 1;
     }
   }
-
-  .ico-twitter & {
+  .ico-twitter a {
     background-image: url(../img/social/twitter.svg);
-    background-repeat: no-repeat;
     background-size: 51px 36px;
   }
 
-  .ico-github & {
+  .ico-github a {
     background-image: url(../img/social/github.svg);
-    background-repeat: no-repeat;
     background-size: 42px 36px;
   }
 }
