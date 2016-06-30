@@ -3,7 +3,7 @@ var showMetaFullScreen = function(event) {
   event.preventDefault();
 
   var target      = event.target; // li.typeface a
-  var metaFamily  = $(target).data('family').replace(/\é/g,"e").replace(/(\.\s)|\s/g, '-').toLowerCase();
+  var metaFamily  = $(target).attr('data-family').toLowerCase().replace(/[^a-z0-9]/g,"-");
   var id          = $(target).attr('href');
   var content     = $('div'+id)[0].outerHTML;
       
