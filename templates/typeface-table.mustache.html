@@ -1,29 +1,53 @@
 <ol class="typefaces-container">
 {{#typefaces}}
-  <li class="typeface {{#lower}}{{family}}{{/lower}} tooltip js-tooltip"
+  <li class="typeface typeface--{{#lower}}{{family}}{{/lower}}"
       data-bg="{{#lower}}{{name}}{{/lower}}"
-      data-family="{{family}}"
       data-title="{{name}}"
+      data-family="{{family}}"
       data-designer="{{designer}}"
       data-year="{{year}}"
       data-rank="{{rank}}"
       data-spacer="{{spacers}}">
-    
-    <svg class="icon icon--typeface">
-      <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
-    </svg>
-    <span class="tooltip__content">
-      <div class="tooltip__figure {{#lower}}{{family}}{{/lower}} card card--mini">
+
+    <a href="#media-{{#lower}}{{name}}{{/lower}}" class="tooltip js-tooltip" data-family="{{family}}">
+      <svg class="icon icon--typeface">
+        <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
+      </svg>
+      <span class="tooltip__content">
+        <div class="tooltip__figure {{#lower}}{{family}}{{/lower}} card card--mini">
+          <span class="card__rank">{{rank}}</span>
+          <svg class="icon card__figure">
+            <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
+          </svg>
+        </div>
+        <span class="tooltip__text">
+          <span class="tooltip__title">{{name}}</span>
+          {{family}}
+        </span>
+      </span>
+    </a>
+  </li>
+{{/typefaces}}
+</ol>
+
+<div id="typeface__media">
+  {{#typefaces}}
+  <div class="media" id="media-{{#lower}}{{name}}{{/lower}}">
+    <div class="media__figure">
+      <div class="card card--large">
         <span class="card__rank">{{rank}}</span>
         <svg class="icon card__figure">
           <use xlink:href="img/typeface-data.svg#{{#lower}}{{name}}{{/lower}}"></use>
         </svg>
+        <span class="card__title">{{name}}</span>
       </div>
-      <span class="tooltip__text">
-        <span class="tooltip__title">{{name}}</span>
-        {{family}}
-      </span>
-    </span>
-  </li>
-{{/typefaces}}
-</ol>
+    </div>
+    <div class="media__body">
+      <span class="family">{{family}}</span>
+      <span class="designer">{{designer}}</span>
+      <span class="year">{{year}}</span>
+      <p>{{blurb}}</p>
+    </div>
+  </div>
+  {{/typefaces}}
+</div>

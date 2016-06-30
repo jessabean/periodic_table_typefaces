@@ -83,7 +83,8 @@ b {
     clear: both; }
 
 .visually-hidden,
-.typeface__title {
+.typeface__title,
+#typeface__media {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -410,19 +411,6 @@ address {
   color: #222222;
   text-align: center;
   text-transform: capitalize; }
-  .typeface:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url(/img/icons/expand.svg) center center no-repeat;
-    background-size: 32px 32px;
-    opacity: 0; }
-  .touchevents .typeface:after {
-    display: none; }
   .typeface[data-family="Script"] {
     margin-top: 3%; }
     @media (max-width: 830px) {
@@ -433,11 +421,33 @@ address {
       border-width: 1px; } }
 
 .typeface:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 0.2s ease-out; }
-  .typeface:hover:after {
+  cursor: pointer; }
+
+.typeface a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #222222; }
+  .typeface a:hover {
+    color: #222222;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s ease-out; }
+  .typeface a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(/img/icons/expand.svg) center center no-repeat;
+    background-size: 32px 32px;
+    opacity: 0; }
+  .typeface a:hover:after {
     opacity: 1; }
+  .touchevents .typeface a:after {
+    display: none; }
 
 @media (max-width: 830px) {
   .typeface__title {
@@ -455,125 +465,53 @@ address {
         flex: auto;
     text-align: left; } }
 
-.sans-serif-grotesk,
+.typeface--sans-serif-grotesk,
 .typeface-meta-fullscreen.sans-serif-grotesk {
   background-color: #c8e9f9; }
 
-.typeface.sans-serif-grotesk {
-  border-radius: 0 5px 5px 5px; }
-  @media (max-width: 830px) {
-    .typeface.sans-serif-grotesk {
-      border-radius: 0; } }
-
-.sans-serif-humanist,
+.typeface--sans-serif-humanist,
 .typeface-meta-fullscreen.sans-serif-humanist {
   background-color: #fddfdf; }
 
-.typeface.sans-serif-humanist {
-  border-radius: 5px 0 5px 0; }
-  @media (max-width: 830px) {
-    .typeface.sans-serif-humanist {
-      border-radius: 0; } }
-
-.sans-serif-geometric,
+.typeface--sans-serif-geometric,
 .typeface-meta-fullscreen.sans-serif-geometric {
   background-color: #e4defd; }
 
-.typeface.sans-serif-geometric {
-  border-radius: 5px 0 5px 5px; }
-  @media (max-width: 830px) {
-    .typeface.sans-serif-geometric {
-      border-radius: 0; } }
-
-.serif-didone,
+.typeface--serif-didone,
 .typeface-meta-fullscreen.serif-didone {
   background-color: #c3b9f5; }
 
-.typeface.serif-didone {
-  border-radius: 5px 5px 5px 0; }
-  @media (max-width: 830px) {
-    .typeface.serif-didone {
-      border-radius: 0; } }
-
-.serif-sans-serif,
+.typeface--serif-sans-serif,
 .typeface-meta-fullscreen.serif-sans-serif {
   background-color: #96c9e3; }
 
-.typeface.serif-sans-serif {
-  border-radius: 0 5px 0 0; }
-  @media (max-width: 830px) {
-    .typeface.serif-sans-serif {
-      border-radius: 0; } }
-
-.serif-realist,
+.typeface--serif-realist,
 .typeface-meta-fullscreen.serif-realist {
   background-color: #e9fdde; }
 
-.typeface.serif-realist {
-  border-radius: 0 5px 0 5px; }
-  @media (max-width: 830px) {
-    .typeface.serif-realist {
-      border-radius: 0; } }
-
-.serif-garalde,
+.typeface--serif-garalde,
 .typeface-meta-fullscreen.serif-garalde {
   background-color: #fcf7de; }
 
-.typeface.serif-garalde {
-  border-radius: 5px 5px 0 5px; }
-  @media (max-width: 830px) {
-    .typeface.serif-garalde {
-      border-radius: 0; } }
-
-.slab-serif,
+.typeface--slab-serif,
 .typeface-meta-fullscreen.slab-serif {
   background-color: #b8f4bd; }
 
-.typeface.slab-serif {
-  border-radius: 0 0 0 5px; }
-  @media (max-width: 830px) {
-    .typeface.slab-serif {
-      border-radius: 0; } }
-
-.glyphic-inscriptional,
+.typeface--glyphic-inscriptional,
 .typeface-meta-fullscreen.glyphic-inscriptional {
   background-color: #d0a6ee; }
 
-.typeface.glyphic-inscriptional {
-  border-radius: 0; }
-  @media (max-width: 830px) {
-    .typeface.glyphic-inscriptional {
-      border-radius: 0; } }
-
-.sans-serif-display,
+.typeface--sans-serif-display,
 .typeface-meta-fullscreen.sans-serif-display {
   background-color: #f4bab9; }
 
-.typeface.sans-serif-display {
-  border-radius: 0 0 5px 0; }
-  @media (max-width: 830px) {
-    .typeface.sans-serif-display {
-      border-radius: 0; } }
-
-.blackletter,
+.typeface--blackletter,
 .typeface-meta-fullscreen.blackletter {
   background-color: #b8f3ee; }
 
-.typeface.blackletter {
-  border-radius: 5px 0 0 0; }
-  @media (max-width: 830px) {
-    .typeface.blackletter {
-      border-radius: 0; } }
-
-.script,
+.typeface--script,
 .typeface-meta-fullscreen.script {
   background-color: #89d9d3; }
-
-.typeface.script {
-  border-radius: 5px; }
-  @media (max-width: 830px) {
-    .typeface.script {
-      border-radius: 0; } }
 
 .typeface-meta-fullscreen {
   background: white;

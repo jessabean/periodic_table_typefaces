@@ -40,23 +40,6 @@
   text-align: center;
   text-transform: capitalize;
 
-  &:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url(/img/icons/expand.svg) center center no-repeat;
-    background-size: 32px 32px;
-    opacity: 0;
-  }
-
-  .touchevents &:after {
-    display: none;
-  }
-
   // Need extra margin for the special ones on the bottom row
   &[data-family="Script"] {
     margin-top: $gutter * 6;
@@ -73,11 +56,42 @@
 
 .typeface:hover {
   cursor: pointer;
-  background-color: rgba(0,0,0,0.5);
-  transition: background-color 0.2s ease-out;
+
+
+}
+
+.typeface a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: $gray;
+
+  &:hover {
+    color: $gray;
+    background-color: rgba(0,0,0,0.5);
+    transition: background-color 0.2s ease-out;
+  }
 
   &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(/img/icons/expand.svg) center center no-repeat;
+    background-size: 32px 32px;
+    opacity: 0;
+  }
+
+  &:hover:after {
     opacity: 1;
+  }
+
+  .touchevents &:after {
+    display: none;
   }
 }
 
@@ -99,6 +113,10 @@
   }
 }
 
+#typeface__media {
+  @extend %visually-hidden;
+}
+
 // Styling the elements
 // -----------------------------
 
@@ -118,17 +136,9 @@ $families: (
 );
 
 @each $label, $map in $families {
-  .#{$label},
+  .typeface--#{$label},
   .typeface-meta-fullscreen.#{$label} {
     background-color: map-get($map, basecolor);
-  }
-
-  .typeface.#{$label} {
-    border-radius: map-get($map, radius);
-
-    @include respond-to(max-width, $break-medium){
-      border-radius: 0;
-    }
   }
 };
 

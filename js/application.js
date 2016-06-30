@@ -1,30 +1,17 @@
 // Build the typeface meta modal and toggle visibility
 var showMetaFullScreen = function(event) {
-  var target = event.target; // li.typeface
-  var metaFamily = $(target).data('family').replace(/\é/g,"e").replace(/(\.\s)|\s/g, '-').toLowerCase();
+  event.preventDefault();
 
-  $.get('templates/typeface-meta.mustache.html',
-    function (template, textStatus, jqXhr) {
-
-      var typefaceData = {
-        name: $(target).data('title'),
-        abbreviation: $(target).textContent,
-        rank: $(target).data('rank'),
-        family: $(target).data('family'),
-        designer: $(target).data('designer'),
-        year: $(target).data('year'),
-      };
-
-      typefaceData.lower = function () {
-        return function (text, render) {
-          text = render(text).replace(/\é/g,"e");
-          return render(text).replace(/(\.\s)|\s/g, '-').toLowerCase();
-        };
-      };
-   
-    var typefaceMetaHtml = Mustache.render(template, typefaceData);
+  var target      = event.target; // li.typeface a
+  var metaFamily  = $(target).data('family').replace(/\é/g,"e").replace(/(\.\s)|\s/g, '-').toLowerCase();
+  var id          = $(target).attr('href');
+  var content     = $('div'+id)[0].outerHTML;
+      
+  $.get('templates/typeface-meta.mustache.html', function (template, textStatus, jqXhr) {
+    var typefaceMetaHtml = Mustache.render(template, content);
     $('.typeface-meta-fullscreen').html(typefaceMetaHtml);
-  });
+    $('.modal__body').html(content);
+  }); // end $.get template
 
   $('.typeface-meta-fullscreen').addClass('is-active ' + metaFamily);
 };
