@@ -1,6 +1,6 @@
 CSS Periodic Table of Typefaces
 =============
 
-A CSS version of Squidspot's [Periodic Table of Typefaces] (http://squidspot.com/Periodic_Table_of_Typefaces.html)
+A CSS version of Cam Wilde's [Periodic Table of Typefaces] (https://www.behance.net/Gallery/Periodic-Table-of-Typefaces/193759)
 
 [View project] (http://jessica-eldredge.com/periodic_table_typefaces)
